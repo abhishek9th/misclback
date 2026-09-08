@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: schemesetu-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      # Set the real key in the Render dashboard (Environment tab), not here.
+      - key: GROQ_API_KEY
+        sync: false
+      - key: NODE_VERSION
+        value: 20
