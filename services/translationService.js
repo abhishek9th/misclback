@@ -35,8 +35,32 @@ export async function translateBatch(texts, targetLang, sourceLang = 'auto') {
   // Nothing to do when source == target.
   if (targetLang === sourceLang) return texts.map(String);
 
-  const source = LANG_NAMES[sourceLang] || 'the given source language';
+  try {
+    return await translateBatchOnce(texts, targetLang, sourceLang);
+  } catch (err) {
+    // The model occasionally fails to produce valid JSON for a batch — most
+    // often when it contains long scraped content (scheme descriptions can
+    // run 300+ chars vs. the short UI strings this was originally built for),
+    // pushing the response past what fits reliably in one JSON completion.
+    // Recover by bisecting instead of dropping the whole batch: a single
+    // persistently-failing item falls back to its untranslated source text
+    // rather than taking its neighbours down with it.
+    if (texts.length === 1) {
+      console.error('Translation failed for a single item, returning source text:', err.message);
+      return texts.map(String);
+    }
+    const mid = Math.ceil(texts.length / 2);
+    const [left, right] = await Promise.all([
+      translateBatch(texts.slice(0, mid), targetLang, sourceLang),
+      translateBatch(texts.slice(mid), targetLang, sourceLang),
+    ]);
+    return [...left, ...right];
+  }
+}
 
+async function translateBatchOnce(texts, targetLang, sourceLang) {
+  const target = LANG_NAMES[targetLang];
+  const source = LANG_NAMES[sourceLang] || 'the given source language';
   const groq = getGroqClient();
 
   const numbered = texts.map((t, i) => ({ id: i, text: String(t ?? '') }));

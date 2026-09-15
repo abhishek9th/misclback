@@ -1,0 +1,10 @@
+import path from 'path'; import dotenv from 'dotenv'; import { fileURLToPath } from 'url';
+import { getSupabaseAdmin } from '../services/supabaseAdmin.js';
+const __d = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.resolve(__d, '../../.env') });
+const s = getSupabaseAdmin();
+const { data: u } = await s.auth.admin.listUsers();
+const demo = u.users.find((x) => x.email === 'user01@schemesetu.demo');
+const { error } = await s.from('scheme_applications').delete().eq('user_id', demo.id).eq('scheme_id', 'scheme_pmegp');
+console.log('removed demo PMEGP application:', error?.message || 'OK');
+process.exit(0);

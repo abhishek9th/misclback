@@ -1,0 +1,358 @@
+{
+  "ministries": [
+    {
+      "name": "Comptroller And Auditor General Of India",
+      "count": 2
+    },
+    {
+      "name": "Ministry Of Agriculture and Farmers Welfare",
+      "count": 41
+    },
+    {
+      "name": "Ministry Of Ayush",
+      "count": 10
+    },
+    {
+      "name": "Ministry Of Chemicals And Fertilizers",
+      "count": 10
+    },
+    {
+      "name": "Ministry Of Commerce And Industry",
+      "count": 56
+    },
+    {
+      "name": "Ministry Of Communication",
+      "count": 11
+    },
+    {
+      "name": "Ministry Of Consumer Affairs, Food And Public Distribution",
+      "count": 1
+    },
+    {
+      "name": "Ministry of Corporate Affairs",
+      "count": 3
+    },
+    {
+      "name": "Ministry Of Culture",
+      "count": 20
+    },
+    {
+      "name": "Ministry Of Defence",
+      "count": 15
+    },
+    {
+      "name": "Ministry Of Development Of North Eastern Region",
+      "count": 1
+    },
+    {
+      "name": "Ministry Of Earth Sciences",
+      "count": 1
+    },
+    {
+      "name": "Ministry of Education",
+      "count": 85
+    },
+    {
+      "name": "Ministry of Electronics and Information Technology",
+      "count": 22
+    },
+    {
+      "name": "Ministry Of Environment,forests and climate change",
+      "count": 4
+    },
+    {
+      "name": "Ministry Of External Affairs",
+      "count": 5
+    },
+    {
+      "name": "Ministry Of Finance",
+      "count": 19
+    },
+    {
+      "name": "Ministry of Fisheries,Animal Husbandry and Dairying",
+      "count": 13
+    },
+    {
+      "name": "Ministry of Food Processing Industries",
+      "count": 3
+    },
+    {
+      "name": "Ministry Of Health & Family Welfare",
+      "count": 15
+    },
+    {
+      "name": "Ministry of Heavy Industries",
+      "count": 4
+    },
+    {
+      "name": "Ministry Of Home Affairs",
+      "count": 18
+    },
+    {
+      "name": "Ministry Of Housing & Urban Affairs",
+      "count": 5
+    },
+    {
+      "name": "Ministry Of Information And Broadcasting",
+      "count": 1
+    },
+    {
+      "name": "Ministry Of Jal Shakti",
+      "count": 6
+    },
+    {
+      "name": "Ministry Of Labour and Employment",
+      "count": 13
+    },
+    {
+      "name": "Ministry Of Law and Justice",
+      "count": 5
+    },
+    {
+      "name": "Ministry Of Micro, Small and Medium Enterprises",
+      "count": 31
+    },
+    {
+      "name": "Ministry Of Mines",
+      "count": 1
+    },
+    {
+      "name": "Ministry Of Minority Affairs",
+      "count": 12
+    },
+    {
+      "name": "Ministry Of New and Renewable Energy",
+      "count": 7
+    },
+    {
+      "name": "Ministry Of Panchayati Raj",
+      "count": 2
+    },
+    {
+      "name": "Ministry Of Personnel, Public Grievances And Pensions",
+      "count": 5
+    },
+    {
+      "name": "Ministry Of Petroleum and Natural Gas",
+      "count": 3
+    },
+    {
+      "name": "Ministry of Ports,Shipping and Waterways",
+      "count": 5
+    },
+    {
+      "name": "Ministry Of Power",
+      "count": 1
+    },
+    {
+      "name": "Ministry Of Railways",
+      "count": 1
+    },
+    {
+      "name": "Ministry Of Road Transport & Highways",
+      "count": 2
+    },
+    {
+      "name": "Ministry Of Rural Development",
+      "count": 10
+    },
+    {
+      "name": "Ministry Of Science And Technology",
+      "count": 68
+    },
+    {
+      "name": "Ministry Of Skill Development And Entrepreneurship",
+      "count": 11
+    },
+    {
+      "name": "Ministry Of Social Justice and Empowerment",
+      "count": 85
+    },
+    {
+      "name": "Ministry Of Statistics and Programme Implementation",
+      "count": 3
+    },
+    {
+      "name": "Ministry Of Steel",
+      "count": 3
+    },
+    {
+      "name": "Ministry Of Textiles",
+      "count": 24
+    },
+    {
+      "name": "Ministry Of Tourism",
+      "count": 7
+    },
+    {
+      "name": "Ministry Of Tribal Affairs",
+      "count": 10
+    },
+    {
+      "name": "Ministry Of Water Resources,River Development & Ganga Rejuvenation",
+      "count": 2
+    },
+    {
+      "name": "Ministry of Women and Child Development",
+      "count": 8
+    },
+    {
+      "name": "Ministry Of Youth Affairs & Sports",
+      "count": 22
+    },
+    {
+      "name": "NITI Aayog (National Institution for Transforming India)",
+      "count": 1
+    },
+    {
+      "name": "The Lokpal of India",
+      "count": 1
+    }
+  ],
+  "states": [
+    {
+      "name": "Andaman and Nicobar Islands",
+      "count": 19
+    },
+    {
+      "name": "Andhra Pradesh",
+      "count": 51
+    },
+    {
+      "name": "Arunachal Pradesh",
+      "count": 38
+    },
+    {
+      "name": "Assam",
+      "count": 78
+    },
+    {
+      "name": "Bihar",
+      "count": 113
+    },
+    {
+      "name": "Chandigarh",
+      "count": 21
+    },
+    {
+      "name": "Chhattisgarh",
+      "count": 106
+    },
+    {
+      "name": "Dadra & Nagar Haveli and Daman & Diu",
+      "count": 62
+    },
+    {
+      "name": "Delhi",
+      "count": 53
+    },
+    {
+      "name": "Goa",
+      "count": 271
+    },
+    {
+      "name": "Gujarat",
+      "count": 641
+    },
+    {
+      "name": "Haryana",
+      "count": 249
+    },
+    {
+      "name": "Himachal Pradesh",
+      "count": 75
+    },
+    {
+      "name": "Jammu and Kashmir",
+      "count": 43
+    },
+    {
+      "name": "Jharkhand",
+      "count": 96
+    },
+    {
+      "name": "Karnataka",
+      "count": 56
+    },
+    {
+      "name": "Kerala",
+      "count": 81
+    },
+    {
+      "name": "Ladakh",
+      "count": 4
+    },
+    {
+      "name": "Lakshadweep",
+      "count": 9
+    },
+    {
+      "name": "Madhya Pradesh",
+      "count": 288
+    },
+    {
+      "name": "Maharashtra",
+      "count": 84
+    },
+    {
+      "name": "Manipur",
+      "count": 27
+    },
+    {
+      "name": "Meghalaya",
+      "count": 83
+    },
+    {
+      "name": "Mizoram",
+      "count": 25
+    },
+    {
+      "name": "Nagaland",
+      "count": 16
+    },
+    {
+      "name": "Odisha",
+      "count": 83
+    },
+    {
+      "name": "Puducherry",
+      "count": 271
+    },
+    {
+      "name": "Punjab",
+      "count": 41
+    },
+    {
+      "name": "Rajasthan",
+      "count": 157
+    },
+    {
+      "name": "Sikkim",
+      "count": 23
+    },
+    {
+      "name": "Tamil Nadu",
+      "count": 234
+    },
+    {
+      "name": "Telangana",
+      "count": 22
+    },
+    {
+      "name": "Tripura",
+      "count": 37
+    },
+    {
+      "name": "Uttar Pradesh",
+      "count": 46
+    },
+    {
+      "name": "Uttarakhand",
+      "count": 446
+    },
+    {
+      "name": "West Bengal",
+      "count": 109
+    }
+  ]
+}
