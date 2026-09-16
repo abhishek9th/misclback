@@ -45,19 +45,26 @@ router.get('/search', async (req, res) => {
 router.get('/filters', async (req, res) => {
   try {
     const supabase = getSupabaseAdmin();
-    const { data, error } = await supabase.from('myscheme_catalogue').select('ministries, states, level');
-    if (error) throw error;
-
+    // Supabase caps a select at 1000 rows, so page through the whole catalogue
+    // to collect EVERY distinct state/ministry (not just those in the first 1000).
     const ministrySet = new Set();
     const stateSet = new Set();
-    for (const row of data) {
-      (row.ministries || []).forEach((m) => ministrySet.add(m));
-      (row.states || []).forEach((s) => stateSet.add(s));
+    let total = 0;
+    for (let from = 0; ; from += 1000) {
+      const { data, error } = await supabase
+        .from('myscheme_catalogue').select('ministries, states').range(from, from + 999);
+      if (error) throw error;
+      for (const row of data) {
+        (row.ministries || []).forEach((m) => ministrySet.add(m));
+        (row.states || []).forEach((s) => stateSet.add(s));
+      }
+      total += data.length;
+      if (data.length < 1000) break;
     }
     res.json({
       ministries: [...ministrySet].sort(),
       states: [...stateSet].sort(),
-      totalSchemes: data.length,
+      totalSchemes: total,
     });
   } catch (error) {
     console.error('Catalogue filters error:', error.message);
