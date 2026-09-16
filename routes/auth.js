@@ -161,6 +161,28 @@ router.post('/register', async (req, res) => {
   }
 });
 
+// POST /api/auth/register-check  { mobile } -> { ok:true } if this mobile is
+// FREE to register, or 409 MOBILE_REGISTERED if it's already tied to an
+// account. Called by the frontend BEFORE sending the registration OTP, so a
+// returning user is told immediately (step 1) instead of after filling in
+// their name/email/password/face photo and only discovering it at submit time.
+router.post('/register-check', async (req, res) => {
+  const normMobile = normalizeMobile(req.body?.mobile);
+  if (!normMobile) return fail(res, 'INVALID_MOBILE', 'Please enter a valid 10-digit mobile number');
+  let supabase;
+  try { supabase = getSupabaseAdmin(); }
+  catch (err) { return fail(res, err.code || 'SUPABASE_NOT_CONFIGURED', 'Server is not configured', 503); }
+  try {
+    const { data, error } = await supabase.from('profiles').select('id').eq('phone', normMobile).maybeSingle();
+    if (error) throw error;
+    if (data) return fail(res, 'MOBILE_REGISTERED', 'This mobile number is already registered. Please log in instead.', 409);
+    res.json({ ok: true });
+  } catch (err) {
+    console.error('register-check error:', err.message);
+    return fail(res, 'DB_ERROR', 'Something went wrong. Please try again.', 500);
+  }
+});
+
 // POST /api/auth/resolve-mobile  { mobile } -> { email }
 // Lets users log in with their mobile number: we map it to the account email,
 // then the client signs in with email + password.
