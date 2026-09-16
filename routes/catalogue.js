@@ -98,9 +98,11 @@ router.get('/eligible', requireUser, async (req, res) => {
     const inVocab = (v, vocab) => (v && vocab.includes(String(v).toLowerCase()) ? String(v).toLowerCase() : null);
     const benefitTypes = String(req.query.benefit_types || '')
       .split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
-    const limit = Math.min(24, Math.max(1, parseInt(req.query.limit, 10) || 12));
+    const audiences = String(req.query.audiences || '')
+      .split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
+    const limit = Math.min(30, Math.max(1, parseInt(req.query.limit, 10) || 12));
 
-    const { data, error } = await supabase.rpc('match_catalogue_schemes', {
+    const base = {
       p_income: profile?.annual_income ?? null,
       p_category: inVocab(profile?.social_category, CAT_VOCAB),
       p_gender: inVocab(profile?.gender, GENDER_VOCAB),
@@ -109,7 +111,14 @@ router.get('/eligible', requireUser, async (req, res) => {
       p_age: profile?.age ?? ageFromDob(profile?.date_of_birth),
       p_benefit_types: benefitTypes.length ? benefitTypes : null,
       p_limit: limit,
+    };
+
+    // Audience-aware matcher. Falls back to the pre-audience signature so the
+    // endpoint keeps working in the window before the audience migration is run.
+    let { data, error } = await supabase.rpc('match_catalogue_schemes', {
+      ...base, p_audiences: audiences.length ? audiences : null,
     });
+    if (error) ({ data, error } = await supabase.rpc('match_catalogue_schemes', base));
     if (error) throw error;
     res.json({ schemes: data || [] });
   } catch (error) {
