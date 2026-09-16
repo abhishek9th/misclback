@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 let SCHEMES_CACHE = null;
 async function getSchemes() {
   if (SCHEMES_CACHE) return SCHEMES_CACHE;
-  const url = pathToFileURL(path.resolve(__dirname, '../../src/data/schemes.js')).href;
+  const url = pathToFileURL(path.resolve(__dirname, '../data/schemes.js')).href;
   SCHEMES_CACHE = (await import(url)).SCHEMES || [];
   return SCHEMES_CACHE;
 }
