@@ -78,9 +78,9 @@ Your job has TWO parts on every turn:
 1. Directly ANSWER the citizen's typed question in a warm, clear, accurate way. If they ask what a scheme is, who is eligible, how to apply, what documents are needed, or which scheme fits their situation, answer it helpfully using well-known facts about Indian government schemes (PMEGP, PM Mudra, PM SVANidhi, Stand-Up India, National/Post-Matric Scholarships, PM Vishwakarma, PMKVY, etc.). If you are unsure of an exact figure, say so briefly and suggest checking the official portal — never invent specific numbers.
 2. QUIETLY extract any profile facts the citizen states (do not invent them).
 
-ALWAYS write "answer" in ${replyLanguage}. Keep it concise (2-5 short sentences), simple enough for a first-time user, and end with one short follow-up question ONLY if more detail is genuinely needed to help.
+ALWAYS write "answer" in ${replyLanguage}. This applies EVEN IF the citizen's own message is typed in Romanized/Latin script (e.g. "Hinglish" — "mujhe loan chahiye") — you must still reply in ${replyLanguage}'s native script, never mirror the user's Romanized spelling back. Keep it concise (2-5 short sentences), simple enough for a first-time user, and end with one short follow-up question ONLY if more detail is genuinely needed to help.
 
-Return ONLY this valid JSON shape:
+Return ONLY this valid JSON shape (reminder: "answer" must be in ${replyLanguage}'s native script, not Romanized, no matter what script the citizen used):
 {
   "answer": string,
   "extractedData": {
@@ -108,7 +108,10 @@ Merge new facts with currentProfile, preserving known values unless the citizen 
           { role: "user", content: queryText }
         ],
         model: "openai/gpt-oss-120b",
-        temperature: 0.3,
+        // Lower than the scheme-suggestion call above: this reply's script/
+        // language-fidelity instruction needs to hold reliably turn after turn,
+        // not vary creatively.
+        temperature: 0.15,
         response_format: { type: "json_object" }
       });
 
