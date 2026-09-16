@@ -7,7 +7,7 @@ export const SCHEMES = [
     name: "Prime Minister Employment Generation Programme (PMEGP)",
     name_hi: "प्रधानमंत्री रोजगार सृजन कार्यक्रम (PMEGP)",
     type: "business",
-    fields: ["manufacturing", "services", "food_processing", "handicrafts", "agriculture_allied"],
+    fields: ["manufacturing", "services", "food_processing", "handicrafts", "agriculture_allied", "tourism"],
     scope: "central",
     states: ["all"],
     income_limit: null, // No family income ceiling
@@ -56,7 +56,7 @@ export const SCHEMES = [
     name: "PM Mudra Yojana - Shishu Loan",
     name_hi: "प्रधानमंत्री मुद्रा योजना - शिशु ऋण",
     type: "business",
-    fields: ["retail_trading", "services", "food_processing", "handicrafts", "agriculture_allied", "transport"],
+    fields: ["retail_trading", "services", "food_processing", "handicrafts", "agriculture_allied", "transport", "tech_it", "healthcare", "tourism"],
     scope: "central",
     states: ["all"],
     income_limit: null,
@@ -99,13 +99,13 @@ export const SCHEMES = [
     name: "PM Mudra Yojana - Kishore & Tarun Loan",
     name_hi: "प्रधानमंत्री मुद्रा योजना - किशोर व तरुण ऋण",
     type: "business",
-    fields: ["manufacturing", "retail_trading", "services", "food_processing", "tech_it", "transport", "healthcare"],
+    fields: ["manufacturing", "retail_trading", "services", "food_processing", "tech_it", "transport", "healthcare", "tourism", "handicrafts"],
     scope: "central",
     states: ["all"],
     income_limit: null,
     eligible_genders: ["all"],
     eligible_categories: ["all"],
-    business_status: ["existing", "expansion"],
+    business_status: ["new", "existing", "expansion"],
     min_financial_assistance: 50000,
     max_financial_assistance: 1000000,
     subsidy_percentage: "गारंटी-मुक्त बिजनेस लोन",
@@ -356,6 +356,235 @@ export const SCHEMES = [
       "बैंक द्वारा लोन स्वीकृत होने पर सब्सिडी जमा की जाएगी"
     ],
     official_link: "https://pmfme.mofpi.gov.in/"
+  },
+
+  {
+    id: "scheme_cgtmse",
+    name: "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+    name_hi: "सूक्ष्म व लघु उद्यमों हेतु क्रेडिट गारंटी फंड ट्रस्ट (CGTMSE)",
+    type: "business",
+    fields: ["manufacturing", "services", "retail_trading", "food_processing", "tech_it", "transport", "healthcare", "tourism", "handicrafts", "agriculture_allied"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["general", "obc", "sc", "st", "minorities", "ews"],
+    business_status: ["new", "existing", "expansion"],
+    min_financial_assistance: 1000000,
+    max_financial_assistance: 20000000, // ₹2 करोड़ तक कोलैटरल-मुक्त गारंटी कवर
+    subsidy_percentage: "बिना गारंटी/जमानत के ऋण गारंटी कवर",
+    interest_rate: "बैंक/NBFC की सामान्य दर",
+    description_hi: "सिडबी (SIDBI) व सूक्ष्म, लघु एवं मध्यम उद्यम मंत्रालय की योजना, जो बैंक/NBFC से लिए गए MSME लोन को बिना किसी कोलैटरल (गिरवी संपत्ति) या तीसरे पक्ष की गारंटी के ₹2 करोड़ तक कवर करती है — नए व मौजूदा दोनों तरह के उद्यमों के विस्तार के लिए उपयुक्त।",
+    benefits_hi: [
+      "₹2 करोड़ तक के MSME लोन पर बिना कोलैटरल गारंटी कवर",
+      "व्यवसाय विस्तार, नई मशीनरी व कार्यशील पूंजी हेतु उपयुक्त",
+      "किसी भी क्षेत्र (मैन्युफैक्चरिंग, सेवा, व्यापार) के MSME पर लागू",
+      "बैंक/NBFC द्वारा तेज़ स्वीकृति में सहायक"
+    ],
+    eligibility_reasons_hi: [
+      "आपका व्यवसाय मौजूदा है या विस्तार करना चाहते हैं",
+      "यह योजना सभी क्षेत्रों के MSME पर लागू होती है",
+      "इस योजना में कोई पारिवारिक आय सीमा नहीं है",
+      "यह भारत के सभी राज्यों में उपलब्ध है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "उद्यम पंजीकरण (Udyam Registration)",
+      "व्यवसाय का प्रोजेक्ट रिपोर्ट/विस्तार योजना",
+      "पिछले वित्तीय वर्ष का बैंक स्टेटमेंट",
+      "पैन कार्ड"
+    ],
+    application_steps_hi: [
+      "अपने व्यवसाय को Udyam Registration पोर्टल पर पंजीकृत करें",
+      "किसी सदस्य बैंक/NBFC शाखा में लोन आवेदन करें",
+      "बैंक CGTMSE गारंटी कवर के लिए आवेदन करता है",
+      "स्वीकृति पर बिना कोलैटरल लोन वितरित किया जाता है"
+    ],
+    official_link: "https://www.cgtmse.in/"
+  },
+
+  {
+    id: "scheme_startup_seed_fund",
+    name: "Startup India Seed Fund Scheme (SISFS)",
+    name_hi: "स्टार्टअप इंडिया सीड फंड योजना (SISFS)",
+    type: "business",
+    fields: ["tech_it", "manufacturing", "services"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["general", "obc", "sc", "st", "minorities", "ews"],
+    business_status: ["new"],
+    min_financial_assistance: 500000,
+    max_financial_assistance: 5000000, // ₹50 लाख (investment component); plus ₹20 लाख तक अनुदान अलग से
+    subsidy_percentage: "अनुदान + निवेश सहायता",
+    interest_rate: "DPIIT-मान्यता प्राप्त इनक्यूबेटर के माध्यम से",
+    description_hi: "DPIIT-मान्यता प्राप्त टेक्नोलॉजी व अन्य स्टार्टअप्स को प्रूफ-ऑफ-कॉन्सेप्ट, प्रोटोटाइप विकास व बाज़ार में उतरने के लिए अनुदान और निवेश सहायता।",
+    benefits_hi: [
+      "प्रूफ-ऑफ-कॉन्सेप्ट/प्रोटोटाइप के लिए ₹20 लाख तक का अनुदान",
+      "बाज़ार में प्रवेश व व्यावसायीकरण के लिए ₹50 लाख तक का निवेश (कन्वर्टिबल डिबेंचर)",
+      "मान्यता प्राप्त इनक्यूबेटर के माध्यम से मार्गदर्शन व सहायता",
+      "देशभर के इनक्यूबेटरों के नेटवर्क तक पहुंच"
+    ],
+    eligibility_reasons_hi: [
+      "आपका व्यवसाय तकनीक/नवाचार आधारित स्टार्टअप है",
+      "DPIIT-मान्यता प्राप्त स्टार्टअप हेतु उपयुक्त",
+      "इस योजना में कोई पारिवारिक आय सीमा नहीं है",
+      "यह भारत के सभी राज्यों में उपलब्ध है"
+    ],
+    required_documents_hi: [
+      "DPIIT स्टार्टअप मान्यता प्रमाण पत्र",
+      "आधार कार्ड / पहचान पत्र",
+      "बिजनेस प्लान / पिच डेक",
+      "कंपनी पंजीकरण दस्तावेज़ (Pvt. Ltd./LLP)",
+      "बैंक खाता विवरण",
+      "पैन कार्ड"
+    ],
+    application_steps_hi: [
+      "DPIIT के अंतर्गत अपने स्टार्टअप को मान्यता प्राप्त करें",
+      "seedfund.startupindia.gov.in पोर्टल पर जाएं",
+      "अपने क्षेत्र के मान्यता प्राप्त इनक्यूबेटर का चयन करें",
+      "आवेदन पत्र व बिजनेस प्लान जमा करें",
+      "इनक्यूबेटर की चयन समिति द्वारा मूल्यांकन की प्रतीक्षा करें",
+      "स्वीकृति पर अनुदान/निवेश राशि जारी की जाएगी"
+    ],
+    official_link: "https://seedfund.startupindia.gov.in/"
+  },
+
+  {
+    id: "scheme_pm_edrive",
+    name: "PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE)",
+    name_hi: "पीएम ई-ड्राइव योजना (इलेक्ट्रिक वाहन खरीद सब्सिडी)",
+    type: "business",
+    fields: ["transport"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["general", "obc", "sc", "st", "minorities", "ews"],
+    business_status: ["new", "existing", "expansion"],
+    min_financial_assistance: 50000,
+    max_financial_assistance: 300000,
+    subsidy_percentage: "वाहन श्रेणी अनुसार खरीद सब्सिडी",
+    interest_rate: "प्रत्यक्ष सब्सिडी (ऋण नहीं)",
+    description_hi: "भारी उद्योग मंत्रालय की योजना जो ई-टू-व्हीलर, ई-थ्री-व्हीलर, ई-ट्रक और ई-एम्बुलेंस जैसे वाणिज्यिक इलेक्ट्रिक वाहन खरीदने पर सीधी खरीद सब्सिडी देती है।",
+    benefits_hi: [
+      "ई-रिक्शा व ई-थ्री-व्हीलर सहित वाणिज्यिक EV की खरीद पर सीधी सब्सिडी",
+      "ई-ट्रक, ई-बस व ई-एम्बुलेंस के लिए वाहन श्रेणी अनुसार सहायता",
+      "EV चार्जिंग इंफ्रास्ट्रक्चर हेतु भी सहायता उपलब्ध",
+      "सटीक सब्सिडी राशि वाहन श्रेणी पर निर्भर — आधिकारिक पोर्टल पर पुष्टि करें"
+    ],
+    eligibility_reasons_hi: [
+      "आपका व्यवसाय परिवहन/लॉजिस्टिक्स क्षेत्र में है",
+      "वाणिज्यिक इलेक्ट्रिक वाहन खरीदने की योजना पर लागू",
+      "इस योजना में कोई पारिवारिक आय सीमा नहीं है",
+      "यह भारत के सभी राज्यों में उपलब्ध है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "व्यवसाय पंजीकरण / ड्राइविंग परमिट (यदि लागू हो)",
+      "वाहन डीलर का कोटेशन / इनवॉइस",
+      "बैंक खाता विवरण",
+      "पैन कार्ड"
+    ],
+    application_steps_hi: [
+      "पंजीकृत डीलर से पात्र इलेक्ट्रिक वाहन का चयन करें",
+      "डीलर द्वारा पोर्टल पर सब्सिडी दावा दर्ज किया जाता है",
+      "आवश्यक दस्तावेज़ जमा करें",
+      "सत्यापन के बाद सब्सिडी राशि वाहन की कीमत में समायोजित/सीधे ट्रांसफर होती है"
+    ],
+    official_link: "https://heavyindustries.gov.in/pm-edrive-scheme"
+  },
+
+  {
+    id: "scheme_jan_aushadhi",
+    name: "Pradhan Mantri Bhartiya Janaushadhi Pariyojana (Jan Aushadhi Kendra)",
+    name_hi: "प्रधानमंत्री भारतीय जनऔषधि परियोजना (जन औषधि केंद्र)",
+    type: "business",
+    fields: ["healthcare", "retail_trading"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["general", "obc", "sc", "st", "minorities", "ews"],
+    business_status: ["new"],
+    min_financial_assistance: 50000,
+    max_financial_assistance: 250000,
+    subsidy_percentage: "बिक्री पर 15% प्रोत्साहन राशि",
+    interest_rate: "प्रत्यक्ष प्रोत्साहन (ऋण नहीं)",
+    description_hi: "रसायन एवं उर्वरक मंत्रालय की योजना जिसके अंतर्गत सस्ती जेनेरिक दवाओं की दुकान (जन औषधि केंद्र) खोलने पर प्रोत्साहन राशि व एकमुश्त सहायता दी जाती है।",
+    benefits_hi: [
+      "मासिक बिक्री का 15% प्रोत्साहन (अधिकतम ₹15,000/माह), कुल ₹2.5 लाख तक",
+      "महिला, SC/ST, दिव्यांग व विशेष क्षेत्र आवेदकों को अतिरिक्त एकमुश्त सहायता",
+      "फर्नीचर, कंप्यूटर व शुरुआती स्टॉक हेतु सहायता",
+      "BPPI द्वारा दवाओं की निरंतर आपूर्ति"
+    ],
+    eligibility_reasons_hi: [
+      "आपका व्यवसाय स्वास्थ्य/खुदरा क्षेत्र में है",
+      "नई दुकान/फार्मेसी शुरू करने की योजना पर लागू",
+      "इस योजना में कोई पारिवारिक आय सीमा नहीं है",
+      "यह भारत के सभी राज्यों में उपलब्ध है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "फार्मासिस्ट डिग्री/डिप्लोमा (B.Pharma/D.Pharma) या नियुक्त फार्मासिस्ट का प्रमाण",
+      "दुकान का स्थान/किराया प्रमाण",
+      "जाति प्रमाण पत्र (यदि लागू हो)",
+      "बैंक खाता विवरण",
+      "पैन कार्ड"
+    ],
+    application_steps_hi: [
+      "janaushadhi.gov.in पोर्टल पर आवेदन फॉर्म भरें",
+      "फार्मासिस्ट योग्यता व दुकान स्थान के दस्तावेज़ अपलोड करें",
+      "BPPI द्वारा आवेदन की समीक्षा व स्वीकृति की प्रतीक्षा करें",
+      "स्वीकृति पत्र प्राप्त कर दुकान स्थापित करें व दवा आपूर्ति शुरू करें"
+    ],
+    official_link: "https://janaushadhi.gov.in/"
+  },
+
+  {
+    id: "scheme_hunar_se_rozgar",
+    name: "Hunar Se Rozgar Tak (HSRT)",
+    name_hi: "हुनर से रोज़गार तक (HSRT)",
+    type: "business",
+    fields: ["tourism", "services"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["general", "obc", "sc", "st", "minorities", "ews"],
+    business_status: ["new"],
+    min_financial_assistance: 10000,
+    max_financial_assistance: 50000,
+    subsidy_percentage: "निःशुल्क प्रशिक्षण + वृत्तिका",
+    interest_rate: "N/A (प्रशिक्षण योजना)",
+    description_hi: "पर्यटन मंत्रालय की योजना जो 18-28 वर्ष के युवाओं को हॉस्पिटैलिटी क्षेत्र (खानपान, हाउसकीपिंग, बेकरी) में निःशुल्क अल्पकालिक प्रशिक्षण व प्लेसमेंट सहायता देकर स्वरोज़गार के लिए तैयार करती है।",
+    benefits_hi: [
+      "फूड प्रोडक्शन, F&B सर्विस, हाउसकीपिंग व बेकरी में निःशुल्क प्रशिक्षण",
+      "प्रशिक्षण के दौरान वृत्तिका (स्टाइपेंड) सहायता",
+      "प्रशिक्षण उपरांत होटल/रेस्टोरेंट में प्लेसमेंट सहायता",
+      "स्वयं का होमस्टे/कैटरिंग व्यवसाय शुरू करने हेतु कौशल आधार"
+    ],
+    eligibility_reasons_hi: [
+      "आपका व्यवसाय पर्यटन/आतिथ्य क्षेत्र से जुड़ा है",
+      "18-28 वर्ष आयु वर्ग के लिए उपयुक्त",
+      "इस योजना में कोई पारिवारिक आय सीमा नहीं है",
+      "यह भारत के सभी राज्यों में उपलब्ध है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "आयु प्रमाण पत्र",
+      "शैक्षणिक योग्यता प्रमाण पत्र (8वीं/10वीं पास)",
+      "पासपोर्ट साइज़ फोटो",
+      "बैंक खाता विवरण"
+    ],
+    application_steps_hi: [
+      "निकटतम NCHMCT-संबद्ध प्रशिक्षण संस्थान से संपर्क करें",
+      "आवेदन फॉर्म व दस्तावेज़ जमा करें",
+      "चयन के बाद प्रशिक्षण बैच में प्रवेश लें",
+      "प्रशिक्षण पूर्ण कर प्लेसमेंट सहायता प्राप्त करें"
+    ],
+    official_link: "https://tourism.gov.in/"
   },
 
   // ==========================================
@@ -661,6 +890,252 @@ export const SCHEMES = [
       "कॉलेज द्वारा NSP पर सत्यापन के पश्चात राशि जारी होगी"
     ],
     official_link: "https://scholarships.gov.in/"
+  },
+
+  {
+    id: "scheme_csis_education_loan",
+    name: "Central Sector Interest Subsidy Scheme (CSIS)",
+    name_hi: "केंद्रीय क्षेत्र ब्याज सब्सिडी योजना (CSIS)",
+    type: "student",
+    student_type: "education_loan",
+    education_levels: ["undergraduate", "postgraduate", "professional"],
+    course_fields: ["all"],
+    scope: "central",
+    states: ["all"],
+    income_limit: 450000,
+    eligible_genders: ["all"],
+    eligible_categories: ["general", "obc", "sc", "st", "minorities", "ews"],
+    description_hi: "उच्च शिक्षा विभाग की योजना, जो IBA मॉडल एजुकेशन लोन पर मोरेटोरियम अवधि (कोर्स + 1 वर्ष) के दौरान पूरी ब्याज सब्सिडी देती है — जिन छात्रों के परिवार की वार्षिक आय ₹4.5 लाख से कम है।",
+    benefits_hi: [
+      "मोरेटोरियम अवधि के दौरान 100% ब्याज सब्सिडी",
+      "कोर्स अवधि + 1 वर्ष या नौकरी मिलने तक (जो पहले हो) कवर",
+      "किसी भी मान्यता प्राप्त तकनीकी/व्यावसायिक कोर्स पर लागू",
+      "बैंक द्वारा स्वीकृत IBA मॉडल एजुकेशन लोन पर सीधा लाभ"
+    ],
+    eligibility_reasons_hi: [
+      "आपने शिक्षा ऋण (एजुकेशन लोन) का विकल्प चुना है",
+      "पारिवारिक आय ₹4.5 लाख की सीमा में है",
+      "यह भारत के सभी राज्यों में उपलब्ध है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "एडमिशन प्रमाण पत्र",
+      "माता-पिता का आय प्रमाण पत्र",
+      "बैंक से स्वीकृत एजुकेशन लोन के दस्तावेज़",
+      "पैन कार्ड"
+    ],
+    application_steps_hi: [
+      "IBA मॉडल एजुकेशन लोन स्कीम के अंतर्गत बैंक से लोन स्वीकृत कराएं",
+      "vidyalakshmi.co.in पोर्टल पर CSIS हेतु आवेदन करें",
+      "आय प्रमाण पत्र व लोन दस्तावेज़ अपलोड करें",
+      "बैंक सत्यापन के बाद ब्याज सब्सिडी सीधे लोन खाते में समायोजित होगी"
+    ],
+    official_link: "https://www.vidyalakshmi.co.in/"
+  },
+
+  {
+    id: "scheme_free_coaching_sc_obc",
+    name: "Free Coaching Scheme for SC/OBC/EWS/Minority Students",
+    name_hi: "SC/OBC/EWS/अल्पसंख्यक छात्रों के लिए निःशुल्क कोचिंग योजना",
+    type: "student",
+    student_type: "coaching_support",
+    education_levels: ["undergraduate", "postgraduate"],
+    course_fields: ["all"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["obc", "sc", "st", "minorities", "ews"],
+    description_hi: "सामाजिक न्याय एवं अधिकारिता मंत्रालय की योजना, जो UPSC, SSC, बैंकिंग व राज्य PSC जैसी प्रतियोगी परीक्षाओं की तैयारी हेतु निःशुल्क कोचिंग व वृत्तिका (स्टाइपेंड) प्रदान करती है।",
+    benefits_hi: [
+      "UPSC/SSC/बैंकिंग/PSC जैसी परीक्षाओं की निःशुल्क कोचिंग",
+      "कोचिंग अवधि के दौरान मासिक वृत्तिका सहायता",
+      "अध्ययन सामग्री व मार्गदर्शन नामित कोचिंग संस्थानों द्वारा",
+      "SC, ST, OBC, EWS व अल्पसंख्यक वर्ग के छात्रों के लिए"
+    ],
+    eligibility_reasons_hi: [
+      "आपने कोचिंग सहायता का विकल्प चुना है",
+      "आपकी सामाजिक श्रेणी इस योजना के अंतर्गत आती है",
+      "यह भारत के सभी राज्यों में उपलब्ध है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "जाति/श्रेणी प्रमाण पत्र",
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "आय प्रमाण पत्र (यदि लागू हो)",
+      "बैंक खाता विवरण"
+    ],
+    application_steps_hi: [
+      "संबंधित मंत्रालय (सामाजिक न्याय/अल्पसंख्यक कार्य) की वेबसाइट पर सूचना देखें",
+      "नामित कोचिंग संस्थान/राज्य नोडल एजेंसी में आवेदन करें",
+      "प्रवेश परीक्षा या मेरिट के आधार पर चयन होगा",
+      "चयन पर कोचिंग बैच में प्रवेश लें"
+    ],
+    official_link: "https://socialjustice.gov.in/"
+  },
+
+  {
+    id: "scheme_padho_pardesh",
+    name: "Padho Pardesh — Interest Subsidy on Education Loans for Overseas Studies",
+    name_hi: "पढ़ो परदेश — विदेश अध्ययन हेतु शिक्षा ऋण पर ब्याज सब्सिडी",
+    type: "student",
+    student_type: "overseas",
+    education_levels: ["postgraduate", "phd", "overseas"],
+    course_fields: ["all"],
+    scope: "central",
+    states: ["all"],
+    income_limit: 600000,
+    eligible_genders: ["all"],
+    eligible_categories: ["minorities"],
+    description_hi: "अल्पसंख्यक कार्य मंत्रालय की योजना, जो अल्पसंख्यक समुदाय के छात्रों को विदेश में उच्च शिक्षा हेतु लिए गए शिक्षा ऋण पर अध्ययन अवधि के दौरान ब्याज सब्सिडी प्रदान करती है।",
+    benefits_hi: [
+      "विदेश में स्नातकोत्तर/PhD अध्ययन हेतु लिए गए एजुकेशन लोन पर ब्याज सब्सिडी",
+      "अध्ययन अवधि के दौरान पूर्ण ब्याज छूट",
+      "अल्पसंख्यक समुदाय (मुस्लिम, ईसाई, सिख, बौद्ध, पारसी, जैन) के छात्रों के लिए",
+      "मान्यता प्राप्त विदेशी विश्वविद्यालय में प्रवेश पर लागू"
+    ],
+    eligibility_reasons_hi: [
+      "आपने विदेश शिक्षा सहायता का विकल्प चुना है",
+      "आप अल्पसंख्यक समुदाय से हैं",
+      "पारिवारिक आय निर्धारित सीमा में है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "अल्पसंख्यक समुदाय प्रमाण पत्र",
+      "विदेशी विश्वविद्यालय में प्रवेश प्रमाण",
+      "बैंक से स्वीकृत एजुकेशन लोन के दस्तावेज़",
+      "माता-पिता का आय प्रमाण पत्र"
+    ],
+    application_steps_hi: [
+      "अल्पसंख्यक कार्य मंत्रालय के पोर्टल (scholarships.gov.in) पर आवेदन करें",
+      "विदेशी विश्वविद्यालय का प्रवेश पत्र व लोन दस्तावेज़ अपलोड करें",
+      "राज्य नोडल एजेंसी द्वारा सत्यापन की प्रतीक्षा करें",
+      "स्वीकृति पर ब्याज सब्सिडी सीधे लोन खाते में जमा होगी"
+    ],
+    official_link: "https://scholarships.gov.in/"
+  },
+
+  {
+    id: "scheme_top_class_sc",
+    name: "Top Class Education Scheme for SC Students",
+    name_hi: "अनुसूचित जाति छात्रों के लिए टॉप क्लास एजुकेशन योजना",
+    type: "student",
+    student_type: "hostel_support",
+    education_levels: ["undergraduate", "postgraduate"],
+    course_fields: ["all"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["sc"],
+    description_hi: "सामाजिक न्याय एवं अधिकारिता मंत्रालय की योजना, जो सूचीबद्ध शीर्ष संस्थानों में पढ़ रहे अनुसूचित जाति (SC) छात्रों की पूरी ट्यूशन फीस के साथ-साथ हॉस्टल व मेस शुल्क (रहने-खाने का खर्च) भी वहन करती है।",
+    benefits_hi: [
+      "सूचीबद्ध शीर्ष संस्थान की पूरी ट्यूशन फीस",
+      "हॉस्टल व मेस शुल्क (रहने-खाने का खर्च) की पूर्ण प्रतिपूर्ति",
+      "पुस्तकें व अन्य शैक्षणिक खर्चों हेतु अतिरिक्त भत्ता",
+      "IIT, IIM, NIT जैसे राष्ट्रीय महत्व के संस्थानों पर लागू"
+    ],
+    eligibility_reasons_hi: [
+      "आपने छात्रावास/आवास सहायता का विकल्प चुना है",
+      "आप अनुसूचित जाति (SC) श्रेणी से हैं",
+      "सूचीबद्ध शीर्ष संस्थान में प्रवेश आवश्यक"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "जाति प्रमाण पत्र (SC)",
+      "सूचीबद्ध संस्थान में प्रवेश प्रमाण",
+      "माता-पिता का आय प्रमाण पत्र",
+      "बैंक खाता विवरण"
+    ],
+    application_steps_hi: [
+      "National Scholarship Portal (NSP) पर टॉप क्लास एजुकेशन योजना चुनें",
+      "संस्थान का प्रवेश प्रमाण व जाति प्रमाण पत्र अपलोड करें",
+      "संस्थान द्वारा NSP पर सत्यापन की प्रतीक्षा करें",
+      "स्वीकृति पर शुल्क सीधे संस्थान को भेजा जाएगा"
+    ],
+    official_link: "https://scholarships.gov.in/"
+  },
+
+  {
+    id: "scheme_top_class_st",
+    name: "Top Class Education Scheme for ST Students",
+    name_hi: "अनुसूचित जनजाति छात्रों के लिए टॉप क्लास एजुकेशन योजना",
+    type: "student",
+    student_type: "hostel_support",
+    education_levels: ["undergraduate", "postgraduate"],
+    course_fields: ["all"],
+    scope: "central",
+    states: ["all"],
+    income_limit: null,
+    eligible_genders: ["all"],
+    eligible_categories: ["st"],
+    description_hi: "जनजातीय कार्य मंत्रालय की योजना, जो सूचीबद्ध शीर्ष संस्थानों में पढ़ रहे अनुसूचित जनजाति (ST) छात्रों की पूरी ट्यूशन फीस के साथ-साथ हॉस्टल व मेस शुल्क (रहने-खाने का खर्च) भी वहन करती है।",
+    benefits_hi: [
+      "सूचीबद्ध शीर्ष संस्थान की पूरी ट्यूशन फीस",
+      "हॉस्टल व मेस शुल्क (रहने-खाने का खर्च) की पूर्ण प्रतिपूर्ति",
+      "पुस्तकें व अन्य शैक्षणिक खर्चों हेतु अतिरिक्त भत्ता",
+      "IIT, IIM, NIT जैसे राष्ट्रीय महत्व के संस्थानों पर लागू"
+    ],
+    eligibility_reasons_hi: [
+      "आपने छात्रावास/आवास सहायता का विकल्प चुना है",
+      "आप अनुसूचित जनजाति (ST) श्रेणी से हैं",
+      "सूचीबद्ध शीर्ष संस्थान में प्रवेश आवश्यक"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "जनजाति प्रमाण पत्र (ST)",
+      "सूचीबद्ध संस्थान में प्रवेश प्रमाण",
+      "माता-पिता का आय प्रमाण पत्र",
+      "बैंक खाता विवरण"
+    ],
+    application_steps_hi: [
+      "National Scholarship Portal (NSP) पर टॉप क्लास एजुकेशन योजना चुनें",
+      "संस्थान का प्रवेश प्रमाण व जनजाति प्रमाण पत्र अपलोड करें",
+      "संस्थान द्वारा NSP पर सत्यापन की प्रतीक्षा करें",
+      "स्वीकृति पर शुल्क सीधे संस्थान को भेजा जाएगा"
+    ],
+    official_link: "https://scholarships.gov.in/"
+  },
+
+  {
+    id: "scheme_ambedkar_hostel_obc_ews",
+    name: "Dr. Ambedkar Pre/Post-Matric Hostel Scheme for OBC & EWS Students",
+    name_hi: "डॉ. अंबेडकर प्री/पोस्ट-मैट्रिक छात्रावास योजना (OBC व EWS छात्र)",
+    type: "student",
+    student_type: "hostel_support",
+    education_levels: ["class_10_12", "undergraduate", "postgraduate"],
+    course_fields: ["all"],
+    scope: "central",
+    states: ["all"],
+    income_limit: 250000,
+    eligible_genders: ["all"],
+    eligible_categories: ["obc", "ews"],
+    description_hi: "सामाजिक न्याय एवं अधिकारिता मंत्रालय की योजना, जो OBC व EWS वर्ग के छात्रों के लिए राज्य सरकार द्वारा संचालित छात्रावासों में निःशुल्क या रियायती आवास व भोजन सुविधा उपलब्ध कराती है।",
+    benefits_hi: [
+      "सरकारी छात्रावास में निःशुल्क/रियायती आवास सुविधा",
+      "भोजन (मेस) शुल्क में सहायता",
+      "पढ़ाई हेतु शांत व सुरक्षित वातावरण",
+      "राज्य सामाजिक न्याय विभाग द्वारा संचालित छात्रावासों में प्राथमिकता"
+    ],
+    eligibility_reasons_hi: [
+      "आपने छात्रावास/आवास सहायता का विकल्प चुना है",
+      "आप OBC या EWS श्रेणी से हैं",
+      "पारिवारिक आय निर्धारित सीमा में है"
+    ],
+    required_documents_hi: [
+      "आधार कार्ड / पहचान पत्र",
+      "जाति/EWS प्रमाण पत्र",
+      "शैक्षणिक संस्थान में प्रवेश प्रमाण",
+      "माता-पिता का आय प्रमाण पत्र",
+      "पासपोर्ट साइज़ फोटो"
+    ],
+    application_steps_hi: [
+      "राज्य सामाजिक न्याय विभाग/जिला कल्याण कार्यालय से संपर्क करें",
+      "छात्रावास आवेदन फॉर्म व दस्तावेज़ जमा करें",
+      "उपलब्धता व मेरिट के आधार पर सीट आवंटित होगी",
+      "आवंटन पत्र प्राप्त कर छात्रावास में प्रवेश लें"
+    ],
+    official_link: "https://socialjustice.gov.in/"
   },
 
   // ==========================================
