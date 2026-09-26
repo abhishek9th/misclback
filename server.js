@@ -31,6 +31,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Cheap liveness ping — no DB/Supabase/Groq call — so the frontend can wake a
+// sleeping Render free-tier instance (~50s cold start) before the user submits
+// a form, instead of only finding out it was asleep after a real request times out.
+app.get('/api/health', (req, res) => res.json({ ok: true }));
+
 // Authentication: registration OTP (MSG91), user creation (Supabase Auth), login helpers.
 app.use('/api/auth', authRouter);
 
