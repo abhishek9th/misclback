@@ -31,10 +31,27 @@ app.use((req, res, next) => {
   next();
 });
 
-// Cheap liveness ping — no DB/Supabase/Groq call — so the frontend can wake a
-// sleeping Render free-tier instance (~50s cold start) before the user submits
-// a form, instead of only finding out it was asleep after a real request times out.
-app.get('/api/health', (req, res) => res.json({ ok: true }));
+// Liveness ping used two ways: (1) the frontend fires it on the login screen
+// mounting to wake a sleeping Render free-tier instance (~50s cold start)
+// before the user submits a form, and (2) a GitHub Actions cron hits it every
+// 10 min to keep Render from ever going idle. It also does one trivial
+// Supabase read so that same cron keeps the Supabase free-tier project from
+// auto-pausing after ~7 days of no DB activity (Render being awake alone
+// doesn't touch the DB) — this caused a real prod outage once (every DB-backed
+// route 500ing while this endpoint stayed fine), so `supabase` in the response
+// is a real diagnostic, not decoration. Never itself fails: a Supabase hiccup
+// still returns 200 so the Render keep-warm ping isn't taken down by it.
+app.get('/api/health', async (req, res) => {
+  let supabase = 'skipped';
+  try {
+    const { getSupabaseAdmin } = await import('./services/supabaseAdmin.js');
+    const { error } = await getSupabaseAdmin().from('profiles').select('id').limit(1);
+    supabase = error ? `error: ${error.message}` : 'ok';
+  } catch (err) {
+    supabase = `error: ${err.message}`;
+  }
+  res.json({ ok: true, supabase });
+});
 
 // Authentication: registration OTP (MSG91), user creation (Supabase Auth), login helpers.
 app.use('/api/auth', authRouter);
