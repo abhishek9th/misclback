@@ -19,6 +19,7 @@ import eligibilityRouter from './routes/eligibility.js';
 import documentsRouter from './routes/documents.js';
 import conflictsRouter from './routes/conflicts.js';
 import advisorRouter from './routes/advisor.js';
+import { synthesize, allowRequest } from './services/ttsService.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -177,6 +178,27 @@ app.post('/api/translate', async (req, res) => {
       return res.status(429).json({ error: 'Too many requests. Please wait a moment.' });
     }
     res.status(502).json({ error: 'Translation unavailable' });
+  }
+});
+
+// Cloud text-to-speech (free): lets the chatbot speak in a user's language even when their
+// device has no voice installed for it. See services/ttsService.js for providers/limits.
+app.post('/api/tts', async (req, res) => {
+  try {
+    const { text, lang } = req.body || {};
+    if (typeof text !== 'string' || !text.trim() || typeof lang !== 'string') {
+      return res.status(400).json({ error: 'text and lang are required', code: 'INVALID_INPUT' });
+    }
+    const ip = String(req.headers['x-forwarded-for'] || req.socket.remoteAddress || '').split(',')[0].trim();
+    if (!allowRequest(ip)) return res.status(429).json({ error: 'Too many speech requests. Please wait a moment.', code: 'RATE_LIMITED' });
+    const { audio, contentType, provider } = await synthesize(text, lang);
+    res.set({ 'Content-Type': contentType, 'Cache-Control': 'public, max-age=86400', 'X-TTS-Provider': provider });
+    res.send(audio);
+  } catch (error) {
+    if (error.code === 'UNSUPPORTED_LANGUAGE') return res.status(501).json({ error: error.message, code: error.code });
+    if (error.code === 'EMPTY_TEXT') return res.status(400).json({ error: error.message, code: error.code });
+    console.error('TTS error:', error.message);
+    res.status(502).json({ error: 'Speech is unavailable right now', code: 'TTS_FAILED' });
   }
 });
 
