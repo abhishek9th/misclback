@@ -36,7 +36,7 @@ const DOC_RULES = [
   { test: /पासपोर्ट/, key: 'passport', name: 'Valid Passport', type: 'identity', priority: 1, delay: 'CRITICAL' },
   { test: /आधार|वोटर|पहचान पत्र/, key: 'identity_proof', name: 'Identity Proof (Aadhaar / Voter ID)', type: 'identity', priority: 1, delay: 'CRITICAL' },
   { test: /पैन कार्ड/, key: 'pan_card', name: 'PAN Card', type: 'identity', priority: 2, delay: 'HIGH' },
-  { test: /जाति प्रमाण|OBC.*EBC|EBC.*जाति/i, skip: true },
+  { test: /जाति प्रमाण|जाति \/ समुदाय प्रमाण|समुदाय प्रमाण|अल्पसंख्यक.*प्रमाण|OBC.*EBC|EBC.*जाति/i, skip: true },
   { test: /दिव्यांगता|UDID/, key: 'disability_certificate', name: 'Disability Certificate / UDID Card', type: 'disability_specific', disabilityOnly: true, priority: 1, delay: 'HIGH' },
   { test: /ट्रांसजेंडर/, key: 'transgender_certificate', name: 'Transgender Certificate', type: 'document', required: false, priority: 3, delay: 'LOW' },
   { test: /निवास|डोमीसाइल/, key: 'address_proof', name: 'Address / Domicile Proof', type: 'address', priority: 1, delay: 'HIGH' },
@@ -155,6 +155,21 @@ function buildRequirementsForScheme(scheme) {
       requirement_key: 'business_new',
       requirement_name: 'New unit only',
       description: 'This scheme funds only a NEW enterprise, not an existing or expanding one.',
+      requirement_type: 'eligibility',
+      priority: 1,
+      delay_risk: 'CRITICAL',
+      rejection_risk: 'CRITICAL',
+    });
+  }
+
+  // 3b. Special eligibility the profile cannot verify (occupation, group membership, marital
+  //     status, being a student…). Left UNKNOWN by the engine, so the scheme is shown as
+  //     "possible — confirm you meet this" and never as a confident match.
+  if (scheme.precondition) {
+    push({
+      requirement_key: 'special_eligibility',
+      requirement_name: scheme.precondition,
+      description: 'SchemeSetu cannot check this from your profile — make sure it applies to you before you apply.',
       requirement_type: 'eligibility',
       priority: 1,
       delay_risk: 'CRITICAL',

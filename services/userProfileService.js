@@ -1,6 +1,7 @@
 import Groq from 'groq-sdk';
 import dotenv from 'dotenv';
 import { LANG_NAMES } from './translationService.js';
+import { buildSchemeContext } from './schemeContext.js';
 dotenv.config();
 
 const getGroqClient = () => {
@@ -67,6 +68,7 @@ Return ONLY this JSON shape:
       }
       
       const replyLanguage = LANG_NAMES[language] || 'simple English';
+      const schemeContext = await buildSchemeContext(queryText).catch(() => '');
 
       const response = await groq.chat.completions.create({
         messages: [
@@ -103,7 +105,10 @@ Return ONLY this valid JSON shape (reminder: "answer" must be in ${replyLanguage
   "shouldFilterSchemes": boolean
 }
 
-Merge new facts with currentProfile, preserving known values unless the citizen corrects them. Set shouldFilterSchemes true once the category is known (for business, also know the field; for student, also know the studentType) so the app can show matching schemes. "nextQuestion" may repeat the follow-up question you placed at the end of "answer" (or be empty). Current profile: ${JSON.stringify(currentProfile)}`
+Merge new facts with currentProfile, preserving known values unless the citizen corrects them. Set shouldFilterSchemes true once the category is known (for business, also know the field; for student, also know the studentType) so the app can show matching schemes. "nextQuestion" may repeat the follow-up question you placed at the end of "answer" (or be empty). Current profile: ${JSON.stringify(currentProfile)}${schemeContext ? `
+
+RELEVANT SCHEMES FOR THIS QUESTION (real data from SchemeSetu's database — prefer these over your own memory, name the best-fitting one explicitly, and use ONLY the figures given here; do not add numbers that are not listed):
+${schemeContext}` : ''}`
           },
           { role: "user", content: queryText }
         ],

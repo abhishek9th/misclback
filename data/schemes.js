@@ -1,4 +1,8 @@
-export const SCHEMES = [
+import { CURATED_EXTRA } from './curatedSchemesExtra.js';
+
+// Hand-written curated schemes (below) + curated-tier schemes promoted from the myScheme
+// catalogue after review against their official text (see curatedSchemesExtra.js).
+const BASE_SCHEMES = [
   // ==========================================
   // BUSINESS SCHEMES (व्यवसाय योजनाएँ)
   // ==========================================
@@ -1316,3 +1320,5 @@ export const SCHEMES = [
     official_link: "https://scholarships.gov.in/"
   }
 ];
+
+export const SCHEMES = [...BASE_SCHEMES, ...CURATED_EXTRA];

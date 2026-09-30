@@ -1,0 +1,2873 @@
+{
+ "ipsacispg": {},
+ "ivdp": {
+  "category_sc": "t must belong to the General/ Scheduled Caste/ Scheduled Tribe category.",
+  "category_st": "the General/ Scheduled Caste/ Scheduled Tribe category."
+ },
+ "ipsapiea": {},
+ "asyf1hvidsstiti": {
+  "edu_undergraduate": "The applicant must be a student. The applicant must be 100% visu"
+ },
+ "ipshacihh": {
+  "min_age": "above 18 years of age"
+ },
+ "rampasmerdnh": {},
+ "ipsidev": {},
+ "ipsile": {},
+ "pmssobcd": {
+  "income_limit": "annual income from all sources must not exceed ₹2,50,000",
+  "category_obc": "applicant must belong to the Other Backward Classes (OBC) category. The applica",
+  "edu_10th": "I or any subsequent pre-matric class as a day scholar. Class III or a",
+  "edu_undergraduate": "gory. The applicant must be enrolled in any of the following: Class I"
+ },
+ "smstomsssfc": {
+  "income_limit": "income of the family should be less than or equal to ₹2,00,000",
+  "category_sc": "The applicant should be from Scheduled Caste (SC)/Scheduled Tribe (ST)/Other Ba",
+  "category_st": "be from Scheduled Caste (SC)/Scheduled Tribe (ST)/Other Backward Classes (OBC)/",
+  "category_obc": "ste (SC)/Scheduled Tribe (ST)/Other Backward Classes (OBC)/Minority (including J",
+  "category_minorities": "/Other Backward Classes (OBC)/Minority (including Jain) community Students from",
+  "edu_12th": "studying in Class 1st to 12th. Students from the Other Backward Classe",
+  "edu_undergraduate": "The applicant should be from Scheduled Caste (SC)/Scheduled Tribe"
+ },
+ "csespatvasastca": {
+  "edu_undergraduate": "tant communications will be sent to this registered email ID. Step 4:"
+ },
+ "fatssfshsa": {
+  "income_limit": "family income should not exceed ₹8,00,000",
+  "max_age": "below 30 years old",
+  "edu_undergraduate": "The applicant should be a citizen of India. The applicant should b",
+  "edu_phd": "l of education (Master’s/Ph.D.) in India or abroad. Applicants for the"
+ },
+ "ificms": {
+  "category_sc": "ge should have been between a Scheduled Caste (SC) and a Non-SC spouse. At least",
+  "max_age": "up to 35 years of age"
+ },
+ "fawdsddaw": {
+  "income_limit": "income of the applicant should be less than Rs 1,00,000",
+  "gender": "The financial assistance can be granted for perfor",
+  "min_age": "above 18 years of age"
+ },
+ "lbsspy": {
+  "income_limit": "income of the woman's family should be Rs. 60,000/- or less",
+  "gender": "low the poverty line. The annual income of the woman's family should be Rs. 60,0"
+ },
+ "spwbdrhs": {
+  "category_ews": "applicant must belong to the Economically Weaker Section (EWS) category as per"
+ },
+ "tdp-spm": {
+  "income_limit": "family income must be less than ₹1,20,000",
+  "category_st": "ant must belong to one of the Scheduled Tribe (ST) communities notified in Goa,"
+ },
+ "ieplss-goa": {},
+ "kkn-ifse": {
+  "income_limit": "income of the family of the applicant (from all sources) must not exceed ₹2,00,000",
+  "max_age": "less than 50 years in age"
+ },
+ "mbarhpbe": {
+  "income_limit": "annual income of the family of the applicant should be less than ₹ 5,00,000"
+ },
+ "gbsysc": {
+  "category_sc": "pplicant should belong to the Scheduled Caste community The applicant should hav",
+  "edu_10th": "Centrally Sponsored Post Matric Scholarship during the current academi",
+  "edu_undergraduate": "The applicant should be a Student. The applicant should belong to"
+ },
+ "ssy-goa": {
+  "category_st": "The applicant must be a Tribal Farmers' Cooperative Organization. The Coop"
+ },
+ "stls": {
+  "category_st": "uld be an individual from the Scheduled Tribe (ST) Community of the State of Goa"
+ },
+ "ses-goa": {
+  "income_limit": "family income of the applicant/beneficiary should not be more than ₹ 1,00,000",
+  "category_st": "he applicant should be from a Scheduled Tribe (ST) Community. The family income"
+ },
+ "tdp-ptt": {
+  "income_limit": "family income must be less than ₹1,20,000",
+  "category_st": "ant must belong to one of the Scheduled Tribe (ST) communities of Goa—Gawda, Vel"
+ },
+ "wbedrj": {
+  "gender": "e to be of Rajasthan origin. Only women taking B.Ed training will be made benef",
+  "edu_undergraduate": "ory for the candidate to be of Rajasthan origin. Only women taking B."
+ },
+ "ismpsssgst": {},
+ "vphdseitftphdc": {
+  "edu_undergraduate": "ll Time PhD seats are to be submitted by eligible institutions only. S",
+  "edu_phd": "Visvesvaraya PhD Scheme is an institutional scheme wherein"
+ },
+ "iu-sss-ner": {
+  "income_limit": "annual income of the applicant should not exceed ₹4,50,000",
+  "edu_12th": "should have passed Class 12th or equivalent in the preceding year of s",
+  "edu_undergraduate": "The applicant must be a domicile of NER. The parental annual inc"
+ },
+ "srtccst": {},
+ "pmsswcapfar": {
+  "gender": "causes attributable to Government service, and Wards of Ex CAPFs & AR personnel",
+  "edu_12th": "alification (MEQ) i.e. 10+2/Diploma/Graduation or equivalent in case o",
+  "edu_diploma": "fication (MEQ) i.e. 10+2/Diploma/Graduation or equivalent in case of a",
+  "edu_undergraduate": "ry, BBA, BCA, B. Pharma, B.SC (Nursing, Agriculture, etc.), MBA and MC",
+  "edu_postgraduate": "ing, Agriculture, etc.), MBA and MCA, etc. in accordance with the guid"
+ },
+ "kkjby": {},
+ "msc": {},
+ "eps": {
+  "min_age": "58 years or above"
+ },
+ "cvy-sumcy": {
+  "gender": "Groups (SHGs), NGOs registered in the Darpan Portal of NITI Aayog, and Governmen"
+ },
+ "bgcrs": {
+  "category_sc": "pplicant should belong to the Scheduled Caste / Scheduled Tribe category. He/she",
+  "category_st": "long to the Scheduled Caste / Scheduled Tribe category. He/she should represent/"
+ },
+ "gvyoj": {
+  "age": "18 to 55 years of age"
+ },
+ "manf": {
+  "category_minorities": "hould be a part of one of the minority communities (Buddhist, Christian, Jain, M",
+  "edu_undergraduate": "The applicant should be a part of one of the minority communities",
+  "edu_phd": "to pursue an M.Phil. or Ph.D. course"
+ },
+ "rmfgp": {
+  "category_sc": "Applicant should belong to Scheduled Caste(SC) / Scheduled Tribe (ST) categor",
+  "category_st": "long to Scheduled Caste(SC) / Scheduled Tribe (ST) category. He/She should repr"
+ },
+ "csmsu": {
+  "category_sc": "having a sufficient number of Scheduled Castes, Scheduled Tribes, and Minority C",
+  "category_st": "t number of Scheduled Castes, Scheduled Tribes, and Minority Communities student",
+  "category_minorities": "Castes, Scheduled Tribes, and Minority Communities students will be considered f",
+  "edu_undergraduate": "ommunities students will be considered for financial assistance. Gene"
+ },
+ "ppma": {
+  "income_limit": "family income must not exceed ₹ 6,00,000",
+  "edu_undergraduate": "d year or later will not be accepted. Priority will be given to applic",
+  "edu_postgraduate": "admitted to an approved master's, M.Phil, or Ph.D. program abroad. St",
+  "edu_phd": "ved master's, M.Phil, or Ph.D. program abroad. Students must have been"
+ },
+ "pmssrpf": {
+  "gender": "d., Diploma/Graduation. The scholarship is admissible for only two wards per fam",
+  "edu_12th": "Qualification (MEQ) i.e. 12th Std., Diploma/Graduation. The scholarshi",
+  "edu_diploma": "on (MEQ) i.e. 12th Std., Diploma/Graduation. The scholarship is admiss",
+  "edu_undergraduate": "i.e. 12th Std., Diploma/Graduation. The scholarship is admissible for",
+  "edu_postgraduate": "eligible for PMSS except MBA, MCA). Minimum Marks in MEQ: At least 60%"
+ },
+ "big": {
+  "edu_undergraduate": "ividual applicant should be an Indian citizen. 2. The primary applican"
+ },
+ "ignwps": {
+  "gender": "The eligibility criteria under Indira Gandhi National Widow Pension Schem",
+  "age": "in the age group of 40-79 years"
+ },
+ "bio-ride": {},
+ "e-yuvasbiraciffpga": {
+  "edu_undergraduate": "ents pursuing PhD cannot be considered for fellowship grants. Selected",
+  "edu_postgraduate": "Post Graduate Fellow: An Indian Student who h",
+  "edu_phd": "om this condition). Post-Doctoral Fellow: An Indian student who has co"
+ },
+ "igstcif-pdif": {},
+ "pmfdr": {
+  "edu_undergraduate": "The applicant should be Indian. The applicant should be a full-tim",
+  "edu_phd": "nt should be a full-time PhD scholar in any recognized Indian universi"
+ },
+ "irdpp-rihrdu": {
+  "edu_undergraduate": "ies The applicant should be a company registered under the Companies A"
+ },
+ "csspostmsossi": {
+  "income_limit": "income, combined with the income of their parents/guardians, does not exceed Rs. 1.50 lakh",
+  "edu_10th": "should be pursuing post-matriculation or post-secondary courses in a",
+  "edu_12th": "ognized Matriculation or Higher Secondary or any higher examination. T",
+  "edu_diploma": "or technical certificate/diploma/degree courses, provided they are oth",
+  "edu_undergraduate": "- The applicant should be an Indian national. The applicant should b",
+  "edu_postgraduate": "assing the undergraduate/Post-Graduate examinations in Arts/Science/Co"
+ },
+ "cmhtp-crwtp-smile": {
+  "gender_other": "imilar benefits from any other schemes of the Central Government or State Govern"
+ },
+ "e-yuvase-yuvac": {},
+ "pre-sc": {
+  "edu_undergraduate": "ia. The applicant should be studying in a Government school or a recog"
+ },
+ "nos-swd": {
+  "income_limit": "Family Income of the applicant (from all sources) must not exceed ₹ 6 lakh",
+  "edu_undergraduate": "The applicant must be a student. The applicant must be Admitted",
+  "edu_postgraduate": "onal offer of admission) Masters's level courses and Ph.D. courses abr",
+  "edu_phd": "ters's level courses and Ph.D. courses abroad in institutions/universi"
+ },
+ "shreshta-m2-ngoos": {
+  "category_sc": "he beneficiary must belong to Scheduled Caste community. The beneficiary must be",
+  "gender": "staff, wardens and chowkidars for girls' residential schools with adequate secur",
+  "edu_10th": "e to Secondary or Senior Secondary Schools (up to at least Class 10th)",
+  "edu_12th": "ses up to at least Class 12th. The applicant organization running prim",
+  "edu_undergraduate": "ation The applicant must be a reputed school chain, Corporate Social R"
+ },
+ "hepsn": {},
+ "tce-swd": {
+  "income_limit": "Annual Income of the Parent / Guardian should be less than or equal to ₹ 6.00 Lakh",
+  "edu_diploma": "Post Graduate Degree or Diploma. The Total Annual Income of the Paren",
+  "edu_undergraduate": "The applicant should be a Student admitted in a full-time course i",
+  "edu_postgraduate": "e Pursuing a Graduate or Post Graduate Degree or Diploma. The Total An"
+ },
+ "lbssf-els": {
+  "category_sc": "various schemes of NSKFDC:- Safai Karamcharis (including Waste pickers), ident",
+  "edu_undergraduate": "person(s)/entities shall be considered eligible for availing of financ"
+ },
+ "tce-sc": {
+  "income_limit": "family income from all sources should not exceed ₹8,00,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste (SC) category. The applicant shoul",
+  "edu_12th": "pursuing a course beyond Class 12 in a notified institution. The appli",
+  "edu_undergraduate": "me. The applicant should be pursuing a course beyond Class 12 in a not"
+ },
+ "pm-yasasvitcseobcebcdnts": {
+  "income_limit": "annual income of less than ₹2.5 lakhs",
+  "category_sc": "hools identified as per the modalities of the scheme with a household annual inc",
+  "category_obc": "All the OBC, EBC, and DNT students studying in the Top Cla",
+  "edu_12th": "wards till they complete Class 12 can avail of the benefits of the sch",
+  "edu_undergraduate": "ss than ₹2.5 lakhs would be eligible for the scheme. The meritorious s"
+ },
+ "shrestha-m1-ssbcprs": {
+  "income_limit": "income of the parents of the applicant must not exceed ₹2,50,000",
+  "category_sc": "The applicant must belong to Scheduled Caste community. The applicant must be s",
+  "edu_10th": "h must have passed Class 10th in the academic year immediately precedi",
+  "edu_undergraduate": "nity. The applicant must be studying in recognized schools - Private o"
+ },
+ "smile": {
+  "gender_other": "The following are the eligibility criteria of Transgender Person as a resident o",
+  "age": "aged between 18 and 60 years",
+  "edu_undergraduate": "icate from elsewhere may be persuaded to register on the National Port"
+ },
+ "pm-yasasvitcceobcebcdnts": {
+  "income_limit": "family income from all sources up to ₹2.50 lakhs",
+  "category_obc": "udents: The Scheme will cover OBC/EBC/DNT students for pursuing studies beyond C",
+  "edu_10th": "be eligible for the Post-Matric Scholarship (PMS) administered by this",
+  "edu_12th": "pursuing studies beyond Class XII. Those OBC/EBC/DNT students having",
+  "edu_undergraduate": "cerned institution, will be eligible for a scholarship under the Schem"
+ },
+ "pmscteoicphh": {
+  "category_sc": "ckers. Persons who are Manual Scavengers as defined under section 2(I) (g) of th",
+  "edu_10th": "fits under any other pre-matric scholarship scheme. The students shoul",
+  "edu_undergraduate": "The scholarship will be admissible to the children/wards of Indian"
+ },
+ "nafie": {
+  "min_age": "above 18 years of age",
+  "max_age": "up to 18 years of age"
+ },
+ "sn2408": {
+  "edu_undergraduate": "The applicant must be a person with disability (PWD) as defined",
+  "edu_phd": "ission to an M. Phil. or Ph.D. program in a university/institution rec"
+ },
+ "css-umscs": {
+  "category_sc": "The applicant must be a Scheduled Caste student. The applicant must be stu",
+  "edu_10th": "icant may be enrolled in class X or XI if he/she has shown excellent p",
+  "edu_undergraduate": "The applicant must be a Scheduled Caste student. The applicant m"
+ },
+ "dacsspostmsebcs": {
+  "income_limit": "income combined with the income of their parents/guardians does not exceed ₹ 1,00,000",
+  "category_obc": "ule Caste, Schedule Tribe and Other Backward Classes). These scholarships will b",
+  "edu_10th": "y of all recognized post-matriculation or post-secondary courses pursu",
+  "edu_diploma": "or Technical certificate/diploma/degree courses will be awarded schola",
+  "edu_undergraduate": "The scholarships will be open to Indian nationals belonging to the",
+  "edu_postgraduate": "tions. Students pursuing Post-graduate courses in medicine will be eli"
+ },
+ "nssw": {
+  "income_limit": "Family Income of the Applicant must be Less than ₹ 3 Lakh",
+  "gender": "The applicant must be a Female. The applicant's age mu",
+  "age": "age must be between 18 and 55 years"
+ },
+ "smile-scholarship": {
+  "gender_other": "e a Transgender Certificate issued through the National Portal for Transgender p",
+  "edu_10th": "te government-funded Pre-Matric/Post-Matric Scholarship. No scholarshi",
+  "edu_undergraduate": "The candidate should not be receiving any other central or state gover"
+ },
+ "nhdp-dba-saic": {
+  "income_limit": "annual income of the artisan should not exceed ₹1,00,000",
+  "max_age": "less than 60 years of age"
+ },
+ "bydbta": {
+  "income_limit": "annual income should not exceed ₹1,00,000",
+  "min_age": "60 years or above"
+ },
+ "naepwdnaieepwdsbakkbvksmsrutz": {
+  "edu_undergraduate": "ial year-wise details to be given beginning 2015-16 onwards) Criteria"
+ },
+ "dddrs": {},
+ "jds": {
+  "gender": "public sector undertaking, or organization. The applicant must be engaged in th"
+ },
+ "sdatocitt": {
+  "min_age": "at least 17 years of age",
+  "edu_undergraduate": "The applicant must be an Indian citizen and at least 17 years of"
+ },
+ "nhdp-iandts-uh": {},
+ "post-st": {
+  "income_limit": "income from all sources does not exceed ₹ 2,00,000",
+  "category_st": "hose candidates who belong to Scheduled Tribes so specified in relation to the S",
+  "gender": "case of a married unemployed girl student) is alive, only the income of the par",
+  "edu_10th": "y of all recognized post-matriculation post-secondary courses pursued",
+  "edu_12th": "sed the Matriculation or Higher Secondary or any higher examination of",
+  "edu_diploma": "or technical certificate/diploma/degree courses will be awarded schola",
+  "edu_undergraduate": "These scholarships will be given for the study of all recognized post",
+  "edu_postgraduate": "hips. Students pursuing post-graduate courses in medicine will be eli"
+ },
+ "iats": {},
+ "pmjvm": {
+  "category_st": "Ps) to ensure a fair price to tribal gatherers. Infrastructure Development: Crea"
+ },
+ "plisjdp": {},
+ "nhdpccwms": {},
+ "nhdpsc": {
+  "edu_diploma": "e for pursuing 3/4 years Diploma/Graduate/Post Graduate courses at Cen",
+  "edu_undergraduate": "rsuing 3/4 years Diploma/Graduate/Post Graduate courses at Central/Sta",
+  "edu_postgraduate": "4 years Diploma/Graduate/Post Graduate courses at Central/State Govern"
+ },
+ "pre-st": {
+  "income_limit": "Annual income of parents/guardians of the applicant (from all sources) must not exceed ₹ 2.50 Lakh",
+  "category_st": "h. The applicant must be from Scheduled Tribe. The Total Annual income of parent",
+  "edu_10th": "ng in Class 9th or Class 10th. The applicant must be from Scheduled Tr",
+  "edu_undergraduate": "The applicant must be a student studying in Class 9th or Class 1"
+ },
+ "css-nos-st": {
+  "income_limit": "family income from all sources does not exceed ₹ 6,00,000",
+  "category_st": "The applicant must be from a Scheduled Tribe (ST). The applicant must be pursui",
+  "edu_undergraduate": "The applicant must be from a Scheduled Tribe (ST). The applicant",
+  "edu_postgraduate": "icant must be pursuing a post-graduate course (Master, Ph.D., or Post-",
+  "edu_phd": "graduate course (Master, Ph.D., or Post-Doctoral Research) from a fore"
+ },
+ "isdmtpp": {
+  "category_st": "me will be made available to: Tribal Cooperative Marketing Development Federatio"
+ },
+ "aniadws": {
+  "gender": "a permanent resident of the Union Territory of Andaman and Nicobar Islands or h"
+ },
+ "anioaas": {
+  "min_age": "60 years or above"
+ },
+ "bse-g": {
+  "income_limit": "family income of parents/guardians should not exceed ₹3,00,000",
+  "edu_undergraduate": "ty. The student should be studying in any recognized and reputed col"
+ },
+ "iwp-andhra": {
+  "gender": "The applicant should be from a Below Poverty Line (BPL) fami"
+ },
+ "sprcddrbw": {},
+ "iwp-u": {
+  "min_age": "65 years of age or above"
+ },
+ "bse-pg": {
+  "income_limit": "family income of parents/guardians should not exceed ₹3,00,000",
+  "edu_undergraduate": "ty. The parents should be studying in Andhra Pradesh. The annual fam"
+ },
+ "cmksy": {},
+ "fahs-assam": {
+  "income_limit": "family income must not exceed ₹5,00,000",
+  "edu_undergraduate": "The applicant must be a permanent resident of Assam. The applica",
+  "edu_postgraduate": "Business Administration (MBA), Engineering, and such other technical/h"
+ },
+ "dpabocwwb": {},
+ "ostps-atisis": {
+  "edu_undergraduate": "ility The applicant must be a tea plantation across all sizes The appl"
+ },
+ "sistpomms": {
+  "category_st": "applicant must belong to the Scheduled Tribe (Plain) / Other Backward Class / M",
+  "category_obc": "the Scheduled Tribe (Plain) / Other Backward Class / More Other Backward Class c",
+  "edu_10th": "Secured 80% or above in Matriculation (Class 10th). Secured 75% or ab",
+  "edu_12th": "ecured 75% or above in 10+2 examination. Secured 70% or above in Gradu",
+  "edu_undergraduate": "long to the Scheduled Tribe (Plain) / Other Backward Class / More Othe",
+  "edu_postgraduate": "Secured 65% or above in Post Graduation. *The applicant cannot claim"
+ },
+ "fauame": {
+  "category_st": "applicant must belong to the Scheduled Tribes (ST)/Other Backward Classes (OBC)",
+  "category_obc": "to the Scheduled Tribes (ST)/Other Backward Classes (OBC)/More Other Backward C"
+ },
+ "sshspms": {
+  "income_limit": "family income must not exceed ₹5,00,000",
+  "category_st": "belong to the Tea Tribes and Adivasi Community. The applicant must have passed",
+  "edu_10th": "ations from the Board of Secondary Education (SEBA) or an equivalent e",
+  "edu_12th": "ant must have passed the Higher Secondary School Leaving Certificate (",
+  "edu_undergraduate": "The applicant must be a permanent resident of Assam. The applica"
+ },
+ "siomsbg": {
+  "income_limit": "annual income of the applicant's parents/guardians must not exceed ₹5,00,000",
+  "category_obc": "applicant must belong to the Other Backward Class (OBC) community of Assam. The",
+  "gender": "rrently enrolled as a student. The applicant must belong to the Other Backward C",
+  "edu_undergraduate": "The applicant must be currently enrolled as a student. The appli"
+ },
+ "fastpscgameie": {
+  "category_st": "applicant must belong to the Scheduled Tribe (Plains) community. The applicant",
+  "edu_10th": "ercentage secured in the Matriculation Examination).",
+  "edu_12th": "ve appeared/passed the 10+2 examination. *Selection is based on merit",
+  "edu_undergraduate": "long to the Scheduled Tribe (Plains) community. The applicant must be"
+ },
+ "cmdes": {
+  "age": "age limit will be 18-60 years",
+  "edu_undergraduate": "The age limit will be 18-60 years for self-employment loans and"
+ },
+ "mmssy": {
+  "income_limit": "family income should be less than ₹4,50,000",
+  "category_minorities": "applicant should belong to a minority community. The applicant's age should be",
+  "gender": "2: There is a 30% reservation for women and 3% reservation for disabled. Note 3:",
+  "age": "age should be between 18 and 45 years",
+  "edu_10th": "training courses is 8th/10th pass. The minimum educational qualificat",
+  "edu_undergraduate": "The applicant should be a permanent resident of Bihar. The applica"
+ },
+ "faosameu": {
+  "income_limit": "annual income of the applicant's parents/guardians must not exceed ₹5,00,000",
+  "category_obc": "he applicant must belong to a Other Backward Class (OBC) community of Assam. The"
+ },
+ "pmssbstsi": {
+  "income_limit": "Income Criteria The applicant must belong to a family whose total gross income from all sources does not exceed ₹2,50,000",
+  "category_st": "applicant must belong to the Scheduled Tribe, Other Backward Classes, or More O",
+  "category_obc": "elong to the Scheduled Tribe, Other Backward Classes, or More Other Backward Cla",
+  "edu_10th": "successfully passed the Matriculation or Higher Secondary or any high",
+  "edu_12th": "sed the Matriculation or Higher Secondary or any higher examination of",
+  "edu_undergraduate": "long to the Scheduled Tribe, Other Backward Classes, or More Other Bac"
+ },
+ "majeajcay": {
+  "category_sc": "e. The student belongs to the Scheduled Caste and Scheduled Tribe. The student",
+  "category_st": "gs to the Scheduled Caste and Scheduled Tribe. The student should be enrolled a",
+  "edu_undergraduate": "The student should be a resident of Bihar state. The student bel"
+ },
+ "mdvpay": {
+  "gender": "e or groom) should have a disability. The minimum age requirement at the time of"
+ },
+ "bps": {
+  "min_age": "18 years and more",
+  "max_age": "less than 18 years",
+  "edu_undergraduate": "ion of the industry must be in rural areas of Assam. The industry must"
+ },
+ "mapvuy": {
+  "category_obc": "cant must belong to Extremely Backward Classes. The applicant should have passed",
+  "age": "aged between 18 and 50 years",
+  "edu_12th": "d have passed at least 10+2, Intermediate, ITI, Polytechnic Diploma, o",
+  "edu_diploma": "east 10+2, Intermediate, ITI, Polytechnic Diploma, or equivalent. The",
+  "edu_undergraduate": "The applicant must be a permanent resident of Bihar. The applica"
+ },
+ "cmbccay": {
+  "income_limit": "family income should be less than ₹3,00,000",
+  "category_obc": "cant must belong to the BC or EBC category. The annual family income should be l",
+  "edu_undergraduate": "ual family income should be less than ₹3,00,000/-. The student must be"
+ },
+ "dpbbocwwb": {},
+ "majajuy": {
+  "category_sc": "elong to the Schedule Castes (SC)/ Scheduled Tribe (ST) category. The applicant",
+  "category_st": "to the Schedule Castes (SC)/ Scheduled Tribe (ST) category. The applicant shoul",
+  "age": "aged between 18 and 50 years",
+  "edu_12th": "d have passed at least 10+2, Intermediate, ITI, Polytechnic Diploma, o",
+  "edu_diploma": "east 10+2, Intermediate, ITI, Polytechnic Diploma, or equivalent. The",
+  "edu_undergraduate": "The applicant must be a permanent resident of Bihar. The applica"
+ },
+ "pmsscstb": {
+  "income_limit": "annual income must not exceed ₹3,00,000",
+  "category_sc": "ld be included in the list of Scheduled Castes (SC) and Scheduled Tribes (ST) is",
+  "category_st": "of Scheduled Castes (SC) and Scheduled Tribes (ST) issued by the state governme",
+  "edu_10th": "lasses after passing the Matriculation/Entry Examination. The family’s",
+  "edu_undergraduate": "The applicant should be a permanent resident of Bihar state. The"
+ },
+ "petro-subsidy-for-disabled": {
+  "income_limit": "income up to Rs.1.50 lacs"
+ },
+ "wpcbocwwb": {},
+ "marriage-of-daughter-of-sc-widow": {
+  "category_sc": "ide's mother must belong to a Scheduled Caste community. Financial help is avail",
+  "gender": "belong to a Scheduled Caste community. Financial help is available for the marri",
+  "min_age": "at least 18 years old"
+ },
+ "ignwpschh": {
+  "gender": "1. The applicant should be a native of Chhattisgarh. 2. The applicant sho",
+  "age": "age should be between 40 and 79 years"
+ },
+ "bany": {
+  "category_st": "applicant must belong to the Scheduled Tribe community in Jharkhand. The applic",
+  "category_ews": "applicant must fall under the economically weaker section. Only individuals res"
+ },
+ "dwis": {
+  "age": "age should be 18 to 45 years"
+ },
+ "bplscs": {
+  "edu_undergraduate": "The students of Graduate Level (UG) & Post Graduate Level (P",
+  "edu_postgraduate": "f Graduate Level (UG) & Post Graduate Level (PG) who are studying in"
+ },
+ "bplsws": {
+  "edu_diploma": "overnment engineering or polytechnic institution in Chhattisgarh.",
+  "edu_undergraduate": "The applicant must be a native resident of Chhattisgarh. The"
+ },
+ "bpkpcckppy": {
+  "edu_10th": "student must have passed 10th or 12th board examination with 60% or ab",
+  "edu_12th": "must have passed 10th or 12th board examination with 60% or above mark",
+  "edu_undergraduate": "he student's parent must be a regular member of a primary weaver coope"
+ },
+ "ssychh": {
+  "gender": "be either a widow or a deserted woman. The age of the widow should be between 18",
+  "min_age": "18 years or older"
+ },
+ "ips": {},
+ "ipshaaciec": {
+  "income_limit": "annual income should be upto ₹2,00,000",
+  "category_sc": "pplicant should belong to the SC/ST/OBC/EWS communities. The applicant should be",
+  "category_st": "icant should belong to the SC/ST/OBC/EWS communities. The applicant should be en",
+  "category_obc": "nt should belong to the SC/ST/OBC/EWS communities. The applicant should be engag",
+  "category_ews": "hould belong to the SC/ST/OBC/EWS communities. The applicant should be engaged i",
+  "min_age": "above 18 years of age"
+ },
+ "scholarshiptcesd": {
+  "income_limit": "family income should not exceed ₹8 lakh",
+  "edu_diploma": "or Post-Graduate Degree/Diploma courses. The applicant must be studyi",
+  "edu_undergraduate": "H&DD. The applicant must be a student with disability. The applicant m",
+  "edu_postgraduate": "be pursuing Graduate or Post-Graduate Degree/Diploma courses. The app"
+ },
+ "psdp": {
+  "income_limit": "family income should not exceed ₹1.5 lakhs"
+ },
+ "mpds": {
+  "category_sc": "pplicant should belong to the Scheduled Caste / Scheduled Tribe category. The ap",
+  "category_st": "long to the Scheduled Caste / Scheduled Tribe category. The applicant should be"
+ },
+ "sparsh20rent": {},
+ "postmssd": {
+  "edu_10th": "uld pursue eligible Post-Matric educational courses covered under the",
+  "edu_diploma": "Post-Graduate Degree or Diploma level. The applicant should pursue co",
+  "edu_undergraduate": "The applicant should be a student with a benchmark disability of 4",
+  "edu_postgraduate": "uld study in Class 11 to Post-Graduate Degree or Diploma level. The ap"
+ },
+ "msgbcdc": {
+  "income_limit": "annual income of the applicant's family should not exceed ₹3,00,000",
+  "category_obc": "a socially and educationally backward class, specifically Other Backward Classe",
+  "gender": "The applicant must be female. The applicant must be a",
+  "age": "age should be between 21 and 45 years",
+  "edu_undergraduate": "The applicant must be female. The applicant must be a resident o"
+ },
+ "dpgsslalgsc": {
+  "income_limit": "family income of the applicant limit should not exceed ₹6,00,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste category. The benefit of this sche"
+ },
+ "csssspg": {
+  "category_st": "rative society located in the tribal areas of Gujarat shall be eligible under th"
+ },
+ "pms": {
+  "income_limit": "family income is up to Rs 3,00,000",
+  "category_obc": "assed Class 10. Belong to the OBC category.",
+  "edu_10th": "s 3,00,000/- Have passed Class 10. Belong to the OBC category.",
+  "edu_undergraduate": "The applicant must be a permanent resident of Madhya Pradesh. An"
+ },
+ "mupssee": {},
+ "bauuyict": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur. The scheme is available to all",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur. The scheme is available to all el"
+ },
+ "htaschrt4": {
+  "category_sc": "eficiary should belong to the Scheduled Caste category. The individual farmer or"
+ },
+ "kkyaabmt": {
+  "category_st": "must be located in designated tribal areas within Gujarat."
+ },
+ "bauuyadmse": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur. The applicant must apply for a",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur. The applicant must apply for a sh"
+ },
+ "bauuyata": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur. New and existing enterprises e",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur. New and existing enterprises enga"
+ },
+ "sgsccs": {},
+ "htasthrt3": {
+  "category_st": "eficiary should belong to the Scheduled Tribe category. The individual farmer or"
+ },
+ "bauuycis": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur. The enterprise must be a manuf",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur. The enterprise must be a manufact"
+ },
+ "daors-hlwb": {},
+ "sdbppd": {
+  "min_age": "over 18 years old"
+ },
+ "fawddwhlwb": {
+  "gender": "The applicant should be the widow or dependent of a deceased worker. The d"
+ },
+ "agma": {
+  "category_sc": "eficiary should belong to the SC/ST (Hindu Adi Dravidar) community. The benefici",
+  "category_st": "ciary should belong to the SC/ST (Hindu Adi Dravidar) community. The beneficiary",
+  "gender": "neficiary should be a Student. The beneficiary should belong to the SC/ST (Hindu",
+  "edu_undergraduate": "The beneficiary should be a resident of Tamil Nadu. The beneficiary"
+ },
+ "siupd": {
+  "min_age": "over 18 years old"
+ },
+ "mtamsy": {
+  "income_limit": "family income should not be more than ₹35,000",
+  "category_ews": "must belong to a socially and economically weaker section of society. The applic",
+  "gender": "dent of Himachal Pradesh. The applicant must be a woman who is unable to raise h",
+  "max_age": "maximum age of 18 years",
+  "edu_undergraduate": "The applicant must be a resident of Himachal Pradesh. The applic"
+ },
+ "msybc": {
+  "income_limit": "family income should not exceed ₹3,00,000",
+  "category_obc": "he applicant should belong to Backward Classes in the case of individual woman b",
+  "gender": "ld. This scheme is applicable for women only. The applicant should belong to Bac"
+ },
+ "bhay": {
+  "gender": "achal Pradesh To the girls who are below the poverty line (BPL). From each BPL",
+  "edu_12th": "enefits of studying till class 12. A beneficiary girl should not get m",
+  "edu_undergraduate": "The candidate must be a permanent resident of Himachal Pradesh"
+ },
+ "hs": {
+  "income_limit": "annual income should be less than Rs. 3.00 lakhs",
+  "category_obc": "uld belong to Scheduled Cast, Other Backward Classes, Minority Community, Single",
+  "category_minorities": "Cast, Other Backward Classes, Minority Community, Single Women, or Handicapped.",
+  "gender": "Backward Classes, Minority Community, Single Women, or Handicapped. 3. The appli"
+ },
+ "mmsy": {
+  "category_ews": "applicant must belong to the economically weaker section of society. 3. The app"
+ },
+ "sjay-hp": {
+  "income_limit": "annual income does not exceed ₹50,000",
+  "category_sc": "he applicant should belong to Scheduled Castes (SC), Scheduled Tribes (ST), or O",
+  "category_st": "ong to Scheduled Castes (SC), Scheduled Tribes (ST), or Other Backward Classes (",
+  "category_obc": "C), Scheduled Tribes (ST), or Other Backward Classes (OBC). The applicant's ann"
+ },
+ "msmsy": {
+  "income_limit": "family income should not exceed ₹35,000",
+  "category_sc": "applicant should belong to a scheduled caste or scheduled tribe family. The ap",
+  "category_st": "elong to a scheduled caste or scheduled tribe family. The applicant's family in",
+  "gender": "The applicant should be a woman. The applicant should"
+ },
+ "sara": {},
+ "tessitil": {
+  "category_sc": "he applicant should belong to Scheduled Caste (SC), Scheduled Tribe (ST), or Oth",
+  "category_st": "long to Scheduled Caste (SC), Scheduled Tribe (ST), or Other Backward Class (OBC",
+  "category_obc": "SC), Scheduled Tribe (ST), or Other Backward Class (OBC) as notified by the Hima",
+  "gender": "Institute (I.T.I.) or I.T.I. for Women in Himachal Pradesh. The applicant shoul",
+  "edu_undergraduate": "Caste (SC), Scheduled Tribe (ST), or Other Backward Class (OBC) as not"
+ },
+ "mpdicbrsbfscc": {
+  "category_sc": "ck owners belonging to BPL of Scheduled Caste category families rearing Desi/Ind"
+ },
+ "ebcdssuk": {
+  "income_limit": "annual income of the parents/guardians from all sources must not exceed ₹2.5 lakh",
+  "category_obc": "st belong to the Economically Backward Class (EBC) category. The applicant must",
+  "edu_undergraduate": "The applicant must be a resident of Uttarakhand. The applicant m"
+ },
+ "wses": {
+  "income_limit": "annual income does not exceed ₹35,000",
+  "gender": "The applicant should be a woman. The applicant should"
+ },
+ "himayat": {
+  "gender": "5 years. The upper age limit for women candidates, and candidates belonging to",
+  "edu_undergraduate": "of the applicant should be between 18 and 35 years. The upper age li"
+ },
+ "mlgs": {},
+ "spy": {
+  "gender": ", widows, destitute women, differently-abled, primitive tribes and people suffer",
+  "min_age": "60 years or above"
+ },
+ "mmsy-j": {
+  "age": "age should be 18-35 years"
+ },
+ "mgjsmoss": {
+  "category_sc": "t belong to Scheduled Tribes, Scheduled Castes, Minorities, or Backward Classes.",
+  "category_st": "The applicant must belong to Scheduled Tribes, Scheduled Castes, Minorities, or",
+  "category_obc": "eduled Castes, Minorities, or Backward Classes. The applicant's maximum age shou",
+  "category_minorities": "led Tribes, Scheduled Castes, Minorities, or Backward Classes. The applicant's m",
+  "max_age": "maximum age should be 35 years",
+  "edu_undergraduate": "The applicant should be a resident of Jharkhand state. The applica"
+ },
+ "majgvy": {
+  "edu_10th": "ust have passed at least 10th grade. Priority will be given to those w",
+  "edu_undergraduate": "For SHGs: The group must be selected by the Gram Sabha. The applicant",
+  "edu_vocational": "l be given to those with vocational training. The applicant should bel"
+ },
+ "shspt": {
+  "category_st": "should belong to a primitive tribal community. The applicant should reside in d"
+ },
+ "jsscpmss-1": {
+  "income_limit": "family income should not exceed ₹2,50,000",
+  "category_sc": "applicant must belong to the Scheduled Caste Jharkhand. The applicant must be e",
+  "edu_10th": ",000/- for Class 9th and 10th.",
+  "edu_undergraduate": "parents/guardians should be a native of Jharkhand. The applicant shoul"
+ },
+ "ssj": {
+  "category_st": "The applicant must be a Scheduled Tribe student and a resident of Jharkhan",
+  "edu_undergraduate": "The applicant must be a Scheduled Tribe student and a resident o"
+ },
+ "pdycmfss": {
+  "category_st": "ng to Particularly Vulnerable Tribal Groups (PVTGs). The applicant’s family must",
+  "edu_undergraduate": "applicant’s family must be enrolled under the \"Antyodaya Yojana.\" The"
+ },
+ "scast": {
+  "income_limit": "income of self and/or income of parents, if dependent on them) should not exceed ₹ 2,50,000",
+  "category_st": "f Jharkhand. Should belong to Scheduled Tribe (ST) category. Should have the eli",
+  "edu_undergraduate": "hing Institution: Should be a Registered private institutions/Non-gove"
+ },
+ "scasc": {
+  "income_limit": "income of self and/or income of parents, if dependent on them) should not exceed ₹ 2,50,000",
+  "category_sc": "Candidates: Should belong to Scheduled Caste (SC) category. Should be a residen",
+  "edu_undergraduate": "hing Institution: Should be a Registered private institutions/Non-gove"
+ },
+ "fsjhascofish": {},
+ "ifs": {
+  "gender": "trict headquarters for better monitoring. The applicant near RFF (Resource Fishe"
+ },
+ "ses": {
+  "income_limit": "annual income from all sources should not be more than Rs.81,000",
+  "category_minorities": "belong to the State Religious Minority Community. The applicant must be a perman"
+ },
+ "cs": {
+  "income_limit": "family income should not exceed ₹30,000"
+ },
+ "ssshgm": {
+  "income_limit": "family income of the members of the women’s Self-Help Group should not exceed ₹6,00,000",
+  "category_minorities": "s (SHGs) should belong to the minority community. All SHG members must be perman",
+  "gender": "permanent residents of Karnataka. The number of women in the Self-Help Group sh",
+  "edu_undergraduate": "ty. All SHG members must be permanent residents of Karnataka. The numb"
+ },
+ "nsy": {},
+ "sts": {
+  "gender_other": "1. Applicant should be Transgender. 2. Applicant should be a resid",
+  "edu_diploma": "studying in 7th Class to Diploma/Degree/PG Level. 5. There is no incom",
+  "edu_undergraduate": "1. Applicant should be Transgender. 2. Applicant should be a resi",
+  "edu_postgraduate": "Class to Diploma/Degree/PG Level. 5. There is no income limit."
+ },
+ "malmtc": {
+  "gender_other": "ant should be Transgender. The applicants must possess a Transgender Identity ca"
+ },
+ "ads": {
+  "category_sc": "pplicant should belong to the Scheduled Castes (SC) or Scheduled Tribe (ST) cate",
+  "category_st": "the Scheduled Castes (SC) or Scheduled Tribe (ST) category. Employment of the a"
+ },
+ "edsc-st-wistem": {
+  "category_sc": "ould be an Indian citizen and SC & ST woman in the Science, Technology, Engineer",
+  "category_st": "be an Indian citizen and SC & ST woman in the Science, Technology, Engineering &",
+  "gender": "ant should be an Indian citizen and SC & ST woman in the Science, Technology, En"
+ },
+ "faphfts": {
+  "gender_other": "should be Transgender. 2. The applicant should be a resident of Kerala. 3. Trans",
+  "edu_undergraduate": "1. The applicant should be Transgender. 2. The applicant should be a"
+ },
+ "sspmphmrp": {},
+ "faimcescstc": {
+  "income_limit": "family income of the couple should not exceed ₹1,00,000"
+ },
+ "atpm": {},
+ "ibhrs": {
+  "category_minorities": "elong to one of the following minority religious communities: Muslim, Christian,",
+  "gender": "owned by the applicant or her spouse, should not exceed 1200 square feet in area"
+ },
+ "tkgthe": {},
+ "wmcl": {
+  "category_sc": "Children of SC/ST labourers working in coffee plantations and",
+  "category_st": "Children of SC/ST labourers working in coffee plantations and Lic",
+  "edu_10th": "gher education after the 10th grade, are eligible. Eligibility extends",
+  "edu_12th": "re-University Course) or 12th Class in the previous academic year, are",
+  "edu_diploma": "(Pre-University Course), Polytechnic, or Vocational Training in the cu",
+  "edu_undergraduate": "births, assistance shall be granted to all the children, provided they",
+  "edu_postgraduate": "n, including Graduation, Post-Graduation, and Professional Courses suc",
+  "edu_vocational": "Course), Polytechnic, or Vocational Training in the current academic y"
+ },
+ "apjkrl": {
+  "income_limit": "annual income should not exceed ₹8,00,000",
+  "category_minorities": "should belong to a religious minority community (Muslim, Christian (all denomin",
+  "edu_diploma": "be studying a three-year diploma course in a government, aided, or gov",
+  "edu_undergraduate": "The applicant must be a permanent resident of Kerala. The applic"
+ },
+ "smas": {
+  "min_age": "above 18 years of age"
+ },
+ "sapsp": {},
+ "wspsl": {
+  "gender": "be a permanent resident of the Union Territory of Lakshadweep. The applicant sh"
+ },
+ "dspy": {
+  "age": "aged between 6 years to 18 years"
+ },
+ "dot-pli-scheme": {
+  "edu_undergraduate": "t under the Scheme shall be provided only to companies for manufacturi"
+ },
+ "ksymplwb": {},
+ "tooplisflsem": {
+  "edu_undergraduate": "The applicant should be a company engaged in manufacturing under t"
+ },
+ "sutsesdm": {
+  "edu_diploma": "ining Institutes (ITIs), polytechnics, or pursuing undergraduate cours",
+  "edu_undergraduate": "The applicant should be a student studying in Class 9 onwards. The"
+ },
+ "specs": {},
+ "pliit20": {
+  "edu_undergraduate": "The applicant must be a company registered in India. The applica"
+ },
+ "sgiavowwst": {
+  "category_st": "with due justification by the Tribal Welfare Department of the State Government,",
+  "edu_undergraduate": "cant organization should be a registered voluntary organization (VO) /"
+ },
+ "pmsby": {
+  "min_age": "completed) and 70 years (age",
+  "edu_undergraduate": "enable auto-debit, will be enrolled into the scheme."
+ },
+ "nswf": {
+  "max_age": "below 60 years old"
+ },
+ "plismbp": {},
+ "gstecs": {
+  "edu_undergraduate": "the GST concession would be valid for a period of three months from th"
+ },
+ "plisaaci": {
+  "edu_undergraduate": "w domestic investment to be achieved Champion OEM (Except 2W & 3W) Cha"
+ },
+ "pmsswwcpfp": {
+  "gender": ". Note 01: The scheme is open for widows and unmarried wards of CPFs personnel.",
+  "edu_12th": "least 60% marks at the 10+2 level for the initial sanction. For renewa",
+  "edu_undergraduate": "ent of scholarships will be as under:- i) Category-A Wards/Widows of C",
+  "edu_postgraduate": "ine, dental, veterinary, MBA, MCA, etc. duly recognized by the respect"
+ },
+ "igoapsm": {
+  "min_age": "65 years of age or older"
+ },
+ "pmvbry": {},
+ "ncscscst": {
+  "income_limit": "annual income of the applicant should not be more than ₹3,00,000",
+  "category_sc": "applicant must belong to the Scheduled Caste (SC) or the Scheduled Tribe (ST) c",
+  "category_st": "e Scheduled Caste (SC) or the Scheduled Tribe (ST) category. The applicant must",
+  "edu_12th": "icant must have passed 10+2 (Minimum educational qualification for coa",
+  "edu_undergraduate": "(SC) or the Scheduled Tribe (ST) category. The applicant must be an un"
+ },
+ "gaoah": {
+  "min_age": "60 years and above"
+ },
+ "mi-maha": {},
+ "omps": {
+  "income_limit": "income of the parents should not be more than Rs. 24000",
+  "edu_undergraduate": "The beneficiary should be a student. The beneficiary should be a res"
+ },
+ "pmv": {},
+ "lmmls": {
+  "income_limit": "annual income of the family of the applicant should be less than or equal to ₹1,00,000"
+ },
+ "is": {},
+ "tfrs": {
+  "category_sc": "y. Applicant should belong to Scheduled Caste (SC) or Scheduled Tribe (ST). The",
+  "category_st": "ng to Scheduled Caste (SC) or Scheduled Tribe (ST). The enterprise must be regis"
+ },
+ "fasetdp": {},
+ "cvy-citus": {},
+ "ics-mda": {
+  "category_sc": "resentation would be given to SC/ST/Women/NER entrepreneurs in such events. Whil",
+  "category_st": "entation would be given to SC/ST/Women/NER entrepreneurs in such events. While s"
+ },
+ "mszcs": {},
+ "epcmrs": {
+  "category_sc": "Applicant should belong to Scheduled Caste(SC)/Scheduled Tribe (ST) category.",
+  "category_st": "belong to Scheduled Caste(SC)/Scheduled Tribe (ST) category. He/She should repr"
+ },
+ "ipr": {},
+ "lels": {
+  "income_limit": "annual income of the family of the applicant should be less than or equal to Rs.3,00,000"
+ },
+ "ds": {},
+ "vls-nmdfc": {
+  "income_limit": "family income of the applicant shall not exceed: Rs. 3.00 lakh",
+  "category_minorities": "ng to one of the six notified minority communities: Muslim, Christian, Sikh, Bud",
+  "gender": "Preference shall be given to women artisans and occupational clusters in minori"
+ },
+ "bhmnsp": {
+  "income_limit": "annual income of the student’s parent/guardian from all sources does not exceed Rs.2.00 lakh",
+  "category_minorities": "nts belonging to six notified Minority Communities i.e. Muslims, Christians, Sik",
+  "gender": "Only girl students belonging to six notified Minor",
+  "min_age": "attained 18 years of age",
+  "edu_12th": "studying in Class 9th to 12th and have secured at least 50% marks or e",
+  "edu_undergraduate": "le. The scholarship will be awarded to minority girl students who are"
+ },
+ "els-nmdfc": {
+  "income_limit": "family income limit is: Up to Rs. 3.00 lakh",
+  "category_minorities": "ng to one of the six notified minority communities (Muslim, Christian, Sikh, Bud",
+  "gender": "Preference shall be given to female students and candidates from economically w",
+  "edu_undergraduate": "a) The applicant must be Indian and belong to one of the six notifi"
+ },
+ "iacab": {},
+ "pmuy": {
+  "category_sc": "per SECC 2011 list Belongs to SC/ST households, be a beneficiary of Pradhan Mant",
+  "category_st": "SECC 2011 list Belongs to SC/ST households, be a beneficiary of Pradhan Mantri",
+  "category_obc": "(AAY), Forest dwellers, Most Backward Classes (MBC), Tea and Ex-Tea Garden Trib",
+  "gender": "sehold will be eligible under UJJWALA 2.0. The beneficiaries should belong to an"
+ },
+ "igndps": {
+  "min_age": "18 years and above"
+ },
+ "ueeupwd": {
+  "income_limit": "family income of the applicant should not be more than ₹1,80,000",
+  "age": "in the age group of 18-48 years",
+  "edu_undergraduate": "6. The applicant should be a Person with Disability. The applicant sh"
+ },
+ "prism-c2-fwmpkhttptt": {
+  "edu_undergraduate": "The applicant must be an Indian Citizen. The applicant must have"
+ },
+ "fcds": {},
+ "mdds": {},
+ "bas": {
+  "edu_undergraduate": "The applicant should be a student residing in a village notified a"
+ },
+ "npaayasias": {},
+ "mgfs": {},
+ "nssp": {},
+ "prism-c1-pcpm": {
+  "edu_undergraduate": "oposals shall preferably be in the following focus sectors: Green Tech"
+ },
+ "tdupw": {
+  "gender": "e development of technologies for women with adequate experience in the field ar"
+ },
+ "nattfeivtaed": {
+  "min_age": "above 55 years of age",
+  "edu_undergraduate": "ing The applicant should be engaged as a trainer or master trainer on",
+  "edu_vocational": "Award for Excellence in Vocational Training & Entrepreneurship Develo"
+ },
+ "cts-msde": {
+  "edu_12th": "ing from 8th standard to 12th standard). The applicant must be able to",
+  "edu_undergraduate": "The applicant must be an Indian citizen. The applicant must meet"
+ },
+ "seed-ee": {
+  "income_limit": "income from all sources of ₹2,50,000/- or less",
+  "category_st": "t must belong to De-notified, Nomadic and Semi-Nomadic Tribes communities. The a",
+  "edu_12th": "t must have passed Class 12th or be studying in Class 12th for competi",
+  "edu_undergraduate": ". The applicant must not be availing any such benefits from similar Sc"
+ },
+ "csspremsobcsi": {
+  "income_limit": "income from all sources does not exceed ₹ 2,50,000",
+  "gender": "eficiaries should be reserved for girl students. At least 5% of students with di",
+  "edu_10th": "tutions and for such pre-matriculation courses, which have been duly r",
+  "edu_undergraduate": "e scholarship award will be sanctioned in the case of students whose p"
+ },
+ "tnsfdcis": {
+  "edu_undergraduate": "The student should be pursuing or completed their undergraduate,",
+  "edu_postgraduate": "ergraduate, graduate, or postgraduate degrees from recognized universi"
+ },
+ "dacssiselosobcebc": {
+  "income_limit": "total income of the applicant (from all sources) shall not exceed ₹ 8,00,000",
+  "gender": "d for Interest Subsidy to the girl candidates.",
+  "edu_undergraduate": "The applicant should be a Student. The student should have secured",
+  "edu_postgraduate": "n the approved course at Masters, M.Phil or PhD levels abroad for the",
+  "edu_phd": "se at Masters, M.Phil or PhD levels abroad for the listed courses. The"
+ },
+ "post-dis": {
+  "income_limit": "Annual income of parents/guardians of the applicant (from all sources) must not exceed ₹ 2.50 Lakh",
+  "edu_10th": "must be pursuing a post-matric qualification, i.e. Class 11th, Class",
+  "edu_12th": ", i.e. Class 11th, Class 12th, including Polytechnics, Post-Matriculat",
+  "edu_diploma": "h, Class 12th, including Polytechnics, Post-Matriculation Diploma/Cert",
+  "edu_undergraduate": "The applicant must be a student. The applicant must be pursuing"
+ },
+ "pre-dis": {
+  "income_limit": "income from all sources should not exceed ₹2,50,000",
+  "edu_10th": "e Central/State Board of Secondary Education. The applicant’s parents/",
+  "edu_undergraduate": "The applicant should be an Indian national. The applicant should b"
+ },
+ "fcssos": {
+  "income_limit": "income of the applicant (from all sources) should be ₹8,00,000/- or less",
+  "category_sc": "The applicant should be from Scheduled Caste or Other Backward Class. The total",
+  "category_obc": "ld be from Scheduled Caste or Other Backward Class. The total annual family inco",
+  "edu_12th": "qualifying exam is class 12th, the candidate should have passed class",
+  "edu_undergraduate": "ry: The applicant should be a student. The applicant should be from Sc"
+ },
+ "satgmsa": {
+  "edu_undergraduate": "he following criteria to be eligible for this Scholarship: The State A",
+  "edu_postgraduate": "Nagaland who passed the M.Sc. Agriculture. Applicants must be from an"
+ },
+ "vdcspds": {
+  "edu_undergraduate": "Beneficiary should be of the age of 10 years or more Beneficiary"
+ },
+ "nos-sc": {
+  "income_limit": "total income of the family of the applicant (from all sources) is less than or equal to ₹ 8 lakh",
+  "category_sc": "t be a student belonging to a Scheduled Caste, Denotified Nomadic, Semi Nomadic",
+  "category_st": "longing to a Scheduled Caste, Denotified Nomadic, Semi Nomadic Tribe, Landless A",
+  "edu_diploma": "ering after completing a Diploma (Lateral Entry to 2nd year), the perc",
+  "edu_undergraduate": "The applicant must be a student belonging to a Scheduled Caste,",
+  "edu_postgraduate": "admission for pursuing a master's / Ph.D. from an institute/university",
+  "edu_phd": "or pursuing a master's / Ph.D. from an institute/university located ab"
+ },
+ "fcfswd": {
+  "income_limit": "family income should not be more than ₹ 6,00,000",
+  "edu_10th": "ff Selection Commission (SSC), various Railway Recruitment Boards (RRB",
+  "edu_undergraduate": "bility. The student must be preparing for competitive examinations con"
+ },
+ "nhis": {},
+ "cssipcra1scstpaa1": {
+  "category_sc": "he applicant must be a from a Scheduled Caste or Scheduled Tribe. The applicant",
+  "category_st": "e a from a Scheduled Caste or Scheduled Tribe. The applicant must be a victim of"
+ },
+ "asiim": {
+  "category_sc": "The following SC / SC Divyang youth would be eligible for suppor",
+  "edu_undergraduate": "/ SC Divyang youth would be eligible for support under ASIIM: Youth wh"
+ },
+ "deisrs": {
+  "age": "in the age group of 0-10 years",
+  "edu_undergraduate": "hat a PwD should have to be enrolled under Disha Centre: PwD should be"
+ },
+ "wsfw": {
+  "gender": "The following individual types of applicants are eligible under this sc"
+ },
+ "wsfdp": {
+  "edu_undergraduate": "ies): The applicant must be a person with disability having at least 4"
+ },
+ "pm-daksh": {
+  "income_limit": "family income below ₹3,00,000",
+  "category_sc": "one of the following groups: Scheduled Castes (SC); Other Backward Classes (OB",
+  "category_st": "cally Weaker Sections (EWS); Denotified & Nomadic Tribes (DNT0, or Safai Mitra",
+  "category_obc": "ups: Scheduled Castes (SC); Other Backward Classes (OBC); Economically Weaker",
+  "category_ews": "Other Backward Classes (OBC); Economically Weaker Sections (EWS); Denotified &",
+  "age": "aged between 18 and 45 years",
+  "edu_undergraduate": "Applicant must be an Indian national with valid proof of nat"
+ },
+ "ccsnfpfscsmap": {
+  "category_sc": "he applicant should be from a Scheduled Caste. 2. The applicant should be p",
+  "edu_undergraduate": "The applicant should be from a Scheduled Caste. 2. The applic",
+  "edu_phd": "rch leading to an M.Phil/PhD Degree. 3. The applicant should have"
+ },
+ "pm-yasasvipmsobcebcdnts": {
+  "income_limit": "income combined with the income of their parents/guardians does not exceed ₹2.50 lakhs",
+  "edu_10th": "y of all recognized post-matriculation or post-secondary courses pursu",
+  "edu_12th": "sed the Matriculation or higher secondary or any higher examination of",
+  "edu_diploma": "or Technical certificate/diploma/degree courses will be awarded schola",
+  "edu_undergraduate": "The scholarships will be open to Indian nationals belonging to OBCs",
+  "edu_postgraduate": "ships. Students pursuing Post-graduate courses in medicine will be eli",
+  "edu_vocational": "dary, Diploma, long-term Vocational Training Certificate, Graduate, Po"
+ },
+ "pmsfss": {
+  "income_limit": "income from all sources does not exceed ₹ 2,50,000",
+  "edu_10th": "stes and have passed the Matriculation, Higher Secondary, or a higher",
+  "edu_12th": "assed the Matriculation, Higher Secondary, or a higher examination of",
+  "edu_undergraduate": "gible. Scholarships will be paid to students whose parents' or guardia"
+ },
+ "shreyas": {
+  "category_obc": "be a student belonging to the Other Backward Classes category. The applicant sho",
+  "edu_undergraduate": "The applicant must be a student belonging to the Other Backward",
+  "edu_phd": "and full-time M.Phil. or Ph.D. programme in a recognised University or"
+ },
+ "beds": {
+  "category_sc": "applicant belongs to General, SC, ST categories, SHG members, PWD, Women, and Tr",
+  "category_st": "icant belongs to General, SC, ST categories, SHG members, PWD, Women, and Transg",
+  "gender_other": "SHG members, PWD, Women, and Transgender individuals. The applicant should purc"
+ },
+ "pmyasasvipmsobcebcdnts": {
+  "income_limit": "income from all sources does not exceed ₹2,50,000",
+  "category_sc": "NT (who are not covered under SC, ST, or OBC) categories through a valid certifi",
+  "category_st": "who are not covered under SC, ST, or OBC) categories through a valid certificate",
+  "category_obc": "hould belong to either of the OBC, EBC, or DNT (who are not covered under SC, ST",
+  "edu_10th": "fits under any other pre-matric scholarship scheme. Only two boys of t",
+  "edu_undergraduate": ". Scholarship award will be sanctioned in the case of students whose p"
+ },
+ "dky": {},
+ "sfsmttpotc": {
+  "gender_other": "certify on an affidavit that they have a child exhibiting gender non-conforming",
+  "max_age": "less than 18 years"
+ },
+ "sadppfaa": {
+  "income_limit": "income from all sources not exceeding Rs.30,000",
+  "max_age": "below 12 years of age",
+  "edu_undergraduate": "nder the Scheme will not be given for commercial production or supply"
+ },
+ "lbssk-sms": {
+  "category_sc": "Safai Karamcharis (including Wastepickers), identi"
+ },
+ "sgiavoowsc": {
+  "edu_undergraduate": "ste beneficiaries should be at least 60% in the case of voluntary orga"
+ },
+ "mi-hma-nhdp": {},
+ "gispw": {
+  "age": "18 to 59 years of age"
+ },
+ "ssfgcojmmw": {
+  "gender": "Scholarship to the girl children on Passing out the Examination in 2021(2",
+  "edu_undergraduate": "period. The scheme will be applicable to the girl children of the wor"
+ },
+ "nhdp-randds": {
+  "edu_undergraduate": "Grants-in-aid can be given to a public body or an institution h"
+ },
+ "sga": {
+  "min_age": "at least 55 years old"
+ },
+ "chcdp": {},
+ "gws": {},
+ "cbsp-ep": {
+  "edu_undergraduate": "2. The applicant should be above the age of 18 years. Note 1: A cl"
+ },
+ "pmaagy": {
+  "category_st": "in plain areas; 250 in hilly/tribal areas. The village must be selected by the"
+ },
+ "vtcta": {
+  "edu_undergraduate": "ections. Preference will be given to programmes that benefit the Parti",
+  "edu_vocational": "ered and conducting such vocational courses for at least three years."
+ },
+ "iwp": {
+  "min_age": "50 years of age or above"
+ },
+ "fg-sw": {
+  "gender": "gistered with the Department of Sainik Welfare, Puducherry. The scope of this sc"
+ },
+ "sddpsa": {
+  "category_st": "must belong to Tea Tribes and Adivasi community. The applicant shall be between",
+  "age": "20 to 35 years of age"
+ },
+ "pmpms": {
+  "income_limit": "family income stating that it is not exceeding ₹5,00,000",
+  "category_st": "belong to the Tea Tribes and Adivasi Community. The applicant must produce a va",
+  "edu_10th": "000/- per annum. The Pre-Matric Scholarship is awarded to students fro",
+  "edu_undergraduate": "The applicant must be a permanent resident of Assam. The applica",
+  "edu_postgraduate": "Integrated Graduate plus Post Graduate courses like integrated Master"
+ },
+ "sascste": {
+  "category_sc": "icro Enterprises, promoted by Scheduled Caste / Scheduled Tribe entrepreneurs.",
+  "category_st": "promoted by Scheduled Caste / Scheduled Tribe entrepreneurs."
+ },
+ "cisscstwe-mesifai": {
+  "category_sc": "The applicant should be a Scheduled Caste/ Scheduled Tribe/ Woman Entreprene",
+  "category_st": "should be a Scheduled Caste/ Scheduled Tribe/ Woman Entrepreneur. In the case o",
+  "gender": "duled Caste/ Scheduled Tribe/ Woman Entrepreneur. In the case of indigenous seco"
+ },
+ "oscste-mesifai-sa-msme": {},
+ "is-mesifai": {
+  "category_sc": "industry should be set up by SC/ST/Women/ Entrepreneur OR The industry should b",
+  "category_st": "dustry should be set up by SC/ST/Women/ Entrepreneur OR The industry should be a"
+ },
+ "mmppy": {
+  "category_sc": "g to the specified categories SC, ST, EBC, BC, Minority, and General.",
+  "category_st": "the specified categories SC, ST, EBC, BC, Minority, and General.",
+  "category_obc": "specified categories SC, ST, EBC, BC, Minority, and General.",
+  "category_minorities": "d categories SC, ST, EBC, BC, Minority, and General.",
+  "max_age": "less than 18 years"
+ },
+ "bsaktpd": {
+  "age": "age must be between 18 and 65 years"
+ },
+ "dls-punjab": {
+  "income_limit": "family income of the applicant (from all sources) should be less than or equal to ₹ 1,00,000",
+  "category_sc": "applicant should be from the Scheduled Caste category OR the applicant should b"
+ },
+ "mts": {
+  "income_limit": "income, if any) income should not exceed ₹2,50,000",
+  "min_age": "18 years or older",
+  "edu_10th": "t pursuing senior higher secondary education. The applicant must have",
+  "edu_12th": "student pursuing senior higher secondary education. The applicant mu",
+  "edu_undergraduate": "The applicant must be a native of Rajasthan. The applicant shoul"
+ },
+ "msyr": {
+  "gender": "The applicant should be a registered voluntary org"
+ },
+ "rduvy": {},
+ "ssdu": {},
+ "ap": {
+  "category_sc": "the following target groups - Scheduled Castes, Other Backward Classes, Minority",
+  "category_st": "f the Delhi Scheduled Castes, Scheduled Tribes, Other Backward Classes, Minoriti",
+  "category_obc": "et groups - Scheduled Castes, Other Backward Classes, Minority, Safai Karamchari",
+  "category_minorities": "stes, Other Backward Classes, Minority, Safai Karamchari, and Persons with Disab"
+ },
+ "lsmpcltt": {
+  "category_st": "eficiary should belong to the Tribal category. The beneficiary should be a membe"
+ },
+ "cs-tn": {
+  "gender": "t generation subsidy): Electrical and electronic industry; Leather and leather g"
+ },
+ "mssp-uw": {
+  "income_limit": "annual income of the family of the applicant should not exceed ₹1,00,000",
+  "age": "in the age group of 6 to 14 years",
+  "edu_undergraduate": "The applicant should be a resident of Tripura. The annual income o"
+ },
+ "iss2017": {
+  "gender": "egistered with/recognized by the Department of Tourism/Goa Investment Promotion"
+ },
+ "stptc": {
+  "category_st": "pplicant should belong to the Scheduled Tribe Community of Goa. The applicant sh",
+  "min_age": "above 18 years of age",
+  "max_age": "below the age of 50 years"
+ },
+ "scsfr": {
+  "max_age": "less than 18 years"
+ },
+ "idsdco": {
+  "category_st": "ffice of Assistant Registrar. Tribal Sub Plan/Schedule Caste Sub Plan Category C"
+ },
+ "daynulmshguk": {
+  "income_limit": "annual income of the beneficiary's family must be less than ₹3.00 lakh",
+  "gender": "resident of Uttarakhand. The beneficiary must be a woman. To form a Self-Help G",
+  "edu_undergraduate": "The beneficiary must be a resident of Uttarakhand. The beneficiary"
+ },
+ "slafpwd": {},
+ "ssboscbpbs": {
+  "category_sc": "pplicant should belong to the Scheduled Caste category. There is no income limit",
+  "edu_undergraduate": "The applicant should be a native of Gujarat. The applicant should"
+ },
+ "lopssc": {
+  "income_limit": "annual income must not exceed ₹1,05,600",
+  "category_sc": "applicant must belong to the Scheduled Caste category. The applicant’s age must",
+  "age": "age must be between 18 and 50 years"
+ },
+ "msydaadc": {
+  "income_limit": "family income should not exceed ₹3,00,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste (SC) category. The applicant shoul",
+  "category_obc": "y or be from the economically backward class. The applicant’s annual family inco",
+  "gender": "nent resident of Gujarat. The applicant should be a woman. The applicant should"
+ },
+ "nsywgntdnt": {
+  "income_limit": "annual income limit for income eligibility will be up to ₹3,00,000",
+  "category_st": "licant must be a woman from a nomadic or denotified caste. The applicant's famil",
+  "gender": "The applicant must be a woman from a nomadic or denoti",
+  "max_age": "not more than 50 years"
+ },
+ "lopsst": {
+  "income_limit": "family income should not exceed ₹2,50,000",
+  "category_st": "applicant must belong to the Scheduled Tribe (ST) category. The applicant's age",
+  "age": "age must be between 18 and 50 years"
+ },
+ "bepuk": {},
+ "speoscelu": {
+  "category_sc": "pplicant should belong to the Scheduled Caste community. The applicant must be u",
+  "age": "age in Sow is 8-9",
+  "edu_undergraduate": "The applicant should be of 18 to 55 years of age and a resident of"
+ },
+ "tlsbc": {
+  "income_limit": "family income of the applicant should not exceed ₹3,00,000",
+  "category_obc": "pplicant should belong to the Backward Classes category. The annual family incom"
+ },
+ "mcfnskfdc-h": {
+  "category_sc": "he applicant should be either Safai Karamchari or his/her dependent. Note 1: Per",
+  "age": "age should be between 18 and 55 years",
+  "edu_undergraduate": "The applicant should be a permanent resident of Haryana. The appli"
+ },
+ "sstlsbc": {
+  "income_limit": "family income should not exceed ₹3,00,000",
+  "category_obc": "pplicant should belong to the backward class category. The applicant's annual fa"
+ },
+ "isshsfdc": {
+  "income_limit": "family income should not exceed ₹1,80,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste Category. The applicant should bel"
+ },
+ "tbsshsfdc": {
+  "income_limit": "family income should not exceed ₹1,80,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste Category. The applicant should bel"
+ },
+ "sui": {
+  "category_sc": "nt is a male, he must be from SC / ST category. The age of the applicant must be",
+  "category_st": "a male, he must be from SC / ST category. The age of the applicant must be at l"
+ },
+ "mmssy-hlwb": {
+  "gender": "an industrial or commercial establishment in Haryana. There is no fixed service"
+ },
+ "nps-tsep": {},
+ "cuy": {
+  "category_sc": "heme. Note : Special focus on SC/ST and beneficiaries from the North Eastern Reg",
+  "category_st": "e. Note : Special focus on SC/ST and beneficiaries from the North Eastern Region",
+  "min_age": "above 18 years of age"
+ },
+ "ics-cbfte": {},
+ "sl": {
+  "edu_diploma": "ining Institutes (ITIs). Polytechnics. Schools recognised by Central o",
+  "edu_undergraduate": "The applicant should be an Indian national. The applicant should h",
+  "edu_vocational": "e secured admission to a skill training course. The applicant should m"
+ },
+ "vcf-sc": {
+  "category_sc": "Documentary proofs of being SC will have to be submitted by the Entrepreneur a"
+ },
+ "gbs": {
+  "category_sc": "Safai Karamcharis, Scavengers, and their Dependent"
+ },
+ "nbcfdc-gls": {
+  "income_limit": "family income should be up to ₹3,00,000"
+ },
+ "sasscdc": {
+  "category_sc": "The applicant must belong to Scheduled Castes. The applicant must be living bel"
+ },
+ "els": {
+  "income_limit": "family income of each member/applicant should not exceed Rs.3.00 lakh",
+  "category_sc": "iary (ies) should be from the Scheduled Caste Community. Individuals, Partnershi"
+ },
+ "mcfnsfdc": {
+  "income_limit": "family income should be less than ₹3,00,000",
+  "category_sc": "applicant should belong to a Scheduled Caste community. 2. The applicant's annu"
+ },
+ "lbssf-gtl": {
+  "category_sc": "Safai Karamcharis (including Wastepickers) identif"
+ },
+ "srms": {
+  "category_sc": "gaged or employed as a Manual Scavenger by an individual or a local authority or"
+ },
+ "ndfadc": {
+  "income_limit": "annual income of less than ₹3,00,000"
+ },
+ "cegssc": {
+  "category_sc": "on. The applicant should be a Scheduled Caste entrepreneur, company, partnership"
+ },
+ "cbssc-tl": {
+  "category_sc": "uld be an entrepreneur of the Scheduled Caste Category. The applicant should sub"
+ },
+ "hkpy": {
+  "category_sc": "neficiary/farmer belonging to SC/ST/General categories who have undertaken train",
+  "category_st": "iciary/farmer belonging to SC/ST/General categories who have undertaken training",
+  "edu_undergraduate": "The beneficiary should be a permanent resident of Himachal Pradesh."
+ },
+ "els-nsfdc": {
+  "income_limit": "family income should be less than ₹3,00,000",
+  "category_sc": "applicant should belong to a Scheduled Caste community. The applicant's annual",
+  "edu_undergraduate": "The applicant should be a student pursuing regular full-time Profe"
+ },
+ "visvas": {
+  "income_limit": "family income of SC/OBC members should generally be up to ₹3,00,000",
+  "category_sc": ". NOTE: No income ceiling for Safai Karamcharis, including identified Manual Sca",
+  "category_obc": "he annual family income of SC/OBC members should generally be up to ₹3,00,000/-."
+ },
+ "lbssk-spuct": {
+  "category_sc": "belonging to the category of: Safai Karamcharis Manual scavengers Dependents of",
+  "min_age": "18 years or above"
+ },
+ "anmpy": {
+  "category_st": "rmers The applicant must be a Scheduled Tribe (ST) of Arunachal Pradesh. The app",
+  "age": "18 to 60 years of age"
+ },
+ "anppy": {
+  "category_st": "long to the Arunachal Pradesh Scheduled Tribe (APST) category and be unemployed."
+ },
+ "mauyb": {
+  "category_minorities": "applicant must belong to the Minority community. The applicant should have pass",
+  "gender": "heir preference: Mukhyamantri Mahila Udyami Yojana Mukhyamantri Alpasankhyak Udy",
+  "age": "aged between 18 and 50 years",
+  "edu_12th": "d have passed at least 10+2, Intermediate, ITI, Polytechnic Diploma, o",
+  "edu_diploma": "east 10+2, Intermediate, ITI, Polytechnic Diploma, or equivalent. The",
+  "edu_undergraduate": "The applicant must be a permanent resident of Bihar. The applica"
+ },
+ "mmuyb": {
+  "gender": "manent resident of Bihar. The applicant must be female. The applicant should hav",
+  "age": "aged between 18 and 50 years",
+  "edu_12th": "d have passed at least 10+2, Intermediate, ITI, Polytechnic Diploma, o",
+  "edu_diploma": "east 10+2, Intermediate, ITI, Polytechnic Diploma, or equivalent. The",
+  "edu_undergraduate": "The applicant must be a permanent resident of Bihar. The applica"
+ },
+ "mysyc": {
+  "edu_undergraduate": "The applicant should be a native of Chhattisgarh state. Applicant"
+ },
+ "cls": {
+  "income_limit": "family income of the applicant (from all sources) should not exceed ₹1,20,000",
+  "category_sc": "the following target groups - Scheduled Caste, Scheduled Tribe, Other Backward C",
+  "category_st": "get groups - Scheduled Caste, Scheduled Tribe, Other Backward Class, Minority, P",
+  "category_obc": "duled Caste, Scheduled Tribe, Other Backward Class, Minority, Persons with Disab",
+  "category_minorities": "Tribe, Other Backward Class, Minority, Persons with Disability. The applicant s",
+  "age": "age should be between 18 to 50 years"
+ },
+ "tls-delhi": {
+  "income_limit": "income ceiling is ₹6,00,000",
+  "category_sc": "the following target groups - Scheduled Castes, Other Backward Classes, Minoriti",
+  "category_obc": "et groups - Scheduled Castes, Other Backward Classes, Minorities, and Safai Kara",
+  "category_minorities": "stes, Other Backward Classes, Minorities, and Safai Karamcharis. The applicant s",
+  "age": "age should be between 18 to 45 years"
+ },
+ "gtegp": {
+  "edu_undergraduate": "The applicant should be Unemployed. The age of the applicant shoul"
+ },
+ "cbts": {
+  "income_limit": "annual income of the applicant's family from all sources should be less than ₹1,03,000",
+  "category_minorities": "hould belong to the religious minority community of the state. The applicant sho",
+  "gender": "t's family from all sources should be less than ₹1,03,000/- in urban areas and l",
+  "age": "age should be between 18 to 35 years",
+  "edu_undergraduate": "te. The applicant should be a permanent resident of Karnataka. The app"
+ },
+ "ssmm": {
+  "income_limit": "family income should not exceed ₹30,000",
+  "category_sc": "ravida, Aadhi Karnataka among scheduled castes. The age of the applicant should"
+ },
+ "mas": {
+  "income_limit": "family income should not exceed ₹30,000"
+ },
+ "issscste": {
+  "category_sc": "unit shall be fully owned by SC / ST entrepreneurs i.e., all promoters in propr",
+  "category_st": "shall be fully owned by SC / ST entrepreneurs i.e., all promoters in proprietar"
+ },
+ "sbstspddsy": {
+  "age": "age should be between 18 and 55 years"
+ },
+ "lvsh": {
+  "income_limit": "family income upto ₹1,50,000",
+  "category_sc": "he applicant should be from a Scheduled Caste. The applicant should be in the ag",
+  "age": "in the age group of 18 to 45 years"
+ },
+ "seloanwomen": {
+  "income_limit": "annual income should not exceed ₹2,50,000",
+  "category_minorities": "he applicant must belong to a minority community (Muslim, Christian, Buddhist, S",
+  "gender": "nt must belong to a minority community (Muslim, Christian, Buddhist, Sikh, Parsi",
+  "age": "age should be between 20 and 60 years"
+ },
+ "s-esdp": {
+  "min_age": "5 years or above",
+  "max_age": "below 55 years of age"
+ },
+ "25-ciss": {
+  "min_age": "above 18 years of age"
+ },
+ "hcpp": {
+  "category_sc": "applicant must belong to the Scheduled Caste category. The applicant must belon"
+ },
+ "mmrsy": {
+  "income_limit": "family income should not exceed ₹5,00,000",
+  "age": "age should be between 18 to 50 years"
+ },
+ "us": {
+  "income_limit": "family income of the applicant should be less than ₹ 1,50,000",
+  "gender": "The applicant should be a woman. The family income of"
+ },
+ "isfsr": {
+  "income_limit": "family income from all sources should not exceed more than ₹6,00,000",
+  "category_minorities": "hould belong to the religious minority category of the state. The applicant shou",
+  "age": "age should be between 18 to 55 years",
+  "edu_undergraduate": "te. The applicant should be a permanent resident of the state. The app"
+ },
+ "sss": {
+  "income_limit": "Family income from all sources should be within Rs. 3.50 lakh",
+  "category_minorities": "ust belong to State Religious Minority Community. Family income from all sources"
+ },
+ "dlsk": {
+  "income_limit": "family income should not exceed ₹30,000",
+  "category_sc": "ravida, Aadhi Karnataka among scheduled castes. The age of the applicant should"
+ },
+ "dlbe": {
+  "category_minorities": "plicant should belong to the minority community Applicant should belong to a mi",
+  "age": "Age should be between 18 to 55 years"
+ },
+ "rrsdmsmecpu": {},
+ "smmgnu": {
+  "gender": "ies under the scheme shall be women entrepreneurs. Note 04: Industrial units whi"
+ },
+ "maky": {
+  "category_sc": "ant should be a member of the Scheduled Caste category. The age of the applicant"
+ },
+ "spshs": {
+  "category_sc": "applicant must belong to the Scheduled Caste (SC) category. The applicant’s age",
+  "gender": "The applicant must be a woman. The applicant must be",
+  "age": "age should be between 18 to 55 years"
+ },
+ "srdsy": {
+  "income_limit": "family income should not exceed ₹12.00 lakhs",
+  "category_sc": "applicant should be belong to Scheduled Caste category. The applicant should hav",
+  "edu_12th": "ational qualification of 12th class passed. The applicant's annual fam",
+  "edu_undergraduate": "The applicant should be a resident of Madhya Pradesh. The applican"
+ },
+ "dbaky": {
+  "category_sc": "nt belongs to all categories: SC, ST, and others are eligible to apply. The appl",
+  "category_st": "elongs to all categories: SC, ST, and others are eligible to apply. The applican",
+  "min_age": "at least 21 years of age"
+ },
+ "msym": {
+  "income_limit": "annual income should be below ₹98,000",
+  "gender": "The applicant should be a female. The applicant should",
+  "age": "age should be between 18 and 50 years"
+ },
+ "fadse": {
+  "income_limit": "annual income of the applicant should be less than ₹1,00,000"
+ },
+ "sma": {
+  "income_limit": "annual income of the family of the applicant should be - Rural areas: Less than or equal to ₹98,000",
+  "category_obc": "applicant should be from the Other Backward Class (OBC) category. The applicant"
+ },
+ "saisoarracgf": {
+  "category_sc": "stricts. Enterprises owned by Scheduled Caste (SC)/Scheduled Tribe (ST) or women",
+  "category_st": "owned by Scheduled Caste (SC)/Scheduled Tribe (ST) or women entrepreneurs. Young",
+  "age": "in the age group of 18 to 45 years"
+ },
+ "kccsf-cmfps": {},
+ "dbaaky": {},
+ "lgss": {
+  "income_limit": "annual income of the family of the applicant should be less than or equal to ₹1,00,000"
+ },
+ "cmegp": {
+  "edu_10th": "the applicant is minimum 10th standard pass.",
+  "edu_undergraduate": "of the applicant should be between 18 to 45. For Special category (in"
+ },
+ "stiti": {
+  "income_limit": "annual income of the applicant’s father should not be more than ₹ 65290",
+  "category_sc": "The student should belong to Scheduled Caste (SC) category. It is mandatory for",
+  "edu_undergraduate": "The applicant must be a permanent resident of Maharashtra. The s"
+ },
+ "mgbby-odisha": {
+  "category_minorities": "d under the scheme, including minorities, women weavers, and weavers belonging t",
+  "age": "age group of 18 and 59 years",
+  "edu_undergraduate": "The weaver should be earning at least 50% of his income from ha"
+ },
+ "cgilsm": {
+  "gender": "M / living spouse/widows who are re-employed as regular / deemed to be regular i"
+ },
+ "cis-mesifa-cii": {
+  "category_sc": "Enterprises, and to the Women/SC/ST Entrepreneurs. In the case of the SC/ST/Wome",
+  "category_st": "erprises, and to the Women/SC/ST Entrepreneurs. In the case of the SC/ST/Women c",
+  "edu_undergraduate": "entrepreneurs will alone be considered. In the case of partnership and"
+ },
+ "cisphpes-mesifai": {},
+ "rs-mesifai": {
+  "category_sc": "e a Woman or should be from a Scheduled Caste/ Scheduled Tribe. The applicant sh",
+  "category_st": "ld be from a Scheduled Caste/ Scheduled Tribe. The applicant should have started",
+  "gender": "hould be an Entrepreneur. The applicant should be a Woman or should be from a Sc"
+ },
+ "tuk-sept": {
+  "income_limit": "annual income of applicant should not exceed ₹8,00,000",
+  "gender_other": "The applicant should be a resident of Rajasthan. T"
+ },
+ "mmvyjsy": {
+  "income_limit": "annual income of the applicant’s family should not exceed ₹2,00,000",
+  "edu_undergraduate": "The applicant should be a specially-abled person as per the Person"
+ },
+ "apafale": {},
+ "cmses": {
+  "income_limit": "annual income should not exceed ₹2,50,000",
+  "age": "age should be between 22 to 35 years",
+  "edu_10th": "t should have passed the 10th class. The applicant's family annual inc",
+  "edu_undergraduate": "The applicant should be unemployed. The applicant's age should be"
+ },
+ "uyegp": {
+  "income_limit": "family income of the applicant should not exceed ₹5 lakhs",
+  "category_sc": ". (b) for Special category (SC/ ST/MBC/ BC/ Minorities/ Ex-Servicemen/ Differe",
+  "category_st": "(b) for Special category (SC/ ST/MBC/ BC/ Minorities/ Ex-Servicemen/ Differently",
+  "category_minorities": "ial category (SC/ ST/MBC/ BC/ Minorities/ Ex-Servicemen/ Differently abled/ Tran",
+  "edu_undergraduate": "1. The applicant should be a permanent resident of Tamil Nadu. 2. The"
+ },
+ "needs": {},
+ "sanfsosms": {
+  "income_limit": "annual income should not exceed ₹72,000",
+  "category_ews": "ly Affected Woman. Woman From Economically Weaker Sections.",
+  "gender": "tailoring. The applicant should be ANY ONE of the following: Destitute Woman. Wi"
+ },
+ "aabcs": {
+  "edu_undergraduate": "The applicant should be a resident of the State of Tamil Nadu. The"
+ },
+ "dalit-bandhu": {
+  "income_limit": "annual income of less than Rs. 2.5 lakh",
+  "category_sc": "eligibility criteria for the Dalit Bandhu scheme in Telangana are based on the",
+  "age": "between the ages of 25 and 50",
+  "edu_10th": "have passed at least the 10th standard. The applicant should not have",
+  "edu_undergraduate": "nity. The applicant must be a resident of Telangana. The family should"
+ },
+ "sessct": {
+  "income_limit": "annual income must not exceed ₹15,975",
+  "category_sc": "he applicant must belong to a Scheduled Castes and Tribes community. The applica"
+ },
+ "siswtbottm": {
+  "gender": "Women artisans belonging to the Tharu, Boksa, and"
+ },
+ "sgsscst": {
+  "income_limit": "annual income should not exceed ₹1,05,600",
+  "category_sc": "he applicant must belong to a Scheduled Caste or Scheduled Tribe community. The",
+  "category_st": "elong to a Scheduled Caste or Scheduled Tribe community. The applicant's annual"
+ },
+ "psc": {
+  "min_age": "60 years or above"
+ },
+ "ftvd": {
+  "category_sc": "he applicant must belong to a Scheduled Caste or Scheduled Tribe category.",
+  "category_st": "elong to a Scheduled Caste or Scheduled Tribe category."
+ },
+ "lopsd": {
+  "income_limit": "family income must not exceed ₹2,00,000",
+  "age": "age must be between 18 and 50 years"
+ },
+ "ffds": {
+  "category_sc": "pplicant should belong to the Scheduled Caste or Scheduled Tribe community. The",
+  "category_st": "ong to the Scheduled Caste or Scheduled Tribe community. The applicant should be"
+ },
+ "daynulsepuk": {
+  "income_limit": "annual income of the beneficiary's family must be less than ₹3.00 lakh"
+ },
+ "assy-goa": {
+  "income_limit": "family income of the deceased or the applicant shall not exceed ₹ 3,00,000",
+  "category_st": "he applicant should be from a Scheduled Tribe Family. The annual family income o"
+ },
+ "gfaptnsgciwe-glwb": {
+  "edu_undergraduate": "The applicant should be a regular industrial worker/employee of th"
+ },
+ "sgmfapetobmp": {
+  "income_limit": "family income of the applicant from all sources must not exceed ₹1,50,000",
+  "max_age": "less than 50 years of age"
+ },
+ "gslwis-stsd": {
+  "gender": "Schedule Caste/Schedule Tribe/Women Entrepreneurs must explicitly state their ca"
+ },
+ "gs2sses": {
+  "income_limit": "income of the applicant along with spouse must not exceed ₹3,00,000",
+  "gender": "shall be relaxable by 5 years for women, disabled persons, Scheduled Caste/Sched",
+  "max_age": "below 42 years of age",
+  "edu_10th": "tion or 12th standard or 10th standard or schooling from the State of",
+  "edu_12th": "ave passed graduation or 12th standard or 10th standard or schooling f",
+  "edu_undergraduate": "The applicant must be an individual or a Group of individuals or"
+ },
+ "fadfbstscpbde": {
+  "category_sc": "ong to the Scheduled Tribe or Scheduled Caste Community. The applicant must be a",
+  "category_st": "applicant must belong to the Scheduled Tribe or Scheduled Caste Community. The"
+ },
+ "gsphs": {
+  "income_limit": "annual income should not exceed ₹25,000",
+  "edu_undergraduate": "The applicant must be a bonafide resident of the State of Goa Th"
+ },
+ "sasseceie": {
+  "income_limit": "total income of the applicant from the salary should not exceed ₹20,000",
+  "category_obc": "Month. Children Belonging to Other Backward Communities. Physically Handicapped",
+  "edu_undergraduate": "ker The applicant should be a regular worker. The applicant should be",
+  "edu_postgraduate": ". Phi.) after completing Postgraduate (P.G.) Courses, Doctor of Medici",
+  "edu_phd": "., Doctor of Philosophy (PhD) or Master of Philosophy (M. Phi.) after"
+ },
+ "rsimp": {},
+ "gfasgciwes1t4ssosu": {
+  "edu_undergraduate": "The applicant should be an industrial worker/employee. The applica"
+ },
+ "scs-goa": {},
+ "mgs-goa": {},
+ "ppimses": {},
+ "iftsmst": {
+  "income_limit": "annual income of the couple should be less than ₹2,00,000",
+  "category_st": "partners should belong to the Scheduled Tribe community. The combined annual inc"
+ },
+ "iftdcmtst": {
+  "income_limit": "annual income of the couple should be less than ₹5,00,000",
+  "category_st": "e spouse should belong to the Scheduled Tribe community and should be a resident"
+ },
+ "ifticmwstc": {
+  "income_limit": "annual income of the couple must be less than ₹2,00,000",
+  "category_st": "e partners should be from the Scheduled Tribe (ST) community but from different"
+ },
+ "vfas": {
+  "category_obc": "ka. Students should belong to backward classes listed by the Government of India",
+  "edu_10th": "ts must be pursuing post-matric courses in government, local, aided, o",
+  "edu_undergraduate": "Students must be citizens of India and permanent residents"
+ },
+ "iicmscc": {
+  "income_limit": "family income of the applicant should not exceed ₹2,00,000"
+ },
+ "dbjrlcwscs": {
+  "income_limit": "annual income should not exceed ₹32,000"
+ },
+ "scds": {
+  "income_limit": "family income from all sources should not exceed ₹6,00,000",
+  "category_minorities": "applicant must belong to the Sikh community. The applicant must be a permanent",
+  "age": "age should be between 18 and 55 years",
+  "edu_undergraduate": "nity. The applicant must be a permanent resident of the state. The app"
+ },
+ "pjmskrl": {
+  "income_limit": "annual income of the candidate’s family must be below ₹8,00,000",
+  "category_minorities": "he applicant must belong to a minority community (Christian, Buddhist, Jain, Sik",
+  "edu_10th": "wo, or Vocational Higher Secondary Education (VHSE) level must have a",
+  "edu_12th": "applicant pursuing SSLC, Plus Two, or Vocational Higher Secondary Educ",
+  "edu_undergraduate": "The applicant must be a permanent citizen of Kerala. The applica",
+  "edu_postgraduate": ". The applicant pursuing postgraduate studies must have 75% marks to a",
+  "edu_vocational": "suing SSLC, Plus Two, or Vocational Higher Secondary Education (VHSE)"
+ },
+ "ksmsmerrs": {},
+ "hfsaed": {
+  "category_sc": "student should belong to the Scheduled Caste category.",
+  "edu_undergraduate": "The applicant should be a native of Madhya Pradesh. The applicant"
+ },
+ "py": {
+  "income_limit": "family income should not exceed ₹6,00,000",
+  "category_st": "student should belong to the Scheduled Tribe category. The applicant's annual f",
+  "edu_undergraduate": "The applicant should be a student. The student should be a native"
+ },
+ "pmsfbcs": {
+  "edu_10th": "tudent of classes 6th to 10th. The parents/guardians of the applicant",
+  "edu_undergraduate": "The applicant should be a student of classes 6th to 10th. The pare"
+ },
+ "majvpvpy": {
+  "category_sc": "applicant should be from the Scheduled Caste (SC) category. The applicant shoul"
+ },
+ "apmcy": {
+  "income_limit": "annual income of the applicant's parents and guardian should not exceed ₹2,00,000",
+  "category_minorities": "ant should be a native of the minority category of Madhya Pradesh. The total ann",
+  "edu_undergraduate": "The applicant should be a native of the minority category of Madhy"
+ },
+ "as-smp": {
+  "category_sc": "applicant must belong to the Scheduled Caste (SC) or Scheduled Tribe (ST) categ",
+  "category_st": "o the Scheduled Caste (SC) or Scheduled Tribe (ST) category. The applicant must"
+ },
+ "fasmp": {},
+ "sa-spdpddpmp": {
+  "income_limit": "annual income must not exceed ₹96,000"
+ },
+ "scgca": {
+  "category_sc": "Applicant must be a scheduled Caste girl students. Applicant should ha",
+  "gender": "ant must be a scheduled Caste girl students. Applicant should have a attested ph",
+  "edu_undergraduate": "Applicant must be a scheduled Caste girl students. Applicant"
+ },
+ "myuy": {
+  "age": "age should be between 18 to 40 years",
+  "edu_10th": "should have passed Class 10th. The applicant’s age should be between 1",
+  "edu_undergraduate": "The applicant should be a permanent resident of Madhya Pradesh. Th"
+ },
+ "pmsm": {
+  "income_limit": "annual income limit of parents/guardians is up to ₹6,00,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste category. • If the applicant stud"
+ },
+ "csispwd": {
+  "edu_undergraduate": "The applicant should be a native of Madhya Pradesh. The applicant"
+ },
+ "kspyscg": {
+  "category_sc": "student should belong to the Scheduled Caste category. All Scheduled Caste girl",
+  "gender": "The applicant should be a girl student. The girl stude",
+  "edu_10th": "students who have passed Class 10 and are entering Class 11 are eligib",
+  "edu_undergraduate": "The applicant should be a girl student. The girl student should be"
+ },
+ "mmkvsy": {
+  "gender": "a permanent resident of Madhya Pradesh, and her spouse must also be a permanent",
+  "min_age": "18 years or older"
+ },
+ "cds": {
+  "category_st": "student should belong to the Scheduled Tribe category. The girl student who did",
+  "gender": "The applicant should be a girl student. The girl stude",
+  "edu_undergraduate": "The applicant should be a girl student. The girl student should be"
+ },
+ "vntbds": {
+  "category_st": "long to the Vimukta Jatis and Nomadic Tribes (VJNT) category. The area must be l"
+ },
+ "fat75opd": {},
+ "pmtaispttshgosc": {
+  "category_sc": "The applicant should be from Scheduled Caste or Nav-Buddhist. The applicant sho",
+  "category_minorities": "e from Scheduled Caste or Nav-Buddhist. The applicant should be a domicile of Ma"
+ },
+ "sasbma": {
+  "edu_undergraduate": "he following criteria to be eligible for this Scholarship: State Agric",
+  "edu_postgraduate": "nd pursuing for B.Sc. or M.Sc. Agriculture. The applicant must be from"
+ },
+ "bmfe": {},
+ "pmsscsn": {
+  "income_limit": "annual income not exceeding ₹2.50 lakh",
+  "category_st": "ve Class X) and belong to the Scheduled Tribe of Nagaland. The applicant should",
+  "edu_10th": "should be pursuing post-matric studies (above Class X) and belong to",
+  "edu_diploma": "ant should be pursuing a Diploma or Certificate course of at least two",
+  "edu_undergraduate": "The applicant should be pursuing post-matric studies (above Class"
+ },
+ "nap-sdp": {
+  "edu_undergraduate": "ees The applicant should be a citizen of India. The applicant should h",
+  "edu_vocational": "have undergone any other skill training course sponsored under the Nat"
+ },
+ "srcs": {},
+ "pmsssc": {
+  "income_limit": "income should not exceed Rs. 2.50 lakh",
+  "category_sc": "t students should belong to a Scheduled Caste. Parent/Guardian of applicant stud",
+  "edu_10th": "a only. Component 1: Pre Matric Scholarship for SC students Applicant",
+  "edu_undergraduate": "pplicant students should be studying in class IX and X on a full time"
+ },
+ "chobcbg": {
+  "category_obc": "the Central/State/UT list of Other Backward Classes and who do not belong to th",
+  "gender": "igible for financial assistance under the Scheme will be as follows: State Gover",
+  "edu_10th": "be essentially for post matric students. However, if there are vacant",
+  "edu_undergraduate": "ce under the Scheme will be as follows: State Governments and UT Admin"
+ },
+ "sdsspd": {
+  "income_limit": "annual income of the applicant’s parents/guardians from all sources must not exceed ₹2.50 lakhs",
+  "edu_undergraduate": "he following criteria to be eligible for this Scholarship: Scholarship"
+ },
+ "sppms": {
+  "income_limit": "family income should not exceed ₹2,40,000",
+  "gender_other": "cant must be a transgender person. The applicant must be a regular student at a",
+  "edu_undergraduate": "The applicant must be a bonafide resident of Odisha. The applica"
+ },
+ "naepwdnaieepwddklspa": {},
+ "aimpwbdop": {
+  "category_sc": "oth the Departments i.e. ST & SC Development, Minorities, and Backward Class Wel",
+  "category_st": "of both the Departments i.e. ST & SC Development, Minorities, and Backward Clas",
+  "category_obc": "Development, Minorities, and Backward Class Welfare Department, and the Departm",
+  "category_minorities": "nts i.e. ST & SC Development, Minorities, and Backward Class Welfare Department,",
+  "min_age": "completed 21 years and 18 years of age",
+  "edu_undergraduate": "th of the spouses should be residents of Odisha State. The cash incent"
+ },
+ "scdf": {},
+ "rtftsccw": {
+  "income_limit": "annual income of the applicant should not exceed ₹24,000",
+  "gender": "ant should be a native of the Union Territory of Pondicherry by birth or continu",
+  "edu_10th": "passed/appeared for SSLC/Matriculation or any other equivalent examina",
+  "edu_undergraduate": "The applicant should be a citizen of India. The applicant should b"
+ },
+ "agy-itb": {},
+ "atuf": {
+  "edu_undergraduate": "ible Entities Units must be registered under the Companies Act or as p"
+ },
+ "agy": {},
+ "pm-janman": {
+  "category_st": "to a Particularly Vulnerable Tribal Group (PVTG) community. The applicant must"
+ },
+ "pmvky": {
+  "income_limit": "annual income must be up to ₹2,50,000",
+  "category_st": "he applicant must belong to a Scheduled Tribe. The applicant must be studying in",
+  "edu_10th": "For Pre-Matric Scholarship The applicant must belong",
+  "edu_undergraduate": "belong to a Scheduled Tribe. The applicant must be studying in Standar"
+ },
+ "dbrasvpcdbrali": {
+  "income_limit": "annual income of the family of the applicant should not exceed ₹2,00,000",
+  "category_sc": "The applicant must be of the Scheduled Caste/Scheduled Tribe community recogniz",
+  "category_st": "ust be of the Scheduled Caste/Scheduled Tribe community recognized by the Union"
+ },
+ "mmky-rfcs": {},
+ "aamgsiscs": {
+  "edu_10th": "% and above marks in the 10th Standard/Matriculation/SSLC Board of Exa",
+  "edu_undergraduate": "ard of Examination shall be eligible for the award. The student should"
+ },
+ "gfadap": {
+  "income_limit": "annual income not exceeding ₹75,000"
+ },
+ "sg-sw": {
+  "gender": "hould not be a member of the Ex-Servicemen Contributory Health Scheme (ECHS)."
+ },
+ "farsrwhrisewsaadc": {
+  "category_ews": "d in Adi-Dravidar colonies or Economically Weaker Section Areas."
+ },
+ "faoapstbc": {
+  "gender": "Age Pensioner or a Destitute Pensioner. The applicant should be suffering from",
+  "min_age": "60 years or above"
+ },
+ "oadp": {
+  "min_age": "above 18 years of age"
+ },
+ "kispits": {
+  "category_st": "otion of Rural and Indigenous/Tribal Games: The sports federation, sports associ",
+  "gender": "ism, disturbances, or located along international land borders. The organization"
+ },
+ "aniwps": {
+  "gender": "The applicant should be a permanent resident of the Union Territory of Andaman a"
+ },
+ "gmawd": {
+  "income_limit": "annual income not exceeding ₹75,000",
+  "gender": "e applicant should be a widow with an annual income not exceeding ₹75,000/-. 2."
+ },
+ "sgassbstaniphsaip-sscp10p2c": {
+  "category_st": "the Andaman & Nicobar Islands Scheduled Tribes Order No. 58 dated 31.03.1959. On",
+  "edu_10th": "cognized Board of Senior Secondary Education or any other higher exami",
+  "edu_12th": "ssed Senior Secondary (10+2) from a recognized Board of Senior Seconda",
+  "edu_diploma": "or Technical certificate/Diploma/ Degree courses, shall be awarded add",
+  "edu_undergraduate": "tional scholarship shall be open to all students of Scheduled Tribes (",
+  "edu_postgraduate": "rship. Students pursuing Post-Graduate courses in Medicine shall be el",
+  "edu_phd": "ing to Diploma/ Degree), Doctoral and Post-Doctoral courses, in any of",
+  "edu_vocational": "nal qualification is the vocational stream, ITI course, 3 years Diplom"
+ },
+ "gfapscplw": {
+  "income_limit": "annual income of the applicant and spouse should not exceed ₹ 2,00,000",
+  "category_sc": "The applicant should be from Scheduled Caste. The applicant should be a woman.",
+  "gender": "be from Scheduled Caste. The applicant should be a woman. The applicant should"
+ },
+ "sgassobcaniphsaislecxixii": {
+  "category_obc": "ging to a non-creamy layer of OBC of the Andaman and Nicobar Islands listed in t",
+  "edu_10th": "o have passed Secondary (Class X)/Senior Secondary (Class XII) from a",
+  "edu_12th": "ass X)/Senior Secondary (Class XII) from a recognized Board of School",
+  "edu_diploma": "tions etc. Post-Graduate Diploma courses in various branches of Manage",
+  "edu_undergraduate": "The scholarship shall be open to students belonging to a non-creamy",
+  "edu_postgraduate": "Degree of Graduation and Post-Graduation. M.Phil, Ph.D., and Post-Doct",
+  "edu_phd": "Post-Graduation. M.Phil, Ph.D., and Post-Doctoral Programmes (D.Litt.,",
+  "edu_vocational": "ary Level (Class-X), for vocational stream, ITI course, 3 years Diplom"
+ },
+ "cssu": {},
+ "iwr": {
+  "income_limit": "annual income should not exceed ₹75,000",
+  "gender": "The applicant should be a citizen of India. The applicant shoul"
+ },
+ "ksfs": {
+  "income_limit": "family income should not exceed ₹75,000",
+  "gender": "der of a white ration card. The applicant's annual family income should not exc",
+  "min_age": "above 60 years of age",
+  "max_age": "below 14 years of age"
+ },
+ "sfwemun": {
+  "gender": "The applicant must be a woman entrepreneur. The applic"
+ },
+ "rdnccff-sw": {
+  "gender": ""
+ },
+ "ap-msscssvixsgsgrpsutp": {
+  "income_limit": "annual income of the parent/guardian shall not exceed ₹24,000",
+  "category_sc": "Boys and girls belonging to Scheduled Caste Community and studying from VI to",
+  "edu_undergraduate": "ship. The student should be a native of the Union Territory of Puduche"
+ },
+ "pegfsw": {},
+ "iasirfa-sw": {
+  "gender": "emen Contributory Health Scheme (ECHS)."
+ },
+ "tdhrs": {},
+ "shrp": {},
+ "anpyap": {},
+ "dduby": {
+  "gender": "Gender: The scheme is exclusively for women weavers. Weaving Activity: A"
+ },
+ "cmpsy": {
+  "edu_10th": "ndidate must have passed Class X or XII in any stream or equivalent fo",
+  "edu_12th": "ndidate must have passed Class XII in any stream or equivalent for a B",
+  "edu_diploma": "stream or equivalent for Diploma Course in tourism or hospitality rela",
+  "edu_undergraduate": "ream or equivalent for a B.Sc. in Hospitality and Hotel Administration",
+  "edu_postgraduate": "duated in any stream for Post Graduate Diploma in tourism or hospitali"
+ },
+ "faanmgnmtc": {
+  "income_limit": "family income must not exceed ₹5,00,000",
+  "category_st": "belong to the Tea Tribes and Adivasi community. The applicant's family income m",
+  "edu_diploma": ", job-oriented technical Diploma/Degree courses. The applicant must be",
+  "edu_undergraduate": "The applicant must be a permanent resident of Assam. The applica"
+ },
+ "cmjas": {
+  "edu_undergraduate": "The applicant must be a Full-time Research Scholar or Full-time",
+  "edu_phd": "nt must be admitted to a PhD program in 2025 at Central or State Unive"
+ },
+ "fiscmgs": {
+  "income_limit": "annual income of the applicant's parents/guardians must not exceed ₹5,00,000",
+  "gender": "ly enrolled as a student. The applicant must be female. The applicant must belon",
+  "edu_undergraduate": "The applicant must be currently enrolled as a student. The appli"
+ },
+ "sostupm-atisis": {
+  "edu_undergraduate": "ility The applicant must be a tea plantation across all sizes. The app"
+ },
+ "pmsstsscnt": {
+  "income_limit": "family income from all sources that does not exceed ₹2,50,000",
+  "category_st": "applicant must belong to the Scheduled Tribe, as specified in relation to the S",
+  "edu_10th": "studying in Class IX or Class X. The applicant must be studying in a",
+  "edu_undergraduate": "long to the Scheduled Tribe, as specified in relation to the State or"
+ },
+ "gascstpsfcad": {
+  "category_sc": "e applicant must belong to an SC / ST community of Assam. 2) Person suffering f",
+  "category_st": "licant must belong to an SC / ST community of Assam. 2) Person suffering from c"
+ },
+ "fasccspcua": {
+  "category_st": "belong to the Tea Tribes and Adivasi community. The applicant must produce a va"
+ },
+ "fassameu": {
+  "income_limit": "annual income of the applicant's parents/guardians must not exceed ₹5,00,000",
+  "category_sc": "he applicant must belong to a Scheduled Caste (SC) community of Assam. The appli"
+ },
+ "fascmbs": {
+  "income_limit": "annual income of the applicant's parents/guardians must not exceed ₹5,00,000",
+  "edu_undergraduate": "The applicant must be currently enrolled as a student. The appli"
+ },
+ "mmajeajcspy": {
+  "category_sc": "pplicant should belong to the Scheduled Caste or Scheduled Tribe category. The a",
+  "category_st": "ong to the Scheduled Caste or Scheduled Tribe category. The applicant should hav",
+  "edu_undergraduate": "The applicant should be a permanent resident of Bihar. The applica"
+ },
+ "bdps": {},
+ "mgawb": {
+  "category_sc": "applicant must belong to the Scheduled Caste, Scheduled Tribe, or Extremely Bac",
+  "category_st": "elong to the Scheduled Caste, Scheduled Tribe, or Extremely Backward Class categ",
+  "category_obc": "Scheduled Tribe, or Extremely Backward Class category. The applicant must reside"
+ },
+ "bsakppd": {
+  "age": "age must be between 18 and 65 years"
+ },
+ "assgsdra": {
+  "gender": "All rural girl students of Punjab having 40 % and above disa",
+  "edu_undergraduate": "the girl students should be 70%. The scholarship will be provided to t"
+ },
+ "pdpspbocwwb": {
+  "income_limit": "income of ₹15,000/- or below"
+ },
+ "pmssb": {
+  "category_obc": "ld be included in the list of Backward Class and Extremely Backward Class issued",
+  "edu_10th": "lasses after passing the Matriculation/Entry Examination. The family’s",
+  "edu_undergraduate": "The applicant should be a permanent resident of Bihar state. The"
+ },
+ "tuk-chterts": {
+  "income_limit": "annual income should not exceed ₹8,00,000",
+  "gender_other": "The applicant should be a resident of Rajasthan. T",
+  "edu_undergraduate": "The applicant should be a resident of Rajasthan. The applicant sho"
+ },
+ "mmvpy": {
+  "category_minorities": "he student should belong to a minority community. 4. The student should meet one",
+  "gender": "asa Education Board. A Muslim girl student has passed the Intermediate/Maulvi ex",
+  "edu_10th": "e student has passed the Matriculation/Fauquania exam with a first div",
+  "edu_12th": "l student has passed the Intermediate/Maulvi exam with first class fro",
+  "edu_undergraduate": "1. The applicant should be a resident of Bihar. 2. The applicant shou"
+ },
+ "amptmsy": {
+  "income_limit": "family income should be less than ₹4,00,000",
+  "category_minorities": "2. The applicant should be a Muslim woman from a minority community. 3. The Mus",
+  "gender": "icant should be a resident of Bihar. 2. The applicant should be a Muslim woman f",
+  "age": "age should be between 18 and 50 years"
+ },
+ "aby": {
+  "gender": "be a native of Rajasthan. The applicant should be a girl student The applicant",
+  "edu_12th": "udying in classes 1st to 12th. The applicant’s family should fall unde",
+  "edu_undergraduate": "The applicant should be a native of Rajasthan. The applicant shoul"
+ },
+ "wwiip": {
+  "gender": "39 to 15th August 1945) or his widow. The applicant should not be receiving any"
+ },
+ "pybihar": {
+  "income_limit": "annual income is less than ₹60,000",
+  "age": "aged 0-18 years",
+  "edu_undergraduate": "line. Children will also be considered orphaned and destitute if their"
+ },
+ "faafbdmmresf": {},
+ "hrasfts": {
+  "category_st": "he student should belong to a Scheduled Tribe community residing in the Schedule",
+  "edu_undergraduate": "The applicant should be studying regularly a undergraduate or post",
+  "edu_postgraduate": "larly a undergraduate or postgraduate course in a government college."
+ },
+ "fapmdcbcbocwwb": {},
+ "fsdcwdw": {
+  "gender": "ould be a widow/destitute woman or with a dependent child/children. OR the legal",
+  "max_age": "less than or equal to 18 years"
+ },
+ "adbtvs": {
+  "income_limit": "annual income of the applicant’s family should not exceed: SC/ST/MBC: ₹2,50,000",
+  "category_sc": "he applicant should belong to Scheduled Caste (SC), Scheduled Tribe (ST), Other",
+  "category_st": "long to Scheduled Caste (SC), Scheduled Tribe (ST), Other Backward Class (OBC),",
+  "category_obc": "e (SC), Scheduled Tribe (ST), Other Backward Class (OBC), Most Backward Class (M",
+  "category_ews": "Most Backward Class (MBC) or Economically Weaker Section (EWS) category. The ap",
+  "edu_undergraduate": "The applicant should be a resident of Rajasthan. The applicant sho",
+  "edu_postgraduate": "d in an undergraduate or postgraduate course at a government college."
+ },
+ "mhvs-sebs": {
+  "gender": "f Rajasthan. The applicant should have completed skill training under the scheme",
+  "min_age": "21 years or above"
+ },
+ "saipispss": {},
+ "tuk-fasbc": {
+  "income_limit": "annual income of applicant should be up to ₹8.00 lakh",
+  "gender_other": "The applicant should be a native of Rajasthan. The",
+  "edu_undergraduate": "The applicant should be a native of Rajasthan. The applicant shoul"
+ },
+ "dpcpy": {
+  "income_limit": "annual income should not exceed ₹2,00,000",
+  "category_obc": "belong to one of the Special Backward Class communities: Banjara, Baldiya, Laba",
+  "edu_10th": "should have passed class 10th to graduation with a first division. The",
+  "edu_undergraduate": "The applicant should be a native of Rajasthan. The applicant shoul",
+  "edu_postgraduate": "t least 48% marks in the postgraduation first year and be enrolled in"
+ },
+ "bufdstmsfa": {
+  "category_st": "pplicant should belong to the Scheduled Tribe category. The applicant's parents/",
+  "edu_10th": "a Board/Central Board of Secondary Education with a first division, se",
+  "edu_12th": "t should have passed the 12th standard examination from the Madhyamik",
+  "edu_undergraduate": "The applicant should be a student. The applicant should have pass"
+ },
+ "isicsch": {
+  "edu_undergraduate": "The applicant should be a resident of Chhattisgarh. The applicant"
+ },
+ "ignoapsch": {
+  "min_age": "60 years of age or older"
+ },
+ "cmdrsr": {},
+ "sgssds": {
+  "min_age": "5 years and above",
+  "edu_undergraduate": "The student's age should be 5 years and above. The student must be d"
+ },
+ "rfsstc": {
+  "category_st": "pplicant should belong to the Scheduled Tribe community. The applicant should be",
+  "edu_undergraduate": "The applicant should be a native of Rajasthan. The applicant shoul",
+  "edu_postgraduate": "nt should have completed Post-graduation with at least 50% marks from",
+  "edu_phd": "in India for pursuing a Ph.D. programme."
+ },
+ "afdm": {
+  "gender": "hould be the widow of an ex-serviceman of the rank of Havildar or below. The ass",
+  "min_age": "at least 18 years of age"
+ },
+ "skhausy": {},
+ "sbwwpm": {
+  "gender": "The applicant should be a native of Rajasthan. The applicant should eit"
+ },
+ "cpyr": {
+  "category_sc": "pplicant should belong to the Scheduled Caste (SC), Scheduled Tribe (ST), Other",
+  "category_st": "to the Scheduled Caste (SC), Scheduled Tribe (ST), Other Backward Class (OBC),",
+  "category_obc": "e (SC), Scheduled Tribe (ST), Other Backward Class (OBC), or General category. T",
+  "age": "age should be between 18 to 35 years",
+  "edu_undergraduate": "The applicant should be a native of Rajasthan. The applicant's age"
+ },
+ "dssmp": {
+  "edu_undergraduate": "The applicant should be a resident of Chhattisgarh. The applicant"
+ },
+ "cmeas": {
+  "category_ews": "he student must belong to the Economically Weaker Section (EWS) as defined by th",
+  "category_minorities": "o students from marginalized, minority communities and specially abled categorie",
+  "edu_undergraduate": "The student must be a domicile of the Sikkim state. The studen"
+ },
+ "uspy": {
+  "edu_undergraduate": "The student must be from a family of weavers who are members o",
+  "edu_postgraduate": "f Engineering/Medical/CA/MBA course in any government college. More th"
+ },
+ "bpsyc": {},
+ "pdbftcws": {
+  "edu_undergraduate": "er: The applicant should be a resident of Sikkim. The applicant should"
+ },
+ "cmdps-sikkim": {
+  "gender": "r the scheme. The applicant should belong to Below Poverty Line (BPL) household."
+ },
+ "skbhcs": {
+  "edu_diploma": "ter admission in college/polytechnic or other course for engineering o"
+ },
+ "vbsy": {
+  "min_age": "60 years or older"
+ },
+ "psw": {
+  "income_limit": "annual income should not exceed ₹1.5 lakh",
+  "gender": "The applicant should be a domicile of the Dadra & Nagar Haveli and D"
+ },
+ "aspie": {
+  "category_st": "eficiary should belong to the Tribal community. The beneficiary should be Unempl"
+ },
+ "postmsc": {
+  "income_limit": "annual income should not exceed ₹2.50 lakh",
+  "edu_10th": "udent should have passed Matriculation/Higher Secondary or equivalent",
+  "edu_12th": "ave passed Matriculation/Higher Secondary or equivalent examination fr"
+ },
+ "postmsobcandebc": {
+  "income_limit": "income combined with the income of their parents/guardians does not exceed ₹2.50 lakhs",
+  "edu_10th": "y of all recognised post-matriculation or post-secondary courses pursu",
+  "edu_12th": "sed the Matriculation or higher secondary or any higher examination of",
+  "edu_diploma": "or Technical certificate/diploma/degree courses will be awarded schola",
+  "edu_undergraduate": "The scholarships will be open to Indian nationals belonging to OBCs",
+  "edu_postgraduate": "ships. Students pursuing Post-graduate courses in medicine will be eli",
+  "edu_vocational": "dary, Diploma, long-term Vocational Training Certificate, Graduate, Po"
+ },
+ "dccbfwe": {
+  "gender": "a resident of Tamil Nadu. The beneficiary should be a woman entrepreneur."
+ },
+ "esspulodd": {
+  "category_sc": "The applicant shall belong to SC/ST, SMF, and BPL Families. The applicant must h",
+  "category_st": "applicant shall belong to SC/ST, SMF, and BPL Families. The applicant must have"
+ },
+ "pcardbpt": {},
+ "pmsobcandebc": {
+  "income_limit": "income from all sources does not exceed ₹2,50,000",
+  "category_sc": "NT (who are not covered under SC, ST, or OBC) categories through a valid certifi",
+  "category_st": "who are not covered under SC, ST, or OBC) categories through a valid certificate",
+  "category_obc": "hould belong to either of the OBC, EBC, or DNT (who are not covered under SC, ST",
+  "edu_10th": "fits under any other pre-matric scholarship scheme. Only two boys of t",
+  "edu_undergraduate": "Scholarship awards will be sanctioned in the case of students whose p"
+ },
+ "fesfpc": {
+  "income_limit": "family income should not exceed ₹1,00,000",
+  "category_st": "t Backward Classes (MBC), and Denotified Communities (DNC). The beneficiary shou",
+  "category_obc": "eficiary should belong to the Backward Classes (BC), Most Backward Classes (MBC)",
+  "edu_undergraduate": "The beneficiary should be a student. The beneficiary should be a res"
+ },
+ "ipszed": {},
+ "pcardfpd": {},
+ "atbs": {
+  "category_st": "d belong to the Adi Dravidar/ Tribal/ Adi Dravidar Converted to Christianity com",
+  "category_minorities": "al/ Adi Dravidar Converted to Christianity communities.",
+  "edu_10th": "ciary should have passed 10th std., Public Examinations. The beneficia",
+  "edu_undergraduate": "The beneficiary should be a resident of Tamil Nadu. The beneficiary"
+ },
+ "ramprwaf": {},
+ "evrmnmasfdopwsii": {
+  "income_limit": "annual income of the family should not exceed ₹72,000",
+  "gender": "hould be the mother of a girl child. The annual income of the family should not",
+  "edu_diploma": "nized open university. A diploma holder from the Institution recognize",
+  "edu_undergraduate": "The applicant should be a Widow. The applicant should be the mothe"
+ },
+ "famdpwog": {
+  "income_limit": "income of the applicant should be less than ₹ 1,00,000",
+  "gender": "ranted for performing marriage up to two daughters only. Residence of a minimum",
+  "min_age": "above 18 years of age"
+ },
+ "fes": {
+  "category_st": "t Backward Classes (MBC), and Denotified Communities (DNC). The beneficiary shou",
+  "category_obc": "eficiary should belong to the Backward Classes (BC), Most Backward Classes (MBC)",
+  "edu_undergraduate": "The beneficiary should be a student. The beneficiary should be a res"
+ },
+ "fesftydpc": {
+  "income_limit": "family income should not exceed ₹1,00,000",
+  "category_obc": "eficiary should belong to the Backward Classes (BC), Most Backward Classes (MBC)",
+  "edu_diploma": "suing studying in 3 year Diploma courses in Government and Government",
+  "edu_undergraduate": "The beneficiary should be a student. The beneficiary should be a res"
+ },
+ "els-delhi": {
+  "income_limit": "annual income of parents/guardian should be below ₹5,00,000",
+  "category_sc": "the following target groups - Scheduled Caste, Scheduled Tribe, Other Backward C",
+  "category_st": "get groups - Scheduled Caste, Scheduled Tribe, Other Backward Class, Minority, P",
+  "category_obc": "duled Caste, Scheduled Tribe, Other Backward Class, Minority, Persons with Disab",
+  "category_minorities": "Tribe, Other Backward Class, Minority, Persons with Disability. The annual inco",
+  "edu_undergraduate": "The applicant must be a permanent resident of Delhi. The applica"
+ },
+ "dpswdwp": {
+  "income_limit": "annual income of the applicant should be less than ₹ 1,00,000",
+  "gender": "A woman who is a widow, divorced, separated, abandoned, deserted, or desti"
+ },
+ "dccbfpl": {},
+ "ddanwrasi": {
+  "gender": "applicant should be a widow. The bride (widow) should be 20 years or above in a",
+  "min_age": "20 years or above",
+  "max_age": "less than 40 years or above in age"
+ },
+ "fafps": {
+  "income_limit": "family income not exceeding INR 2 lakh",
+  "category_sc": "Applicant should belong to SC/ST/OBC/Minorities and in support thereof they a",
+  "category_st": "Applicant should belong to SC/ST/OBC/Minorities and in support thereof they are",
+  "category_obc": "licant should belong to SC/ST/OBC/Minorities and in support thereof they are req",
+  "category_minorities": "nt should belong to SC/ST/OBC/Minorities and in support thereof they are require",
+  "edu_undergraduate": "elhi. Application should be resident of Delhi and in support thereof h"
+ },
+ "atlfstp": {
+  "income_limit": "family income should not exceed ₹1,00,000",
+  "category_st": "ld belong to the Adi Dravidar/Tribal community. Beneficiary’s annual family inco"
+ },
+ "ecssl": {},
+ "dbwmwaaaw": {},
+ "klp": {
+  "income_limit": "parental income should not exceed ₹2,00,000",
+  "category_sc": "married girl belonging to the SC/ST/BC/EBC community. The applicant should be a",
+  "category_st": "ried girl belonging to the SC/ST/BC/EBC community. The applicant should be a res",
+  "category_obc": "irl belonging to the SC/ST/BC/EBC community. The applicant should be a resident"
+ },
+ "otfs-t": {
+  "category_st": "student should belong to the Scheduled Tribe (ST) community. The student should",
+  "edu_10th": "should have passed Class 10th (Madhyamik) for pre-12th courses or Clas",
+  "edu_12th": "10th (Madhyamik) for pre-12th courses or Class 12th (H.S level) for po",
+  "edu_undergraduate": "The student should be a domicile of Tripura. The student should"
+ },
+ "hpsitc": {
+  "category_st": "applicant should belong to a tribal community of Tripura. The applicant should"
+ },
+ "mssp-pws": {
+  "income_limit": "annual income of the family of the applicant should not exceed ₹1,00,000",
+  "age": "in the age group of 6 to 14 years",
+  "edu_undergraduate": "The applicant should be a resident of Tripura. The applicant shoul"
+ },
+ "bhsstg": {
+  "category_st": "a. The applicant should be an ST student studying in classes I to XII. The appli",
+  "edu_undergraduate": "plicant’s residence must be the resident of Tripura. The applicant sho"
+ },
+ "mgs": {
+  "income_limit": "annual income of the applicant in urban areas should not exceed Rs. 56,460",
+  "category_obc": "ghters of poor individuals of other backward classes (excluding minorities in ba"
+ },
+ "alaes": {
+  "edu_undergraduate": "bility is 40% and should be certified by Competent Authority of State"
+ },
+ "wbisps": {},
+ "bmsmewcs": {},
+ "lpsup": {},
+ "mfpffw": {
+  "gender": "permanent resident of Uttarakhand. The applicant must be either a Freedom Fighte"
+ },
+ "dbgmig": {
+  "gender": "should be residents of Uttarakhand or have been domiciled in the state for at le"
+ },
+ "mukhopadhyaystudentfunduk": {
+  "edu_undergraduate": "The applicant must be a student in need of financial support to"
+ },
+ "dduskky": {},
+ "mmsy-uk": {
+  "min_age": "at least 18 years of age",
+  "edu_undergraduate": "The applicant must be a native or permanent resident of Uttarakh"
+ },
+ "ppscholarshipuk": {
+  "edu_undergraduate": "The applicant must be a student. The applicant must be enrolled"
+ },
+ "kcsfellowshipuk": {
+  "edu_undergraduate": "The applicant must be a student. The applicant must be enrolled",
+  "edu_postgraduate": "n the second year of the M.Sc. (Agriculture) in Agronomy program at Go"
+ },
+ "stscss": {
+  "category_sc": "n individual belonging to the Scheduled Caste or Scheduled Tribe category and re",
+  "category_st": "ing to the Scheduled Caste or Scheduled Tribe category and residing in the mount"
+ },
+ "kgsuk": {
+  "category_st": "ium-Term (MT) and Short-Term (ST) loans under the Deendayal Upadhyaya Krishi Kal",
+  "gender": ". Preference will be given to female beneficiaries under this scheme. The applic"
+ },
+ "smamchcbfuk": {},
+ "icirma": {
+  "category_sc": ", one spouse must belong to a Scheduled Caste. In the case of an inter-religious"
+ },
+ "smamuk": {
+  "category_sc": "d in agricultural activities. SC/ST farmers, small and marginal farmers, and wom",
+  "category_st": "n agricultural activities. SC/ST farmers, small and marginal farmers, and women",
+  "gender": "all and marginal farmers, and women farmers (of all castes) are eligible for 50%"
+ },
+ "gsfmssg": {
+  "category_sc": "applicant must belong to the Scheduled Caste category. 3. The family’s total mo",
+  "age": "age must be between 18 and 45 years"
+ },
+ "chwdfhl": {},
+ "gpradpd": {},
+ "dmpy": {},
+ "ismpsspr": {},
+ "saipcar": {},
+ "avpv": {},
+ "saiprsd": {},
+ "sdbwaw": {},
+ "ms": {
+  "income_limit": "Family income of the beneficiary should not exceed ₹1,00,000"
+ },
+ "wpwb": {
+  "gender": "The beneficiary must be widow girl/woman. The bene"
+ },
+ "sgdtly": {},
+ "lbs-wb": {
+  "gender": "resident of West Bengal. The applicant should be a woman. The age of the applic",
+  "edu_undergraduate": "The applicant should be a resident of West Bengal. The applicant s"
+ },
+ "bmsmesgst": {},
+ "sdrfs": {},
+ "ismpsssd": {},
+ "bis": {},
+ "mgy": {
+  "income_limit": "family income of up to ₹6,00,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste category. The applicant should be"
+ },
+ "dfsbnsfdc": {
+  "income_limit": "family income should not exceed ₹3,00,000",
+  "category_sc": "applicant must belong to the Scheduled Caste (SC) community. The applicant must"
+ },
+ "bauuysdpd": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur. The shed must be located in a",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur. The shed must be located in a gov"
+ },
+ "isaltlcss": {},
+ "atesgephmesthrt3": {
+  "category_st": "eficiary should belong to the Scheduled Tribes. The individual farmer or farmer"
+ },
+ "bauuyadp": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur. The applicant must apply for a",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur. The applicant must apply for a pl"
+ },
+ "vky": {
+  "category_st": "Beneficiary must be from Tribal Category. Must belong to BPL group."
+ },
+ "bauuyzed": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur.The enterprise must be a manufa",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur.The enterprise must be a manufactu"
+ },
+ "bauuysme": {
+  "category_sc": "mall/Medium enterprise run by SC/ST entrepreneur. The enterprise must have succe",
+  "category_st": "l/Medium enterprise run by SC/ST entrepreneur. The enterprise must have successf"
+ },
+ "atesgephmschrt4": {
+  "category_sc": "eficiary should belong to the Scheduled Caste category. The individual farmer or"
+ },
+ "scuccocsc": {
+  "category_sc": "ve Act. The society must be a Scheduled Caste Savings and Credit Co-operative So"
+ },
+ "ttscandbc": {
+  "income_limit": "family income should be less than ₹2.5 lakhs",
+  "category_sc": "pplicant should belong to the Scheduled Caste or Backward Class category. 5. The",
+  "category_obc": "ong to the Scheduled Caste or Backward Class category. 5. The applicant's annual",
+  "gender": "a permanent resident of Haryana. 2. The applicant should be a widow, destitute w",
+  "age": "age should be between 14 and 45 years"
+ },
+ "sscssgi": {
+  "category_sc": "olarship will be given to all Scheduled Castes students who are studying in Gove",
+  "edu_diploma": "e studying in Government ITI's situated in Haryana State. The students",
+  "edu_undergraduate": "The Scholarship will be given to all Scheduled Castes students who"
+ },
+ "pmfmpe": {
+  "min_age": "above 18 years of age",
+  "edu_undergraduate": "Borrowers for PMFMPE can be: 1. Farmer Producer Organization (FPO) 2.",
+  "edu_postgraduate": "hould have undergraduate/postgraduate courses in food processing techn"
+ },
+ "day-nrlm": {
+  "gender": "racticing ‘Panchasutras’ i.e., Regular meetings; Regular savings; Regular inter-",
+  "edu_undergraduate": "SHGs should be in active existence at least for the last"
+ },
+ "cbssc-msy": {
+  "category_sc": "milies or women who belong to SC/ST/OBC categories as notified by the Central/St",
+  "category_st": "ies or women who belong to SC/ST/OBC categories as notified by the Central/State",
+  "category_obc": "or women who belong to SC/ST/OBC categories as notified by the Central/State Go",
+  "gender": "Applicant must be between 18 to 55 years of age. A",
+  "age": "18 to 55 years of age"
+ },
+ "kbpyy": {
+  "income_limit": "annual income not exceeding 2 lakh",
+  "category_sc": "o all categories like general/SC/ST/BPL/Women and Landless persons of Himachal P",
+  "category_st": "ll categories like general/SC/ST/BPL/Women and Landless persons of Himachal Prad"
+ },
+ "isdane": {
+  "max_age": "below 36 years",
+  "edu_undergraduate": "Pradesh. Applicants must be permanent residents of the state to be eli"
+ },
+ "kccy": {
+  "gender": "dent of Himachal Pradesh. The applicant must be a girl. The applicant must be a",
+  "edu_12th": "e a regular student of 10+2, academic, professional or technical cours",
+  "edu_undergraduate": "The applicant must be a resident of Himachal Pradesh. The applic",
+  "edu_postgraduate": "including undergraduate, postgraduate, and professional courses. The s"
+ },
+ "mmvenay": {
+  "income_limit": "family income from all sources does not exceed ₹3,00,000",
+  "gender": "sources does not exceed ₹3,00,000/-. The applicant should have at least 02 Bisw",
+  "min_age": "40 years or above"
+ },
+ "ignsap": {
+  "age": "18 to 79 years old"
+ },
+ "aficm": {
+  "max_age": "not exceed 50 years"
+ },
+ "mmky": {
+  "income_limit": "total income does not exceed ₹35,000",
+  "gender": "00/- per annum (excluding MNREGA income). Girl whose father is incapacitated or"
+ },
+ "ddusy": {
+  "edu_12th": "ational qualification of Class XII passed or its equivalent (10+2). T",
+  "edu_diploma": "ce if they hold a Degree/Diploma in Tourism & Hospitality, Information",
+  "edu_undergraduate": "desh. The applicant must be an unemployed individual. The applicant m"
+ },
+ "cmwrs": {},
+ "mvky": {
+  "edu_undergraduate": "The applicant should be a bonafide of Himachal Pradesh. The applic"
+ },
+ "iswc-atisis": {
+  "edu_undergraduate": "ility The applicant must be a tea plantation across all sizes The appl"
+ },
+ "srs": {},
+ "bns": {
+  "min_age": "18 years and more",
+  "max_age": "less than 18 years",
+  "edu_undergraduate": "The industry should be located in rural areas of Assam. This indu"
+ },
+ "sy": {
+  "min_age": "18 years of age or above"
+ },
+ "bsp": {},
+ "myuyb": {
+  "age": "aged between 18 and 50 years",
+  "edu_12th": "d have passed at least 10+2, Intermediate, ITI, Polytechnic Diploma, o",
+  "edu_diploma": "east 10+2, Intermediate, ITI, Polytechnic Diploma, or equivalent. The",
+  "edu_undergraduate": "The applicant must be a permanent resident of Bihar. The applica"
+ },
+ "fafmjkbocwwb": {},
+ "marry": {
+  "income_limit": "family income should be less than ₹4,00,000",
+  "category_minorities": "applicant should belong to a minority community (Muslim, Sikh, Christian, Buddh",
+  "age": "age should be between 18 and 50 years",
+  "edu_undergraduate": "The applicant should be a permanent resident of Bihar. The applica"
+ },
+ "isss-wid": {
+  "income_limit": "income of the applicant should be less than ₹ 75,000",
+  "gender": "plicant should be a destitute widow/divorced/deserted woman. The income of the a",
+  "gender_other": "d 79 years."
+ },
+ "ipsftsmppu": {},
+ "smaspg": {
+  "gender": "The applicant must be a female. The applicant must be",
+  "min_age": "18 years or above",
+  "edu_undergraduate": "The applicant must be a female. The applicant must be of marriag"
+ },
+ "sgeds": {},
+ "ipsftsvmu": {},
+ "ipsfsafmit": {},
+ "ipsftsame": {},
+ "cccsaw": {},
+ "ipstsaffs": {},
+ "ipstsaists": {},
+ "ipstasfpi": {},
+ "ipsfaci": {
+  "min_age": "above 18 years of age",
+  "edu_undergraduate": "The applicant should be associated with Cottage Industry. The appl"
+ },
+ "rgsry": {
+  "edu_undergraduate": "om time to time and must be located within the N. C. T. of Delhi, are"
+ },
+ "ksdcs": {
+  "edu_undergraduate": "The applicant must be a pass-out trainee/ex-trainee from a depar"
+ },
+ "jsbcpmss-3": {
+  "income_limit": "family income should not exceed ₹2,50,000",
+  "category_obc": "applicant must belong to the Other Backward Class category. The applicant must",
+  "edu_10th": ",000/- for Class 9th and 10th.",
+  "edu_undergraduate": "parents/guardians should be a native of Jharkhand. The applicant shoul"
+ },
+ "majjpy": {
+  "category_st": "e of the recognized primitive tribal groups: Asur, Birhor, Hill-Kharia, Korwa, M"
+ },
+ "jsstpmss": {
+  "income_limit": "annual income should not exceed ₹2,50,000",
+  "category_st": "d. The student belongs to the Scheduled Tribe category. The student's family ann",
+  "edu_10th": "hould be pursuing a post-matric course (Degree, Diploma, Certificate,",
+  "edu_12th": "iploma courses requiring Class 12 or higher qualifications. Group 3: P",
+  "edu_diploma": "t-matric course (Degree, Diploma, Certificate, or equivalent). The st",
+  "edu_undergraduate": "dent: The student should be a native of Jharkhand. The student belongs",
+  "edu_postgraduate": "p 1: Professional degree/postgraduate courses in institutions with A++",
+  "edu_vocational": "accreditation. Group 2: Vocational and diploma courses requiring Clas"
+ },
+ "ksyj": {
+  "min_age": "18 years or above"
+ },
+ "mmssyj": {
+  "category_sc": "elong to the Scheduled Tribe, Scheduled Caste, or Backward Class categories. The",
+  "category_st": "applicant must belong to the Scheduled Tribe, Scheduled Caste, or Backward Clas",
+  "category_obc": "ed Tribe, Scheduled Caste, or Backward Class categories. The applicant must be s"
+ },
+ "jsstpmss-2": {
+  "income_limit": "family income should not exceed ₹2,50,000",
+  "category_st": "applicant must belong to the Scheduled Tribe category. The applicant must be en",
+  "edu_10th": ",000/- for Class 9th and 10th.",
+  "edu_undergraduate": "parents/guardians should be a native of Jharkhand. The applicant shoul"
+ },
+ "tlsgmfdc": {
+  "income_limit": "income exceeding ₹1,20,000/- and up to ₹8,00,000",
+  "category_minorities": "applicant should belong to a minority religious community (Muslim, Christian, S",
+  "age": "age should be between 21 and 45 years"
+ },
+ "sssgbcdc": {
+  "income_limit": "family income of the applicant should not exceed ₹3,00,000",
+  "category_obc": "he Socially and Educationally Backward Classes (SEBC). The applicant should be b",
+  "edu_diploma": "sional course (degree or diploma). The applicant should intend to star",
+  "edu_undergraduate": "The applicant should be a resident of Gujarat. The applicant shoul"
+ },
+ "dcs-tl": {
+  "category_sc": "at. The applicant should be a scavenger/sanitation worker or a dependent of one."
+ },
+ "sbsdaadc": {
+  "income_limit": "family income should not exceed ₹3,00,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste (SC) category. The applicant shoul"
+ },
+ "rfds": {
+  "edu_undergraduate": "The applicant must be a member of a registered fisheries coopera"
+ },
+ "asekkmbmtsny": {
+  "category_st": "a village with a significant tribal population. The applicant village must have"
+ },
+ "iftsm": {
+  "income_limit": "Family Income: The family income from all sources should not exceed Rs. 2 lakhs",
+  "category_sc": "resident of Karnataka state. SC Community: The applicant must belong to the SC"
+ },
+ "pdos": {
+  "edu_12th": "in qualifying exams (PUC/12th class) for undergraduate courses. Standa",
+  "edu_undergraduate": "cy: The applicant should be a permanent resident of Karnataka state in",
+  "edu_postgraduate": "ourses, and 35 years for postgraduate and doctoral programs. Qualifyin",
+  "edu_phd": "ars for postgraduate and doctoral programs. Qualifying Marks: Candidat"
+ },
+ "ifticmc": {
+  "income_limit": "income of the couple should not exceed ₹5,00,000",
+  "category_sc": "e should be performed between Scheduled Caste and other communities. The income"
+ },
+ "iscwr": {
+  "category_sc": "he widow should belong to the Scheduled Caste community. There is no annual inco",
+  "gender": "The applicant should be a resident of Karnataka. The applicant should b"
+ },
+ "bys": {
+  "gender": "after her birth date. Girls shouldn’t engage in child labour. Benefits from the"
+ },
+ "ifticmcst": {
+  "income_limit": "annual income of the couple should be less than ₹5,00,000",
+  "category_sc": "partner should belong to the Scheduled Caste (SC) category. The marriage should",
+  "category_st": "e spouse should belong to the Scheduled Tribe (ST) community. Other spouse shoul"
+ },
+ "kssk": {
+  "income_limit": "family income should not exceed ₹30,000",
+  "gender": "p Group must have at least 10 female artisans to be eligible. The applicant shou"
+ },
+ "mj-fapm": {
+  "income_limit": "family income should not exceed ₹1,00,000"
+ },
+ "js-esdcv": {
+  "income_limit": "annual income of the family should not exceed ₹1,00,000"
+ },
+ "vstspdec": {
+  "gender_other": "The applicant should be a native and resident of Kerala State. The a",
+  "edu_diploma": "students pursuing Degree/Diploma/ PG courses from Open universities, D",
+  "edu_undergraduate": "The applicant should be a native and resident of Kerala State. The",
+  "edu_postgraduate": "pursuing Degree/Diploma/ PG courses from Open universities, Distance e"
+ },
+ "ag": {
+  "edu_undergraduate": "1. The applicant should be a permanent resident of the Kerala State."
+ },
+ "chms": {
+  "income_limit": "annual income should not exceed ₹4,50,000",
+  "category_minorities": "pplicant should belong to the Muslim, Latin, or Converted Christian community. T",
+  "gender": "ld be a native of Kerala. The applicant should be a girl student. The applicant",
+  "edu_undergraduate": "ty. The applicant should be a native of Kerala. The applicant should b"
+ },
+ "sstsppc": {
+  "gender_other": "The applicant should be Transgender. The applicant should be a residen",
+  "edu_diploma": "gender students pursuing Diploma level government-accredited courses a",
+  "edu_undergraduate": "The applicant should be Transgender. The applicant should be a res"
+ },
+ "mswr": {
+  "gender": "The applicant should be a resident of Kerala State. The applicant shou",
+  "age": "age group of 18 to 50 years"
+ },
+ "maynskfdc-h": {
+  "category_sc": "cant should be either a woman Safai Karamchari or a dependent daughter of Safai",
+  "gender": "nent resident of Haryana. The applicant should be a female. The applicant's age",
+  "age": "age should be between 18 and 55 years",
+  "edu_undergraduate": "The applicant should be a permanent resident of Haryana. The appli"
+ },
+ "msk": {
+  "income_limit": "annual income must not exceed ₹2,50,000",
+  "category_minorities": "he applicant must belong to a minority religious community (Hindu, Christian (al",
+  "edu_undergraduate": "The applicant must be a permanent resident of Kerala. The applic"
+ },
+ "ess": {},
+ "ibrs": {},
+ "msymc": {
+  "income_limit": "family income of applicant should not exceed ₹98,000",
+  "category_minorities": "he applicant should belong to Minority Community i.e. Muslims, Sikhs, Christians",
+  "gender": "e between 16 to 45 years. The applicant should be a woman. The applicant should",
+  "edu_undergraduate": "The applicant should be a permanent resident of Haryana. The age o",
+  "edu_vocational": "nt educational/technical/vocational qualifications/experience and back"
+ },
+ "gbshr": {
+  "income_limit": "family income should be up to ₹3,00,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste category. The applicant's annual f",
+  "age": "in the age group of 18 to 45 years"
+ },
+ "asha": {},
+ "tlnskfdch": {
+  "category_sc": "he applicant should be either Safai Karamchari or his/her dependent. Note 1: Per",
+  "age": "age should be between 18 and 55 years",
+  "edu_undergraduate": "The applicant should be a permanent resident of Haryana. The appli"
+ },
+ "tls-cl1mc": {
+  "income_limit": "family income of the applicant should not exceed ₹98,000",
+  "category_minorities": "applicant should belong to a minority community, i.e., Muslims, Sikhs, Christia"
+ },
+ "issspwd": {
+  "gender": "uld be a permanent resident of the Union Territory of Ladakh. The applicant shou",
+  "age": "age should be between 40 and 79 years"
+ },
+ "pseshsfdc": {
+  "income_limit": "family income should not exceed ₹1,80,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste Category. The applicant should bel"
+ },
+ "dfshsfdc": {
+  "income_limit": "family income should not exceed ₹1,80,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste Category. The applicant should bel"
+ },
+ "mapdbpl": {
+  "income_limit": "family income of the applicant should be below ₹18,000"
+ },
+ "aldspsl": {
+  "gender": "an. The applicant should not have remarried after separation or abandonment. The"
+ },
+ "mkyh": {
+  "income_limit": "family income upto ₹1,50,000",
+  "category_sc": "e applicant should be from a 'Scheduled Caste'. The applicant's annual family in",
+  "gender": "The applicant should be a female. The applicant should"
+ },
+ "tlscl2mc": {
+  "category_minorities": "applicant should belong to a minority community, i.e., Muslims, Sikhs, Christia"
+ },
+ "nssgbcdc": {
+  "income_limit": "annual income of the applicant's family should not exceed ₹3,00,000",
+  "category_obc": "a socially and educationally backward class. The total annual income of the app",
+  "gender": "class. The total annual income of the applicant's family should not exceed ₹3,00",
+  "age": "age should be between 21 and 45 years",
+  "edu_undergraduate": "e applicant's age should be between 21 and 45 years as on the date of"
+ },
+ "pfshsfdc": {
+  "income_limit": "family income should not exceed ₹1,80,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste Category. The applicant should bel"
+ },
+ "srshsfdc": {
+  "income_limit": "family income should not exceed ₹1,80,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste Category. The applicant should bel"
+ },
+ "pfs-hsfdc": {
+  "income_limit": "family income should not exceed ₹1,80,000",
+  "category_sc": "pplicant should belong to the Scheduled Caste Category. The applicant should bel"
+ },
+ "msynskfdc-h": {
+  "category_sc": "cant should be either a woman Safai Karamchari or a dependent daughter of Safai",
+  "gender": "nent resident of Haryana. The applicant should be a female. The applicant's age",
+  "age": "age should be between 18 and 55 years",
+  "edu_undergraduate": "The applicant should be a permanent resident of Haryana. The appli"
+ },
+ "hpmfd": {
+  "category_minorities": "Individuals belonging to minority communities (Sikhs, Muslims, Christians,",
+  "age": "in the age group of 18 years to 55 years"
+ },
+ "ttr": {
+  "gender": "h, J&K. Any individual women/ women entrepreneur (s)/ enterprise where women ent",
+  "age": "between the age of 18 to 35 years",
+  "edu_10th": "aving a qualification of 10th standard or above. Provided that CEO Mis",
+  "edu_undergraduate": "holding. Preference will be given to the categories of women entrepren"
+ },
+ "rpcs": {},
+ "oels": {
+  "category_minorities": "he student should belong to a minority community (Muslim, Christian, Jain, Buddh",
+  "edu_undergraduate": "The student should be a resident of Karnataka State. The student"
+ },
+ "kvy-k": {},
+ "sisnhe": {},
+ "tls": {
+  "income_limit": "Income should be below ₹98,000",
+  "age": "age should be between 18 and 50 years"
+ },
+ "msws": {
+  "edu_10th": "ational qualification of 10th pass and a bonafide certificate from the",
+  "edu_undergraduate": "es): The collective must be based in the village where the program is"
+ },
+ "pseeads": {},
+ "cmgta": {},
+ "ffes": {},
+ "cmmfi": {},
+ "imspesy": {
+  "gender": "The applicant's age should be 18 years or more. The appli"
+ },
+ "csusme-to": {
+  "income_limit": "annual income of the applicant and his family from all sources should not exceed ₹1,00,000",
+  "age": "aged between 21 to 50 years",
+  "edu_10th": "t should have passed the 10th class. The present annual income of the",
+  "edu_undergraduate": "y. The applicant should be a member of the AP Brahmin Welfare Coopera"
+ },
+ "swlhps": {},
+ "nkmds": {
+  "max_age": "below 21 years old"
+ },
+ "faaadp": {},
+ "ptstgk": {
+  "income_limit": "household income should be less than ₹40,000",
+  "category_sc": "he applicant should be from a Scheduled Caste. The applicant should be a residen",
+  "min_age": "18 years or above"
+ },
+ "kvdgssy": {
+  "category_sc": "The applicant should be from Scheduled Caste or should be a Nav-Buddhists. The",
+  "category_minorities": "uled Caste or should be a Nav-Buddhists. The applicant should be landless. The a"
+ },
+ "fatnukyv": {
+  "category_sc": "ride and groom must belong to Scheduled Castes (including Neo-Buddhists), Vimukt",
+  "category_st": "o-Buddhists), Vimukta Castes, Nomadic Tribes (including Dhangars and Vanjaris),",
+  "category_obc": "ars and Vanjaris), or Special Backward Classes.",
+  "category_minorities": "heduled Castes (including Neo-Buddhists), Vimukta Castes, Nomadic Tribes (includ",
+  "max_age": "less than 21 years of age"
+ },
+ "fawwrcw": {
+  "gender": "The applicant should be the widow or widower of a deceased construction wor"
+ },
+ "iamdp": {},
+ "sapwdpfaa": {
+  "income_limit": "income of the applicant from all sources should not exceed ₹ 15,000",
+  "max_age": "below 12 years of age"
+ },
+ "cmlh-prem": {
+  "gender": "30% of the seats are reserved for girl students. Girl students who do not get se",
+  "edu_undergraduate": "es: The applicant should be a Government school, a private school reco"
+ },
+ "dpmbocwwb": {},
+ "stsemstsmcupscviii": {
+  "category_st": "The applicant should be a tribal student of Meghalaya and belong to the Khas",
+  "edu_10th": "tudies in any recognized secondary school in Meghalaya.",
+  "edu_undergraduate": "The applicant should be a tribal student of Meghalaya and belong t"
+ },
+ "tmtsbg-pme": {
+  "edu_undergraduate": "The applicant should be a permanent resident of Meghalaya. The app",
+  "edu_vocational": "other than technical or vocational course. The course should be pursu"
+ },
+ "mms": {},
+ "atvs": {},
+ "fs": {
+  "category_sc": "ld belong to Scheduled Casts (SC)/ Scheduled Tribes (ST)/ Other Backward Classes",
+  "category_st": "long to Scheduled Casts (SC)/ Scheduled Tribes (ST)/ Other Backward Classes (OBC",
+  "category_obc": "(SC)/ Scheduled Tribes (ST)/ Other Backward Classes (OBC). He/ She should be p",
+  "edu_10th": "Indian government's Post Matric Scholarship for SC/ST students and oth",
+  "edu_undergraduate": "The applicant should be a citizen of India. The applicant should b"
+ },
+ "mabvs": {},
+ "mats": {
+  "edu_undergraduate": "uals: The applicant must be between 18 and 58 years of age. The applic"
+ },
+ "mpfs": {},
+ "mpdsc": {},
+ "cmhap": {
+  "income_limit": "annual income up to ₹1,00,000",
+  "category_ews": "pplicant should belong to the Economically Weaker Section (annual income up to ₹",
+  "min_age": "18 years of age or above"
+ },
+ "pmssts": {
+  "income_limit": "income from all sources should not exceed ₹2,50,000",
+  "category_st": "pplicant should belong to the Scheduled Tribes community. The applicant should b",
+  "edu_undergraduate": "ty. The applicant should be permanently settled in the state of Mizora",
+  "edu_phd": "om Class XI up to a Post-Doctoral Fellowship. The applicant’s parents’"
+ },
+ "pmssbscc": {
+  "income_limit": "income of the parents/guardians of the applicant (from all sources) should not exceed ₹2,50,000",
+  "category_sc": "The applicant must belong to Scheduled Caste. The income of the parents/guardia",
+  "edu_10th": "tudying either in 9th or 10th standard.",
+  "edu_undergraduate": "The applicant must be permanently settled in Mizoram. The applic"
+ },
+ "wsosdp": {
+  "min_age": "65 years or above"
+ },
+ "mpmssc": {
+  "income_limit": "income of the parents/guardians of the applicant (from all sources) should not exceed ₹2,50,000",
+  "category_sc": "The applicant must belong to Scheduled Caste. The income of the parents/guardia",
+  "edu_undergraduate": "The applicant must be permanently settled in Mizoram. The applic",
+  "edu_phd": "n 11th Standard and Post-Doctoral Fellowship."
+ },
+ "mbkhhs": {},
+ "stssts": {
+  "income_limit": "annual income of the applicant’s parents from all sources must not exceed ₹6 lakhs",
+  "category_st": "pplicant should belong to the Scheduled Tribe Community. The annual income of th",
+  "edu_diploma": ". The applicant pursuing Diploma/Degree/Post Graduated/ course in Engi",
+  "edu_undergraduate": "he following criteria to be eligible for this Scholarship: The applica",
+  "edu_postgraduate": "pursuing Diploma/Degree/Post Graduated/ course in Engineering Institu"
+ },
+ "bbsy": {
+  "income_limit": "annual income of the family should not exceed Rs. 1,00,000"
+ },
+ "mbpy": {
+  "income_limit": "family income from all sources not exceeding ₹ 24,000",
+  "gender": "- The age of the applicant is 60 years and above. The applicant is a widow. Th",
+  "min_age": "60 years and above"
+ },
+ "hss": {},
+ "mmky-ntebwa": {},
+ "satptc": {
+  "gender_other": "ant should be the parents/ guardian of the transgender child. The child must be",
+  "max_age": "under 18 years of age"
+ },
+ "gssy": {
+  "income_limit": "income of the household from all sources should be less than ₹ 10,000",
+  "category_sc": "e / Living on Alms. d) Manual Scavengers. c) Particularly Vulnerable Tribal",
+  "category_st": ") Particularly Vulnerable Tribal Groups. f) Legally released Bonded Labourer",
+  "edu_undergraduate": "ried). 2) He/ She should be a Permanent Resident of Odisha. 3) The stu",
+  "edu_postgraduate": "en enrolled for graduate/postgraduate courses ((Non-Technical/Technica"
+ },
+ "sfcssuds": {},
+ "pmssc": {
+  "income_limit": "income from all sources does not exceed Rs. 2,50,000",
+  "category_sc": "hose candidates who belong to Scheduled Castes so specified about the State/Unio",
+  "edu_10th": "and who have passed the Matriculation or Higher Secondary or any high",
+  "edu_12th": "sed the Matriculation or Higher Secondary or any higher examination of",
+  "edu_undergraduate": "Secondary Education will be eligible. Scholarships will be paid to th",
+  "edu_postgraduate": "s or B.Com after B.A. or M.A. in one subject after M.A. in other subje"
+ },
+ "btus": {
+  "category_sc": "applicant should be from the Scheduled Caste category. The annual income of the"
+ },
+ "egsdcppbocwwb": {
+  "income_limit": "income of ₹15,000/- or below"
+ },
+ "ssds-punjab": {
+  "edu_undergraduate": "on. The scholarship will be provided to each student with disability f"
+ },
+ "fwpspbocwwb": {
+  "income_limit": "income of ₹15,000/- or below",
+  "gender": "For Registration as a Building/ Construction Worker: The a"
+ },
+ "syss": {
+  "income_limit": "family income must not exceed ₹8 lakhs",
+  "age": "18 to 45 years of age"
+ },
+ "sgatt": {
+  "gender": "nt should be from Below Poverty Line (BPL) family. The applicant should not be a",
+  "gender_other": "The applicant should be a resident of the state of Sikkim. The applicant sh",
+  "edu_undergraduate": "The applicant should be a resident of the state of Sikkim. The app"
+ },
+ "igndps-sikkim": {
+  "gender": "nt should have attained the age of 18 years and above. The applicant with a disa",
+  "min_age": "18 years and above"
+ },
+ "pddbftcw": {
+  "edu_undergraduate": "er: The applicant should be a resident of Sikkim. The applicant should"
+ },
+ "hrs": {},
+ "sms": {
+  "income_limit": "income of the Parents shall not exceed ₹2,00,000",
+  "category_minorities": "ied girl should belong to the minority community. 2. The unmarried girl should b",
+  "gender": "on or after October 2, 2014. 5. The combined income of the Parents shall not exc",
+  "min_age": "completed 18 years of age"
+ },
+ "mssp-vm": {
+  "income_limit": "annual income of the family of the applicant should not exceed ₹1,00,000",
+  "gender": "e a resident of Tripura. The annual income of the family of the applicant should",
+  "age": "in the age group of 6 to 14 years",
+  "edu_undergraduate": "The applicant should be a resident of Tripura. The annual income o"
+ },
+ "da-60ada": {
+  "min_age": "10 years and above"
+ },
+ "ttfacfar-2022": {
+  "category_st": "nd organizations belonging to Scheduled Tribes. Both governmental and non-gover"
+ },
+ "ngin": {
+  "edu_diploma": "e a technical institute, polytechnic institute, or a government genera",
+  "edu_undergraduate": "The applicant must be a technical institute, polytechnic institu"
+ },
+ "sgpd": {
+  "income_limit": "annual income of the applicant/applicant's guardian should not exceed Rs.60,000"
+ },
+ "wpup": {
+  "income_limit": "annual income of the applicant and her family from all sources should not exceed ₹ 2,00,000",
+  "gender": "The applicant should be a permanent resident of Ut",
+  "max_age": "less than 18 years"
+ },
+ "pmrs": {
+  "income_limit": "Annual income of the parents/guardians of the students upto ₹ 2 Lakh"
+ },
+ "fmtsfpwd": {}
+}

@@ -18,6 +18,7 @@ import catalogueRouter from './routes/catalogue.js';
 import eligibilityRouter from './routes/eligibility.js';
 import documentsRouter from './routes/documents.js';
 import conflictsRouter from './routes/conflicts.js';
+import advisorRouter from './routes/advisor.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -88,6 +89,7 @@ app.use('/api/documents', documentsRouter);
 
 // Scheme conflict engine — official-rule-driven mutual-exclusion detection.
 app.use('/api/conflicts', conflictsRouter);
+app.use('/api/advisor', advisorRouter);
 
 // Endpoint to understand natural language or partial profile using Groq
 app.post('/api/analyze-user', async (req, res) => {
