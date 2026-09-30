@@ -70,7 +70,7 @@ export function templateExplanation(advice, lang = 'en') {
   parts.push(hi ? `${r.name_hi} के तहत ${rupee(f.coveredByScheme)} तक की सहायता मिल सकती है।` : `${r.name} can support up to ${rupee(f.coveredByScheme)} of your ${rupee(f.projectCost)} project.`);
   if (f.grant) parts.push(hi ? `सरकारी अनुदान/सब्सिडी: ${rupee(f.grant.amount)}।` : `Government subsidy/grant: ${rupee(f.grant.amount)}.`);
   if (f.loanPrincipal > 0) parts.push(hi ? `ऋण: ${rupee(f.loanPrincipal)}।` : `Loan: ${rupee(f.loanPrincipal)}.`);
-  if (r.loan?.emi != null) parts.push(hi ? `${r.loan.tenureMonths} महीनों के लिए मासिक ईएमआई लगभग ${rupee(r.loan.emi)} (दर ${r.loan.rate.label})।` : `Monthly EMI about ${rupee(r.loan.emi)} over ${r.loan.tenureMonths} months (rate ${r.loan.rate.label}).`);
+  if (r.loan?.emi != null) parts.push(hi ? `${r.loan.tenureMonths} महीनों के लिए मासिक ईएमआई लगभग ${rupee(r.loan.emi)} (दर ${r.loan.rate.labelHi})।` : `Monthly EMI about ${rupee(r.loan.emi)} over ${r.loan.tenureMonths} months (rate ${r.loan.rate.label}).`);
   if (f.ownFundsNeeded > 0) parts.push(hi ? `आपको अपने पास से ${rupee(f.ownFundsNeeded)} लगाने होंगे।` : `You would put in ${rupee(f.ownFundsNeeded)} of your own money.`);
   const cautions = [...new Set([...r.flags, ...advice.assumptions])].map((c) => sentence(c, null, lang)).filter(Boolean);
   const steps = [];
@@ -127,7 +127,7 @@ function payloadFor(advice, lang) {
   const slim = (p) => p && ({
     name: lang === 'hi' ? p.name_hi : p.name,
     eligibility_status: p.eligibility_status, eligibility_uncertain: p.eligibility_uncertain,
-    funding: p.funding, loan: p.loan && { ...p.loan, rate: p.loan.rate && { label: p.loan.rate.label, basis: p.loan.rate.basis, isEstimate: p.loan.rate.isEstimate } },
+    funding: p.funding, loan: p.loan && { ...p.loan, rate: p.loan.rate && { label: lang === 'hi' ? p.loan.rate.labelHi : p.loan.rate.label, basis: lang === 'hi' ? p.loan.rate.basisHi : p.loan.rate.basis, isEstimate: p.loan.rate.isEstimate } },
     affordability: p.affordability, government_benefit: p.governmentBenefit,
     missing_documents: p.missing_documents, cautions: p.flags,
   });
@@ -137,7 +137,7 @@ function payloadFor(advice, lang) {
     recommended: slim(advice.recommended),
     alternatives: advice.alternatives.map((a) => ({ name: lang === 'hi' ? a.name_hi : a.name, why_not_top: a.whyNotTop, government_benefit: a.governmentBenefit })),
     blocked: advice.blocked.map((b) => ({ name: b.name, problems: b.problems })),
-    enablers: advice.enablers.map((e) => e.text),
+    enablers: advice.enablers.map((e) => (lang === 'hi' ? e.text_hi : e.text)),
     assumptions: advice.assumptions,
   };
 }

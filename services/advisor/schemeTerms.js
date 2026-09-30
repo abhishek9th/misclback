@@ -104,7 +104,10 @@ export const CURATED_TERMS = {
 
 // Schemes that don't hand out money themselves but can make a loan easier.
 export const ENABLERS = {
-  scheme_cgtmse: 'Collateral-free credit guarantee — ask the lender whether your loan can be covered by CGTMSE so you do not need to pledge security.',
+  scheme_cgtmse: {
+    en: 'Collateral-free credit guarantee — ask the lender whether your loan can be covered by CGTMSE so you do not need to pledge security.',
+    hi: 'बिना गिरवी के क्रेडिट गारंटी — ऋणदाता से पूछें कि क्या आपका ऋण CGTMSE द्वारा कवर हो सकता है, ताकि आपको कोई संपत्ति गिरवी न रखनी पड़े।',
+  },
 };
 
 const isSpecial = (t, profile) =>
@@ -142,20 +145,26 @@ export function resolveTerms(schemeId, ctx) {
 }
 
 // The interest rate to compute with, or null when it cannot honestly be known.
-// Returns { value, isEstimate, label, basis }.
+// Returns { value, isEstimate, label, labelHi, basis, basisHi } — every user-visible string in
+// English and Hindi so the UI never mixes languages.
 export function pickRate(rate, { gender, quotedRate }) {
   if (!rate) return null;
-  if (rate.kind === 'fixed') return { value: rate.value, isEstimate: false, label: `${rate.value}%`, basis: 'scheme rate' };
+  if (rate.kind === 'fixed') return { value: rate.value, isEstimate: false, label: `${rate.value}%`, labelHi: `${rate.value}%`, basis: 'scheme rate', basisHi: 'योजना की दर' };
   if (rate.kind === 'by_gender') {
     const v = gender === 'female' ? rate.female : rate.other;
-    return { value: v, isEstimate: false, label: `${v}%`, basis: gender === 'female' ? 'scheme rate for women' : 'scheme rate' };
+    const w = gender === 'female';
+    return { value: v, isEstimate: false, label: `${v}%`, labelHi: `${v}%`, basis: w ? 'scheme rate for women' : 'scheme rate', basisHi: w ? 'महिलाओं के लिए योजना की दर' : 'योजना की दर' };
   }
   if (rate.kind === 'range') {
     const mid = (rate.min + rate.max) / 2;
-    return { value: mid, isEstimate: true, label: `~${mid}% (range ${rate.min}%–${rate.max}%)`, basis: 'midpoint of the published range — the lender sets the final rate' };
+    return {
+      value: mid, isEstimate: true,
+      label: `~${mid}% (range ${rate.min}%–${rate.max}%)`, labelHi: `~${mid}% (सीमा ${rate.min}%–${rate.max}%)`,
+      basis: 'midpoint of the published range — the lender sets the final rate', basisHi: 'प्रकाशित सीमा का मध्य मान — अंतिम दर ऋणदाता तय करता है',
+    };
   }
   // 'unspecified': only the user's own bank quote may be used.
-  if (Number.isFinite(quotedRate)) return { value: quotedRate, isEstimate: false, label: `${quotedRate}%`, basis: 'the rate you told us your bank quoted' };
+  if (Number.isFinite(quotedRate)) return { value: quotedRate, isEstimate: false, label: `${quotedRate}%`, labelHi: `${quotedRate}%`, basis: 'the rate you told us your bank quoted', basisHi: 'आपके द्वारा बताई गई बैंक की दर' };
   return null;
 }
 

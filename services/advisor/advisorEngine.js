@@ -221,7 +221,7 @@ export function buildAdvice({ situation, profile, curatedEvaluated, curatedSchem
   }
 
   const enablers = recommended && recommended.funding.loanPrincipal > 0
-    ? Object.entries(ENABLERS).filter(([id]) => (evById.get(id)?.bucket || 'x') !== 'not_eligible').map(([id, text]) => ({ scheme_id: id, name: schemeById.get(id)?.name || id, text }))
+    ? Object.entries(ENABLERS).filter(([id]) => (evById.get(id)?.bucket || 'x') !== 'not_eligible').map(([id, t]) => ({ scheme_id: id, name: schemeById.get(id)?.name || id, name_hi: schemeById.get(id)?.name_hi || schemeById.get(id)?.name || id, text: t.en, text_hi: t.hi }))
     : [];
 
   // ---- catalogue options (unverified, never recommended) --------------------
@@ -242,7 +242,7 @@ export function buildAdvice({ situation, profile, curatedEvaluated, curatedSchem
       states: row.states || [],
       loan_min: t.sizeMin, loan_max: t.sizeMax,
       fits_your_project: fits,
-      rate: rate ? { label: rate.label, isEstimate: rate.isEstimate } : null,
+      rate: rate ? { label: rate.label, labelHi: rate.labelHi, isEstimate: rate.isEstimate } : null,
       indicative_emi: c ? c.emi : null, tenureMonths: c ? tenure : null,
     };
   })
@@ -263,8 +263,7 @@ export function buildAdvice({ situation, profile, curatedEvaluated, curatedSchem
   }
 
   const assumptions = ['income_not_projected', 'terms_can_change', 'lender_decides_final'];
-  if (recommended?.flags.includes('tenure_assumed')) assumptions.push('tenure_assumed');
-  if (recommended?.flags.includes('rate_estimated')) assumptions.push('rate_estimated');
+  // (tenure_assumed / rate_estimated are already shown as per-plan flags — not repeated here.)
 
   return {
     situation,
