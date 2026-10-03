@@ -1,7 +1,7 @@
 /**
  * Extends the Application Readiness & Document Checker's structured
  * requirement data (public.scheme_requirements) from PMEGP-only to every
- * scheme in SchemeSetu's own curated catalogue (src/data/schemes.js).
+ * scheme in SchemeSahayak's own curated catalogue (src/data/schemes.js).
  *
  * SOURCE OF TRUTH: every requirement row generated here is DERIVED from
  * fields already present on that scheme's own object in schemes.js
@@ -169,7 +169,7 @@ function buildRequirementsForScheme(scheme) {
     push({
       requirement_key: 'special_eligibility',
       requirement_name: scheme.precondition,
-      description: 'SchemeSetu cannot check this from your profile — make sure it applies to you before you apply.',
+      description: 'SchemeSahayak cannot check this from your profile — make sure it applies to you before you apply.',
       requirement_type: 'eligibility',
       priority: 1,
       delay_risk: 'CRITICAL',

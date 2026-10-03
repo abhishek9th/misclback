@@ -1,4 +1,4 @@
-// One-off script: create a demo login account for SchemeSetu.
+// One-off script: create a demo login account for SchemeSahayak.
 // Bypasses the normal OTP + live-photo capture flow (service-role only) since
 // this is a fixed demo account, not a real registration. Safe to re-run —
 // it's idempotent (updates the password if the account already exists).

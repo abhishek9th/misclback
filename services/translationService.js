@@ -74,7 +74,7 @@ async function translateBatchOnce(texts, targetLang, sourceLang) {
 STRICT RULES:
 - Translate meaning naturally and formally, as a government portal would read in ${target}.
 - Keep it concise; do NOT add explanations or extra words.
-- Preserve exactly, without translating: numbers, digits, ₹ amounts, percentages, dates, emoji, URLs, and well-known acronyms/brand names such as PMEGP, PM, EMI, AI, PIB, KVIC, SC, ST, OBC, EWS, PwD, LGBTQ+, UPSC, NEET, WhatsApp, SchemeSetu.
+- Preserve exactly, without translating: numbers, digits, ₹ amounts, percentages, dates, emoji, URLs, and well-known acronyms/brand names such as PMEGP, PM, EMI, AI, PIB, KVIC, SC, ST, OBC, EWS, PwD, LGBTQ+, UPSC, NEET, WhatsApp, SchemeSahayak.
 - Do NOT translate text that is already in ${target}.
 - Return the SAME number of items, in the SAME order, matched by id.
 

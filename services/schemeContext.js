@@ -2,7 +2,7 @@ import { SCHEMES } from '../data/schemes.js';
 import { getSupabaseAdmin } from './supabaseAdmin.js';
 
 // Grounds the chatbot in real scheme data. Before the LLM answers, we look up
-// schemes relevant to the citizen's message — first in SchemeSetu's curated
+// schemes relevant to the citizen's message — first in SchemeSahayak's curated
 // catalogue, then in the scraped myscheme.gov.in catalogue — so it can name
 // them (with real figures) instead of answering only from model memory.
 
@@ -103,7 +103,7 @@ export async function buildSchemeContext(query) {
   }
   if (!curated.length && !catalogue.length) return '';
   return [
-    curated.length && `VERIFIED SchemeSetu schemes:\n${curated.join('\n')}`,
+    curated.length && `VERIFIED SchemeSahayak schemes:\n${curated.join('\n')}`,
     catalogue.length && `Other schemes from myscheme.gov.in (details unverified — say to confirm on the portal):\n${catalogue.join('\n')}`,
   ].filter(Boolean).join('\n\n');
 }

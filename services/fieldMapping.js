@@ -1,6 +1,6 @@
 // ============================================================================
 // Field-mapping engine (§9).
-// Maps government-portal field labels -> a known SchemeSetu source value.
+// Maps government-portal field labels -> a known SchemeSahayak source value.
 // Every auto-filled field carries its provenance (source), so the UI/audit can
 // always explain WHERE a value came from. AI may later help resolve unfamiliar
 // labels, but this engine never invents a value: an unmapped or empty field is

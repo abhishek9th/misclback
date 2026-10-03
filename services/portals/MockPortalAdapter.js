@@ -18,7 +18,7 @@ export class MockPortalAdapter extends PortalAdapter {
   constructor() {
     super({
       id: 'mock_scholarship',
-      name: 'SchemeSetu Demo Scholarship Portal',
+      name: 'SchemeSahayak Demo Scholarship Portal',
       authType: 'REGISTRATION_REQUIRED',
       integrationMode: 'MOCK',
       statusLookup: 'REFERENCE_LOOKUP',
@@ -34,7 +34,7 @@ export class MockPortalAdapter extends PortalAdapter {
       { type: 'AUTO', state: 'REGISTRATION_REQUIRED', event: 'ACCOUNT_STATE_DETECTED',
         detail: 'No existing portal account found — registration required' },
 
-      // Registration form auto-filled from the SchemeSetu profile.
+      // Registration form auto-filled from the SchemeSahayak profile.
       { type: 'AUTOFILL', state: 'REGISTERING', fields: ['full_name', 'email', 'phone'],
         event: 'REGISTRATION_FIELDS_POPULATED', detail: 'Registration form auto-filled from profile' },
 
@@ -88,8 +88,8 @@ export class MockPortalAdapter extends PortalAdapter {
         input: {
           type: 'CONSENT',
           title: 'Review & confirm submission', title_hi: 'समीक्षा करें और पुष्टि करें',
-          message: 'I have reviewed my application details and authorise SchemeSetu to submit this application.',
-          message_hi: 'मैंने अपने आवेदन विवरण की समीक्षा कर ली है और SchemeSetu को यह आवेदन जमा करने के लिए अधिकृत करता/करती हूँ।',
+          message: 'I have reviewed my application details and authorise SchemeSahayak to submit this application.',
+          message_hi: 'मैंने अपने आवेदन विवरण की समीक्षा कर ली है और SchemeSahayak को यह आवेदन जमा करने के लिए अधिकृत करता/करती हूँ।',
         },
         event: 'APPLICATION_REVIEWED', onComplete: { event: 'CONSENT_GIVEN', detail: 'User approved submission' } },
 

@@ -129,7 +129,7 @@ app.post('/api/analyze-user', async (req, res) => {
   }
 });
 
-// Suggests real government schemes beyond SchemeSetu's own structured catalogue
+// Suggests real government schemes beyond SchemeSahayak's own structured catalogue
 // (see userProfileService.suggestAdditionalSchemes for the honesty rules —
 // Groq never invents a scheme or its numbers, only names real ones it knows).
 app.post('/api/schemes/suggest', async (req, res) => {

@@ -15,7 +15,7 @@ import { SCHEME_META, CONFLICT_RULES } from '../data/schemeConflicts.js';
 // Map the stored scheme_applications.status (and any richer user-reported
 // status) to a canonical state the rules reason about.
 const STATUS_MAP = {
-  registered: 'SAVED',            // saved in SchemeSetu, not actually applied
+  registered: 'SAVED',            // saved in SchemeSahayak, not actually applied
   draft: 'SAVED',
   applied: 'SUBMITTED',
   submitted: 'SUBMITTED',

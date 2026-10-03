@@ -64,7 +64,7 @@ router.put('/', requireUser, async (req, res) => {
     Object.assign(patch, {
       aadhaar_ciphertext: enc.ciphertext, aadhaar_iv: enc.iv, aadhaar_tag: enc.tag,
       aadhaar_last4: digits.slice(-4),
-      // Storing/changing the number resets any prior verification — SchemeSetu
+      // Storing/changing the number resets any prior verification — SchemeSahayak
       // never claims a value is verified just because it was typed in (§14).
       aadhaar_verified: false, aadhaar_verified_at: null,
     });

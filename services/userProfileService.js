@@ -10,7 +10,7 @@ const getGroqClient = () => {
 
 const userProfileService = {
   // Suggests ADDITIONAL real, well-known Indian government schemes beyond
-  // SchemeSetu's small structured catalogue (src/data/schemes.js has ~20
+  // SchemeSahayak's small structured catalogue (src/data/schemes.js has ~20
   // verified entries — most real users' profiles narrow down to the same
   // 2-3 generic ones there). Groq draws on its general knowledge of widely
   // published schemes (PMEGP, PM Mudra, PM SVANidhi, Stand-Up India, NSP,
@@ -27,7 +27,7 @@ const userProfileService = {
       messages: [
         {
           role: 'system',
-          content: `You are SchemeSetu's scheme-discovery assistant. SchemeSetu's own verified database only has a small number of structured schemes, so the user may be missing other REAL, well-known Indian government schemes (central or state) that could match their profile.
+          content: `You are SchemeSahayak's scheme-discovery assistant. SchemeSahayak's own verified database only has a small number of structured schemes, so the user may be missing other REAL, well-known Indian government schemes (central or state) that could match their profile.
 
 Given the user's profile/criteria as JSON, suggest up to 6 REAL Indian government schemes (central or the relevant state) that plausibly match, which are NOT already in the "already_shown" list.
 
@@ -74,7 +74,7 @@ Return ONLY this JSON shape:
         messages: [
           {
             role: "system",
-            content: `You are SchemeSetu's helpful assistant for Indian Government welfare schemes (business, student/education, and skill/employment support).
+            content: `You are SchemeSahayak's helpful assistant for Indian Government welfare schemes (business, student/education, and skill/employment support).
 
 Your job has TWO parts on every turn:
 1. Directly ANSWER the citizen's typed question in a warm, clear, accurate way. If they ask what a scheme is, who is eligible, how to apply, what documents are needed, or which scheme fits their situation, answer it helpfully using well-known facts about Indian government schemes (PMEGP, PM Mudra, PM SVANidhi, Stand-Up India, National/Post-Matric Scholarships, PM Vishwakarma, PMKVY, etc.). If you are unsure of an exact figure, say so briefly and suggest checking the official portal — never invent specific numbers.
@@ -107,7 +107,7 @@ Return ONLY this valid JSON shape (reminder: "answer" must be in ${replyLanguage
 
 Merge new facts with currentProfile, preserving known values unless the citizen corrects them. Set shouldFilterSchemes true once the category is known (for business, also know the field; for student, also know the studentType) so the app can show matching schemes. "nextQuestion" may repeat the follow-up question you placed at the end of "answer" (or be empty). Current profile: ${JSON.stringify(currentProfile)}${schemeContext ? `
 
-RELEVANT SCHEMES FOR THIS QUESTION (real data from SchemeSetu's database — prefer these over your own memory, name the best-fitting one explicitly, and use ONLY the figures given here; do not add numbers that are not listed):
+RELEVANT SCHEMES FOR THIS QUESTION (real data from SchemeSahayak's database — prefer these over your own memory, name the best-fitting one explicitly, and use ONLY the figures given here; do not add numbers that are not listed):
 ${schemeContext}` : ''}`
           },
           { role: "user", content: queryText }

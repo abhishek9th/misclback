@@ -55,7 +55,7 @@ router.get('/:schemeId', requireUser, async (req, res) => {
 
     if (!schemeRequirements || schemeRequirements.length === 0) {
       return res.status(404).json({
-        error: 'SchemeSetu has not yet verified structured requirements for this scheme.',
+        error: 'SchemeSahayak has not yet verified structured requirements for this scheme.',
         code: 'REQUIREMENTS_NOT_AVAILABLE',
       });
     }

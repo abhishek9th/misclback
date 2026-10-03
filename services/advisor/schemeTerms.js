@@ -56,7 +56,7 @@ export const CURATED_TERMS = {
     sizeMin: 1000000, sizeMax: 10000000, // repo
     ownContributionPct: () => 10, // guideline
     grant: null,
-    rate: { kind: 'unspecified', note: 'Priced at the lender\'s base rate + a margin (MCLR + 3% as listed); the current MCLR is not known to SchemeSetu.' },
+    rate: { kind: 'unspecified', note: 'Priced at the lender\'s base rate + a margin (MCLR + 3% as listed); the current MCLR is not known to SchemeSahayak.' },
     sources: { size: 'repo', rate: 'repo', own: 'guideline' },
     verifyWithBank: ['own_contribution', 'rate'],
   },
@@ -70,7 +70,7 @@ export const CURATED_TERMS = {
     sources: { size: 'repo', rate: 'repo', grant: 'repo' },
     verifyWithBank: ['tenure', 'trade_eligibility'],
     note: 'For traditional artisans and craftspeople in the notified trades.',
-    selfConfirm: 'confirm_trade_eligibility', // SchemeSetu cannot check the applicant's trade
+    selfConfirm: 'confirm_trade_eligibility', // SchemeSahayak cannot check the applicant's trade
   },
   scheme_up_msme_swarozgar: {
     fundingType: 'loan_with_subsidy',

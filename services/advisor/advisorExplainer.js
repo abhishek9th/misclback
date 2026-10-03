@@ -26,7 +26,7 @@ const T = {
   emi_too_high_any_rate: { en: (d) => `Even at 0% interest the repayments would be more than the ${rupee(d)} a month that is comfortable for you.`, hi: (d) => `0% ब्याज पर भी किस्तें आपके लिए सुविधाजनक ${rupee(d)} प्रति माह से अधिक होंगी।` },
   emi_unaffordable: { en: () => 'The EMI would leave you with no cash after expenses.', hi: () => 'ईएमआई के बाद खर्चों के लिए नकद नहीं बचेगा।' },
   // flags
-  rate_unknown: { en: () => 'The interest rate is set by the bank, so SchemeSetu cannot calculate the EMI. Enter the rate your bank quotes to see it.', hi: () => 'ब्याज दर बैंक तय करता है, इसलिए ईएमआई की गणना नहीं हो सकती। बैंक द्वारा बताई गई दर डालकर देखें।' },
+  rate_unknown: { en: () => 'The interest rate is set by the bank, so SchemeSahayak cannot calculate the EMI. Enter the rate your bank quotes to see it.', hi: () => 'ब्याज दर बैंक तय करता है, इसलिए ईएमआई की गणना नहीं हो सकती। बैंक द्वारा बताई गई दर डालकर देखें।' },
   rate_estimated: { en: () => 'The rate shown is an estimate from the scheme\'s published range; the lender sets the final rate.', hi: () => 'दिखाई गई दर योजना की प्रकाशित सीमा से अनुमान है; अंतिम दर ऋणदाता तय करता है।' },
   tenure_assumed: { en: () => 'The repayment period is an assumption — change it above to see other EMIs.', hi: () => 'चुकौती अवधि एक मान्यता है — अन्य ईएमआई देखने के लिए इसे बदलें।' },
   grant_back_ended: { en: () => 'The subsidy is paid later, not upfront, so it is not deducted from your EMI.', hi: () => 'सब्सिडी बाद में मिलती है, शुरुआत में नहीं, इसलिए ईएमआई से घटाई नहीं गई है।' },
@@ -36,7 +36,7 @@ const T = {
   partial_cover: { en: () => 'Your project cost is above what this scheme can finance; you must fund the rest yourself.', hi: () => 'आपकी परियोजना लागत इस योजना की सीमा से अधिक है; शेष राशि आपको स्वयं जुटानी होगी।' },
   own_contribution_unspecified: { en: () => 'The bank may still ask for some contribution from you (margin money) — this is not specified in the scheme.', hi: () => 'बैंक आपसे कुछ अंशदान (मार्जिन मनी) माँग सकता है — यह योजना में निर्दिष्ट नहीं है।' },
   eligibility_unconfirmed: { en: () => 'Some of your profile details are missing, so your eligibility is not confirmed yet — complete your profile for a firmer answer.', hi: () => 'आपकी प्रोफ़ाइल की कुछ जानकारी अधूरी है, इसलिए पात्रता अभी पुष्ट नहीं है — पक्के उत्तर के लिए प्रोफ़ाइल पूरी करें।' },
-  confirm_trade_eligibility: { en: () => 'This scheme is only for traditional artisans in the notified trades — SchemeSetu cannot check that, so confirm it before relying on this option.', hi: () => 'यह योजना केवल अधिसूचित व्यवसायों के पारंपरिक कारीगरों के लिए है — SchemeSetu यह जाँच नहीं सकता, इसलिए भरोसा करने से पहले पुष्टि करें।' },
+  confirm_trade_eligibility: { en: () => 'This scheme is only for traditional artisans in the notified trades — SchemeSahayak cannot check that, so confirm it before relying on this option.', hi: () => 'यह योजना केवल अधिसूचित व्यवसायों के पारंपरिक कारीगरों के लिए है — SchemeSahayak यह जाँच नहीं सकता, इसलिए भरोसा करने से पहले पुष्टि करें।' },
   verify_terms: { en: () => 'Some terms come from scheme guidelines — confirm them with the bank or the official portal before committing.', hi: () => 'कुछ शर्तें योजना दिशानिर्देशों से ली गई हैं — प्रतिबद्ध होने से पहले बैंक/आधिकारिक पोर्टल से पुष्टि करें।' },
   // assumptions
   income_not_projected: { en: () => 'Affordability is checked against your CURRENT income only; we do not assume any future business income.', hi: () => 'वहन-क्षमता केवल आपकी वर्तमान आय से जाँची गई है; भविष्य की व्यवसाय आय नहीं मानी गई।' },
@@ -109,8 +109,8 @@ export function validateNumbers(texts, allowed) {
   return bad;
 }
 
-const SYSTEM_PROMPT = `You are SchemeSetu's financial explainer for Indian government funding schemes.
-You are given a JSON object containing a recommendation that has ALREADY been decided and fully calculated by SchemeSetu's engine.
+const SYSTEM_PROMPT = `You are SchemeSahayak's financial explainer for Indian government funding schemes.
+You are given a JSON object containing a recommendation that has ALREADY been decided and fully calculated by SchemeSahayak's engine.
 
 STRICT RULES:
 1. Do NOT change the recommendation, pick another scheme, or recalculate anything. Only explain it.
