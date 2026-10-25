@@ -63,8 +63,11 @@ export async function verifyAccessToken(token) {
 // verify with a real SMS before relying on it.
 // ---------------------------------------------------------------------------------------------
 const WIDGET_BASE = () => process.env.MSG91_WIDGET_API_BASE || 'https://control.msg91.com/api/v5/widget';
-const widgetId = () => process.env.MSG91_WIDGET_ID || process.env.VITE_MSG91_WIDGET_ID;
-const widgetToken = () => process.env.MSG91_WIDGET_TOKEN_AUTH || process.env.VITE_MSG91_TOKEN_AUTH;
+// The app uses its own widget (Widget Integration = Mobile). The website keeps the browser widget (VITE_* / MSG91_WIDGET_*).
+// MSG91's mobile flow has no captcha: it sends through /sendOtpMobile with widgetId + tokenAuth in the body, exactly like
+// MSG91's React Native SDK does.
+const widgetId = () => process.env.MSG91_APP_WIDGET_ID || process.env.MSG91_WIDGET_ID || process.env.VITE_MSG91_WIDGET_ID;
+const widgetToken = () => process.env.MSG91_APP_WIDGET_TOKEN_AUTH || process.env.MSG91_WIDGET_TOKEN_AUTH || process.env.VITE_MSG91_TOKEN_AUTH;
 
 export const otpWidgetConfigured = () => Boolean(widgetId() && widgetToken());
 
@@ -79,7 +82,7 @@ async function widgetCall(path, body) {
     res = await fetch(`${WIDGET_BASE()}/${path}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json', tokenAuth: widgetToken() },
-      body: JSON.stringify({ widgetId: widgetId(), ...body }),
+      body: JSON.stringify({ widgetId: widgetId(), tokenAuth: widgetToken(), ...body }),
       signal: AbortSignal.timeout(15000),
     });
   } catch {
@@ -96,8 +99,8 @@ async function widgetCall(path, body) {
   return data;
 }
 
-export const widgetSendOtp = (mobile) => widgetCall('sendOtp', { identifier: mobile });
-export const widgetRetryOtp = (reqId) => widgetCall('retryOtp', { reqId });
+export const widgetSendOtp = (mobile) => widgetCall('sendOtpMobile', { identifier: mobile });
+export const widgetRetryOtp = (reqId) => widgetCall('retryOtp', { reqId, retryChannel: 11 }); // 11 = SMS
 export const widgetVerifyOtp = (reqId, otp) => widgetCall('verifyOtp', { reqId, otp });
 
 // Small in-memory sliding-window limiter (resets on restart; enough to stop casual SMS bombing).
