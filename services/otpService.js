@@ -123,10 +123,15 @@ export function allowOtpAction(bucket, limit, windowMs, now = Date.now()) {
 // successful verify, hands out a short-lived HMAC proof for exactly that mobile; /otp-login requires it.
 import crypto from 'node:crypto';
 const reqMobile = new Map();
-export function rememberReq(reqId, mobile) {
+export function rememberReq(reqId, mobile, opts = {}) {
   if (!reqId) return;
-  reqMobile.set(String(reqId), { mobile, at: Date.now() });
+  reqMobile.set(String(reqId), { mobile, at: Date.now(), phone: Boolean(opts.phone) });
   if (reqMobile.size > 5000) for (const [k, v] of reqMobile) if (Date.now() - v.at > 20 * 60_000) reqMobile.delete(k);
+}
+/** True when the OTP was sent from the phone itself: the server then cannot be sure which number it went to. */
+export function isPhoneReq(reqId) {
+  const v = reqMobile.get(String(reqId));
+  return Boolean(v && v.phone);
 }
 export function mobileForReq(reqId) {
   const v = reqMobile.get(String(reqId));

@@ -1,6 +1,6 @@
 import express from 'express';
 import { getSupabaseAdmin } from '../services/supabaseAdmin.js';
-import { verifyAccessToken, normalizeMobile, widgetSendOtp, widgetRetryOtp, widgetVerifyOtp, allowOtpAction, rememberReq, mobileForReq, signProof, checkProof, proofsEnabled } from '../services/otpService.js';
+import { verifyAccessToken, normalizeMobile, widgetSendOtp, widgetRetryOtp, widgetVerifyOtp, allowOtpAction, rememberReq, mobileForReq, isPhoneReq, signProof, checkProof, proofsEnabled } from '../services/otpService.js';
 
 const router = express.Router();
 
@@ -283,6 +283,30 @@ router.post('/otp/send', async (req, res) => {
   } catch (err) { otpFail(res, err); }
 });
 
+// POST /api/auth/otp/phone-sent { mobile, reqId } -> { ok }
+// The app can ask MSG91 for the OTP itself (so the SMS request comes from the phone, not from this server's shared host
+// address). The server then only has to verify it. Because a phone could claim any number for a reqId, this is accepted
+// ONLY for numbers with no account yet (new sign-ups). Such a reqId never gets a sign-in proof, so it cannot be used to
+// log in to, or reset the password of, an existing account.
+router.post('/otp/phone-sent', async (req, res) => {
+  const mobile = normalizeMobile(req.body?.mobile);
+  const reqId = String(req.body?.reqId || '');
+  if (!mobile || !reqId) return fail(res, 'INVALID_INPUT', 'mobile and reqId are required');
+  if (!allowOtpAction('phone:ip:' + clientIp(req), 30, 3600_000)) return fail(res, 'RATE_LIMITED', 'Too many requests. Please wait a few minutes and try again.', 429);
+  let supabase;
+  try { supabase = getSupabaseAdmin(); } catch (err) { return fail(res, err.code || 'SUPABASE_NOT_CONFIGURED', 'Server is not configured', 503); }
+  try {
+    const { data, error } = await supabase.from('profiles').select('id').eq('phone', mobile).maybeSingle();
+    if (error) throw error;
+    if (data) return fail(res, 'MOBILE_REGISTERED', 'This number already has an account. Please sign in with your password.', 409);
+    rememberReq(reqId, mobile, { phone: true });
+    res.json({ ok: true });
+  } catch (err) {
+    console.error('phone-sent error:', err.message);
+    return fail(res, 'DB_ERROR', 'Something went wrong. Please try again.', 500);
+  }
+});
+
 router.post('/otp/retry', async (req, res) => {
   const reqId = String(req.body?.reqId || '');
   if (!reqId) return fail(res, 'INVALID_INPUT', 'reqId is required');
@@ -307,7 +331,7 @@ router.post('/otp/verify', async (req, res) => {
   try {
     const data = await widgetVerifyOtp(reqId, otp);
     const m = mobileForReq(reqId);
-    res.json({ ok: true, verificationToken: data.message, mobile: m, proof: m && proofsEnabled() ? signProof(m) : null });
+    res.json({ ok: true, verificationToken: data.message, mobile: m, proof: m && !isPhoneReq(reqId) && proofsEnabled() ? signProof(m) : null });
   } catch (err) { otpFail(res, err); }
 });
 
