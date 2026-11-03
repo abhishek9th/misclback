@@ -1,6 +1,6 @@
 import Groq from 'groq-sdk';
 import { getSupabaseAdmin } from './supabaseAdmin.js';
-import { inSector } from './catalogueMatcher.js';
+import { inSector, buildReadiness } from './catalogueMatcher.js';
 import { extractDocuments } from './eligibilityRules.js';
 import { scoreScheme, checkEligibility, GAP_LABEL, ELIGIBILITY_TEXT } from './recommender/scoring.js';
 import { BANDS } from './recommender/config.js';
@@ -452,6 +452,41 @@ function groupFamilies(sorted) {
   return [...out.values()];
 }
 
+// ---------------------------------------------------------------- personalised ordering
+async function personaliseOrder(schemes, profile, haveKeys) {
+  if (!schemes.length) return;
+  const { personalise, fromRules } = await import('./documentRequirements.js');
+  const rows = new Map();
+  try {
+    const { data } = await getSupabaseAdmin().from('scheme_document_requirements').select('slug,documents').in('slug', schemes.map((s) => s.slug));
+    for (const r of data || []) rows.set(r.slug, r.documents || []);
+  } catch { /* table not created: fall back to the rules below */ }
+  const tier = { exact: 2, group: 1, general: 0 };
+  for (const s of schemes) {
+    // eligibility: share of the scheme's saved criteria that the user's facts satisfy
+    const items = buildReadiness(s, profile);
+    const met = items.filter((i) => i.status === 'met').length;
+    const eligibility = items.length ? met / items.length : null;
+    // documents: share of the saved required documents (for this category/income) the user already holds
+    const docs = personalise(rows.get(s.slug) || fromRules({ documents_required: s.documents_text || '', income_limit: s.income_limit }).documents, profile);
+    const required = docs.filter((d) => d.status === 'required');
+    const heldN = required.filter((d) => d.key && haveKeys.has(d.key)).length;
+    const readiness = required.length ? heldN / required.length : null;
+    const parts = [eligibility, readiness].filter((v) => v !== null);
+    const personal = parts.length ? parts.reduce((a, b) => a + b, 0) / parts.length : 0.5;
+    s.personal_percent = Math.round(personal * 100);
+    s.eligibility_percent = eligibility === null ? null : Math.round(eligibility * 100);
+    s.readiness_percent = readiness === null ? null : Math.round(readiness * 100);
+    s.documents_held = heldN;
+    s.documents_required_count = required.length;
+    delete s.documents_text;
+  }
+  schemes.sort((a, b) => b.personal_percent - a.personal_percent
+    || (b.readiness_percent ?? -1) - (a.readiness_percent ?? -1)
+    || b.relevance_score - a.relevance_score
+    || (tier[b.match_level] ?? 0) - (tier[a.match_level] ?? 0));
+}
+
 // ---------------------------------------------------------------- stage 4 + public
 const memo = new Map();
 
@@ -471,15 +506,15 @@ const inflight = new Map();
 // Identical searches that arrive together (the page can fire the same request twice) share ONE run,
 // so they do not each spend tokens.
 export function aiSearch(params) {
-  const key = JSON.stringify([params.criteria, params.profile, params.query, params.answers, params.remembered, params.limit]);
+  const key = JSON.stringify([params.criteria, params.profile, params.query, params.answers, params.remembered, params.limit, params.haveDocs]);
   if (inflight.has(key)) return inflight.get(key);
   const p = aiSearchRun(params).finally(() => inflight.delete(key));
   inflight.set(key, p);
   return p;
 }
 
-async function aiSearchRun({ criteria = {}, profile = {}, query = '', answers = {}, remembered = null, limit = 30 }) {
-  const key = JSON.stringify([criteria, profile, query, answers, remembered, limit]);
+async function aiSearchRun({ criteria = {}, profile = {}, query = '', answers = {}, remembered = null, limit = 30, haveDocs = [] }) {
+  const key = JSON.stringify([criteria, profile, query, answers, remembered, limit, haveDocs]);
   const hit = memo.get(key);
   if (hit && Date.now() - hit.at < 10 * 60 * 1000) return hit.value;
 
@@ -534,14 +569,17 @@ async function aiSearchRun({ criteria = {}, profile = {}, query = '', answers = 
       to_verify: toVerify,
       benefit_summary: clip(benefits_text, 220) || null,
       documents: extractDocuments(documents_required || '').map((d) => d.label),
+      documents_text: documents_required || '',
       application_url: r.official_website || r.source_url || `https://www.myscheme.gov.in/schemes/${r.slug}`,
       last_checked_at: r.detail_scraped_at || null,
       ai_judged: Boolean(j),
     });
   });
 
-  const tier = { exact: 2, group: 1, general: 0 };
-  schemes.sort((a, b) => b.relevance_score - a.relevance_score || (tier[b.match_level] ?? 0) - (tier[a.match_level] ?? 0));
+  // PERSONALISED ORDER. The AI has already decided WHICH schemes are valid; now the stored data decides the
+  // order: how much of each scheme's saved eligibility the user meets, and how many of its saved required
+  // documents (for this user's category and income) they already hold. Most personal first.
+  await personaliseOrder(schemes, eff, new Set(haveDocs));
 
   const value = {
     ai: ai && judgedOk,

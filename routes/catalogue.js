@@ -159,7 +159,16 @@ router.post('/ai-search', requireUser, async (req, res) => {
       const p = prev?.extracted?.profile;
       if (p) remembered = Object.fromEntries(['state', 'district', 'category', 'gender', 'age', 'annual_income', 'landholding', 'business_type'].filter((k) => p[k] != null).map((k) => [k, p[k]]));
     } catch { /* table not created yet */ }
-    const result = await aiSearch({ criteria: safe, profile, query, answers, remembered, limit });
+    // Which standard documents the user already holds, so results can be ordered by personal readiness.
+    let haveDocs = [];
+    try {
+      const [{ data: up }, { data: av }] = await Promise.all([
+        supabase.from('user_documents').select('document_type').eq('user_id', req.user.id),
+        supabase.from('document_availability').select('document_type, status').eq('user_id', req.user.id),
+      ]);
+      haveDocs = [...new Set([...(up || []).map((d) => d.document_type), ...(av || []).filter((d) => ['uploaded', 'verified', 'available_online', 'available_physical'].includes(d.status)).map((d) => d.document_type)])].sort();
+    } catch { /* no documents known */ }
+    const result = await aiSearch({ criteria: safe, profile, query, answers, remembered, limit, haveDocs });
     const { extracted, ...out } = result;
     if (extracted) {
       try {
