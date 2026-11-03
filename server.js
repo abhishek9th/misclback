@@ -66,7 +66,7 @@ app.get('/api/health', async (req, res) => {
   } catch (err) {
     supabase = `error: ${err.message}`;
   }
-  res.json({ ok: true, supabase });
+  res.json({ ok: true, supabase, build: (process.env.RENDER_GIT_COMMIT || 'local').slice(0, 7) });
 });
 
 // Authentication: registration OTP (MSG91), user creation (Supabase Auth), login helpers.

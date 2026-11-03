@@ -311,6 +311,8 @@ export function retrieve(pool, plan, profile, criteria, limit) {
   for (const r of pool) {
     // Crop farming must not pull in livestock/poultry/fisheries schemes (that is the 'dairy_livestock' field).
     if (criteria.field === 'agriculture_allied' && SECTOR_NOT_NAME.agriculture_allied.test(r.name || '')) continue;
+    // Dairy/poultry/fisheries results must really be about livestock or fish, not general farming schemes.
+    if (criteria.field === 'dairy_livestock' && !inSector(r, 'dairy_livestock')) continue;
     let score = 0;
     for (const k of related) {
       if (r._hay_name.includes(k)) score += 6;
