@@ -86,6 +86,9 @@ async function loadAll() {
   return rows;
 }
 
+const SECTOR_NOT_NAME = {
+  agriculture_allied: /poultry|dairy|livestock|piggery|pig|fisher|aquacultur|animal husbandry|cattle|cow|gau|goat|sheep|apicultur|beekeep|honey|pashu|semen|hatchery|shrimp/i,
+};
 const has = (a) => Array.isArray(a) && a.length > 0;
 const overlap = (a, b) => has(a) && has(b) && a.some((x) => b.includes(x));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -211,6 +214,7 @@ Return ONLY JSON:
   },
   "follow_ups": [up to 3 {"key": one of "state|district|landholding|category|annual_income|age|gender|crop|investment_required|business_stage", "question_en": string, "question_hi": string} — ONLY facts that are missing AND would change which schemes apply]
 }
+Field meaning: flow_answers.field 'agriculture_allied' = crop farming, horticulture, irrigation, farm inputs and machinery ONLY; dairy, poultry, fisheries and other livestock belong to the separate field 'dairy_livestock', so do not include them for 'agriculture_allied' (and the reverse).
 When a crop is given, first work out its group and season; match schemes to that group, not to farming in general.
 Be broad on keywords (recall matters; a later step filters). Never invent scheme names.`;
 
@@ -305,6 +309,8 @@ export function retrieve(pool, plan, profile, criteria, limit) {
   const out = [];
   let excluded = 0;
   for (const r of pool) {
+    // Crop farming must not pull in livestock/poultry/fisheries schemes (that is the 'dairy_livestock' field).
+    if (criteria.field === 'agriculture_allied' && SECTOR_NOT_NAME.agriculture_allied.test(r.name || '')) continue;
     let score = 0;
     for (const k of related) {
       if (r._hay_name.includes(k)) score += 6;

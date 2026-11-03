@@ -16,6 +16,9 @@ const COLS = 'slug,name,short_description,level,states,benefit_types,scheme_type
 const SECTORS = {
   agriculture_allied: {
     audiences: ['farmer'],
+    // Dairy, poultry, fisheries and other livestock work is the separate 'dairy_livestock' field, so a scheme
+    // whose NAME is about them does not belong under crop farming.
+    notName: /poultry|dairy|livestock|piggery|pig|fisher|aquacultur|animal husbandry|cattle|cow|gau|goat|sheep|apicultur|beekeep|honey|pashu|semen|hatchery|shrimp/i,
     words: /agricultur|farm|kisan|crop|dairy|livestock|poultry|fisher|aquacultur|horticult|animal husbandry|cattle|sericultur|beekeep|apicultur|irrigation|seed|fertili|tractor|mandi|agri\b|agro/i,
   },
   dairy_livestock: {
@@ -91,6 +94,7 @@ export function inSector(row, sector) {
   const name = row.name || '';
   const desc = row.short_description || '';
   if (def.not && def.not.test(`${name} ${desc}`)) return false;
+  if (def.notName && def.notName.test(name)) return false;
   if (overlap(row.audiences, def.audiences)) return true;
   if (def.words.test(name)) return true; // title says it's about this sector
   // Otherwise the summary must be clearly about it (several sector terms), not a passing mention.
