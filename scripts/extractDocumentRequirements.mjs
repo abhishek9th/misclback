@@ -16,6 +16,7 @@ import { extractWithAI, saveRequirements } from '../services/documentRequirement
 const arg = (n) => { const i = process.argv.indexOf(`--${n}`); return i > -1 ? process.argv[i + 1] : null; };
 const limit = Number(arg('limit') || 50);
 const onlySlug = arg('slug');
+const WORKERS = Math.max(1, Math.min(6, Number(arg('workers') || 3)));
 const sb = getSupabaseAdmin();
 
 let rows;
@@ -39,19 +40,24 @@ if (onlySlug) {
   }
 }
 
-console.log(`Extracting ${rows.length} scheme(s)…`);
-let ok = 0; let failed = 0;
-for (const row of rows) {
-  try {
-    const r = await extractWithAI(row);
-    await saveRequirements(row.slug, r, 'ai');
-    ok += 1;
-    console.log(`  ✓ ${row.slug} (${r.documents.length} documents)`);
-  } catch (e) {
-    failed += 1;
-    console.error(`  ✗ ${row.slug}: ${e.message}`);
-    if (/daily limit/i.test(e.message)) { console.error('All Groq keys are over the daily limit — stop and rerun tomorrow.'); break; }
+console.log(`Extracting ${rows.length} scheme(s) with ${WORKERS} workers…`);
+let ok = 0; let failed = 0; let stop = false; let next = 0;
+async function worker() {
+  while (!stop) {
+    const row = rows[next++];
+    if (!row) return;
+    try {
+      const r = await extractWithAI(row);
+      await saveRequirements(row.slug, r, 'ai');
+      ok += 1;
+      if (ok % 10 === 0) console.log(`  … ${ok} stored`);
+    } catch (e) {
+      failed += 1;
+      console.error(`  ✗ ${row.slug}: ${String(e.message).slice(0, 120)}`);
+      if (/daily limit/i.test(e.message)) { stop = true; console.error('All AI keys are over the daily limit — stopping; rerun later, it resumes.'); }
+    }
   }
 }
+await Promise.all(Array.from({ length: WORKERS }, worker));
 console.log(`Done: ${ok} stored, ${failed} failed.`);
 process.exit(0);

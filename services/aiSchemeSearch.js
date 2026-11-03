@@ -457,9 +457,10 @@ async function personaliseOrder(schemes, profile, haveKeys) {
   if (!schemes.length) return;
   const { personalise, fromRules } = await import('./documentRequirements.js');
   const rows = new Map();
+  const sources = new Map();
   try {
-    const { data } = await getSupabaseAdmin().from('scheme_document_requirements').select('slug,documents').in('slug', schemes.map((s) => s.slug));
-    for (const r of data || []) rows.set(r.slug, r.documents || []);
+    const { data } = await getSupabaseAdmin().from('scheme_document_requirements').select('slug,documents,source').in('slug', schemes.map((s) => s.slug));
+    for (const r of data || []) { rows.set(r.slug, r.documents || []); sources.set(r.slug, r.source || 'rules'); }
   } catch { /* table not created: fall back to the rules below */ }
   const tier = { exact: 2, group: 1, general: 0 };
   for (const s of schemes) {
@@ -477,6 +478,8 @@ async function personaliseOrder(schemes, profile, haveKeys) {
     s.personal_percent = Math.round(personal * 100);
     s.eligibility_percent = eligibility === null ? null : Math.round(eligibility * 100);
     s.readiness_percent = readiness === null ? null : Math.round(readiness * 100);
+    // 'ai' = documents read scheme-by-scheme; anything else is a rougher estimate from keywords
+    s.readiness_estimate = (sources.get(s.slug) || 'rules') !== 'ai';
     s.documents_held = heldN;
     s.documents_required_count = required.length;
     delete s.documents_text;

@@ -31,30 +31,37 @@ const plain = (v) => {
   return (Array.isArray(x) ? x : [x]).map((y) => String(y ?? '')).join('\n');
 };
 
+// Papers outside our standard list (e.g. "Copy of insurance of the cow") still get a stable key so a user can
+// upload them and the scheme's readiness can recognise them.
+const customKey = (name) => `doc_${String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '').slice(0, 48)}`;
+
 function clean(out) {
   const docs = (Array.isArray(out?.documents) ? out.documents : []).slice(0, 30).map((d) => {
     const at = (Array.isArray(d.applies_to) ? d.applies_to : ['all']).map((x) => String(x).toLowerCase()).filter((x) => x === 'all' || CATEGORIES.includes(x));
     const num = (v) => (v === null || v === undefined || v === '' || Number.isNaN(Number(v)) ? null : Number(v));
     const name = clip(d.name, 120);
     return {
-      name, key: docKeyFor(name), applies_to: at.length ? at : ['all'],
+      name, key: docKeyFor(name) || customKey(name), applies_to: at.length ? at : ['all'],
       income: { max: num(d.income?.max), min: num(d.income?.min) },
       required: d.required === 'conditional' ? 'conditional' : 'always',
       condition: d.condition ? clip(d.condition, 160) : null, evidence: clip(d.evidence, 160),
     };
-  }).filter((d) => d.name);
+  }).filter((d) => d.name && !/^(any )?other (applicable )?documents?|as (may be )?(applicable|required)$/i.test(d.name));
   return { documents: docs, category_notes: (Array.isArray(out?.category_notes) ? out.category_notes : []).slice(0, 5).map((x) => clip(x, 200)) };
 }
 
 // AI extraction for ONE scheme. Used only by the batch script (scripts/extractDocumentRequirements.mjs)
 // that fills the database ahead of time; it is never called while a user is browsing.
 export async function extractWithAI(row) {
+  // Only the parts of the text that can name a document, to keep each call small.
+  const sentences = (t) => plain(t).replace(/\s+/g, ' ').split(/(?<=[.;])\s+/);
+  const about = /certificate|proof|document|copy of|photo|aadhaar|pan\b|passbook|card|report|affidavit|income|caste|category|domicile|marksheet|registration|land|record/i;
   const text = [
-    `DOCUMENTS REQUIRED:\n${clip(plain(row.documents_required), 2500)}`,
-    `ELIGIBILITY:\n${clip(plain(row.eligibility_text), 2500)}`,
-    `HOW TO APPLY:\n${clip(plain(row.application_process), 1500)}`,
+    `DOCUMENTS REQUIRED:\n${clip(plain(row.documents_required), 1600)}`,
+    `ELIGIBILITY (relevant lines):\n${clip(sentences(row.eligibility_text).filter((x) => about.test(x)).join(' '), 800)}`,
+    `HOW TO APPLY (relevant lines):\n${clip(sentences(row.application_process).filter((x) => about.test(x)).join(' '), 500)}`,
   ].join('\n\n');
-  return clean(await aiJson('plan', SYSTEM, JSON.stringify({ scheme: row.name, text }), 2500));
+  return clean(await aiJson('fast', SYSTEM, JSON.stringify({ scheme: row.name, text }), 1800));
 }
 
 export async function saveRequirements(slug, result, source = 'ai') {
