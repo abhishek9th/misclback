@@ -277,7 +277,11 @@ async function understand(criteria, profile, query, remembered = null) {
 // profile's category/income/gender/age/education belong to the USER, not the beneficiary, so
 // they are dropped; only what the beneficiary's own details (note / answers) state is used.
 // Location is kept because it is usually shared and is stated by the user's state.
-export function effectiveProfile(saved, plan, answers = {}) {
+// The student flow's education level is the level they are studying / applying at. Scheme education
+// requirements for students list that CURRENT level, so it is the value used for matching.
+const EDU_FROM_FLOW = { school: 'school', class_10_12: '12th', undergraduate: 'undergraduate', professional: 'undergraduate', postgraduate: 'postgraduate', phd: 'phd' };
+
+export function effectiveProfile(saved, plan, answers = {}, criteria = {}) {
   const forSelf = !plan.beneficiary || plan.beneficiary === 'self';
   const ai = plan.profile || {};
   const base = forSelf ? { ...saved } : { state: saved.state || null, income: null, category: null, gender: null, education: null, age: null };
@@ -288,13 +292,50 @@ export function effectiveProfile(saved, plan, answers = {}) {
     income: pick(numOrNull(answers.annual_income), ai.annual_income, base.income),
     category: pick(answers.category, ai.category, base.category),
     gender: pick(answers.gender, ai.gender, base.gender),
-    education: base.education ?? null,
+    education: EDU_FROM_FLOW[criteria.education_level] ?? base.education ?? null,
     age: pick(numOrNull(answers.age), ai.age, base.age),
     landholding: pick(answers.landholding, ai.landholding, null),
     investment_required: pick(numOrNull(answers.investment_required), ai.investment_required, null),
     business_stage: pick(answers.business_stage, ai.business_stage, null),
     business_type: pick(answers.business_type, ai.business_type, null),
   };
+}
+
+// ---------------------------------------------------------------- student flow
+const STUDENT_BENEFITS = {
+  scholarship: ['scholarship', 'fellowship', 'stipend', 'grant'],
+  education_loan: ['loan', 'subsidy'],
+  coaching_support: ['scholarship', 'training', 'grant'],
+  hostel_support: ['housing', 'scholarship', 'grant'],
+  overseas: ['scholarship', 'loan', 'fellowship'],
+};
+const COURSE_WORDS = {
+  engineering: ['engineering', 'technical', 'b.tech', 'aicte', 'technology'], medical: ['medical', 'mbbs', 'nursing', 'health', 'neet'],
+  management: ['management', 'mba', 'commerce'], arts: ['arts', 'humanities', 'social science'], science: ['science', 'research', 'stem'],
+  law: ['law', 'legal'], agriculture: ['agriculture', 'agricultural', 'icar'], other: [],
+};
+const STUDENT_TEXT = /scholarship|fellowship|student|education|educational|tuition|study|studies|hostel|coaching|merit|stipend|college|school|university/i;
+
+const STUDENT_TYPE_TEXT = {
+  education_loan: /loan|vidyalaxmi|interest subsid|credit guarantee/i,
+  hostel_support: /hostel|accommodation|boarding|housing/i,
+  coaching_support: /coaching|competitive exam|entrance|test prep|training/i,
+  overseas: /overseas|abroad|foreign|international/i,
+};
+function studentTypeFit(r, type) {
+  const re = STUDENT_TYPE_TEXT[type];
+  if (!re) return true;                       // scholarship: any student scheme
+  if (type === 'education_loan' && overlap(r.benefit_types, ['loan'])) return true;
+  return re.test(`${r.name} ${r.short_description || ''} ${r._hay_body || ''}`);
+}
+
+// A student search is about student schemes: make sure the plan says so even if the AI's reading was loose.
+function shapeForStudent(plan, criteria) {
+  if (!criteria.student_type) return plan;
+  const audiences = [...new Set([...(plan.audiences || []), 'student'])];
+  const benefit_types = [...new Set([...(plan.benefit_types || []), ...(STUDENT_BENEFITS[criteria.student_type] || [])])];
+  const keywords = [...new Set([...(plan.keywords || []), 'scholarship', 'student', 'education', ...(COURSE_WORDS[criteria.course_field] || [])])];
+  return { ...plan, audiences, benefit_types, keywords };
 }
 
 // ---------------------------------------------------------------- stage 2
@@ -313,6 +354,10 @@ export function retrieve(pool, plan, profile, criteria, limit) {
     if (criteria.field === 'agriculture_allied' && SECTOR_NOT_NAME.agriculture_allied.test(r.name || '')) continue;
     // Dairy/poultry/fisheries results must really be about livestock or fish, not general farming schemes.
     if (criteria.field === 'dairy_livestock' && !inSector(r, 'dairy_livestock')) continue;
+    // Student searches only consider schemes that are for students / about education.
+    if (criteria.student_type && !overlap(r.audiences, ['student']) && !STUDENT_TEXT.test(`${r.name} ${r.short_description || ''}`)) continue;
+    // ...and the kind of help asked for must really be on offer (a loan search is not shown internships).
+    if (criteria.student_type && !studentTypeFit(r, criteria.student_type)) continue;
     let score = 0;
     for (const k of related) {
       if (r._hay_name.includes(k)) score += 6;
@@ -441,9 +486,10 @@ async function aiSearchRun({ criteria = {}, profile = {}, query = '', answers = 
   const t0 = Date.now();
   const pool = await loadAll();
   const t1 = Date.now();
-  const { plan, ai } = await understand(criteria, profile, query, remembered);
+  const { plan: rawPlan, ai } = await understand(criteria, profile, query, remembered);
+  const plan = shapeForStudent(rawPlan, criteria);
   const t2 = Date.now();
-  const eff = effectiveProfile(profile, plan, answers);
+  const eff = effectiveProfile(profile, plan, answers, criteria);
   const { list: shortlist, excluded: hardExcluded } = retrieve(pool, plan, eff, criteria, 40);
 
   let judged = new Map();
