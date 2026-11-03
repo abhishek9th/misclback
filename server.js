@@ -15,6 +15,8 @@ import consentsRouter from './routes/consents.js';
 import readinessRouter from './routes/readiness.js';
 import partnersRouter from './routes/partners.js';
 import catalogueRouter from './routes/catalogue.js';
+import { rateLimit, corsOptions } from './services/rateLimit.js';
+import { warmUp } from './services/aiSchemeSearch.js';
 import eligibilityRouter from './routes/eligibility.js';
 import documentsRouter from './routes/documents.js';
 import conflictsRouter from './routes/conflicts.js';
@@ -32,7 +34,13 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const app = express();
-app.use(cors());
+app.set('trust proxy', 1); // behind Render's proxy: use the real client IP for rate limiting
+app.use(cors(corsOptions()));
+// Rate limits: a general cap, and tighter caps where abuse is costly (login/OTP, AI calls).
+app.use('/api', rateLimit({ max: 300 }));
+app.use('/api/auth', rateLimit({ max: 20, message: 'Too many attempts. Please wait a minute and try again.' }));
+app.use('/api/analyze-user', rateLimit({ max: 20 }));
+app.use('/api/catalogue/ai-search', rateLimit({ max: 12 }));
 app.use(express.json({ limit: '8mb' })); // room for base64 live-photo in /api/auth/register
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
@@ -284,4 +292,5 @@ app.use((req, res, next) => {
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Secure AI Backend API running on port ${PORT}`);
+  warmUp();
 });

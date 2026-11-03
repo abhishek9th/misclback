@@ -60,6 +60,18 @@ function extractIncome(text, evidence) {
     const v = toRupees(m[1], m[2]);
     if (v && v >= 10000 && v <= 5e7) { caps.push(v); evidence.income_limit = evidence.income_limit || clip(m[0], 160); }
   }
+  // "income limit / ceiling of Rs X", "Rs X per annum ... income", "income ... Rs X per annum"
+  const re3 = /(?:income (?:limit|ceiling|cap)|ceiling on income|annual income|family income|household income)[^\d₹]{0,40}(?:rs\.?|inr|₹)?\s*([\d][\d,]*(?:\.\d+)?)\s*(lakhs?|lacs?|crores?|thousand)?(?:\s*(?:per annum|per year|annually|p\.a\.|per month))?/gi;
+  for (const m of text.matchAll(re3)) {
+    let v = toRupees(m[1], m[2]);
+    if (/per month/i.test(m[0]) && v) v *= 12;
+    if (v && v >= 10000 && v <= 5e7) { caps.push(v); evidence.income_limit = evidence.income_limit || clip(m[0], 160); }
+  }
+  const re4 = /(?:rs\.?|inr|₹)\s*([\d][\d,]*(?:\.\d+)?)\s*(lakhs?|lacs?|crores?|thousand)?\s*(?:per annum|per year|annually|p\.a\.)[^.;]{0,60}income|income[^.;]{0,50}(?:rs\.?|inr|₹)\s*([\d][\d,]*(?:\.\d+)?)\s*(lakhs?|lacs?|crores?|thousand)?\s*(?:per annum|per year|annually|p\.a\.)/gi;
+  for (const m of text.matchAll(re4)) {
+    const v = toRupees(m[1] || m[3], m[2] || m[4]);
+    if (v && v >= 10000 && v <= 5e7) { caps.push(v); evidence.income_limit = evidence.income_limit || clip(m[0], 160); }
+  }
   if (!caps.length) return null;
   // Different caps usually mean different categories/regions — take the most
   // permissive so nobody is wrongly excluded (matcher shows "confirm on portal").
@@ -129,18 +141,37 @@ function extractAge(text, evidence) {
       const v = Number(mx[1]); if (ok(v) && v >= 10) { max = v; evidence.max_age = clip(mx[0], 100); }
     }
   }
+  if (min === null) {
+    // "aged 60 and above", "age of 18 or more", "senior citizens (60+)"
+    const mn2 = /(?:aged?|age of)\s*(\d{1,2})\s*(?:years?)?\s*(?:and|or)\s*(?:above|more|older|over)|(?:attained|completed|reached)\s*(?:the\s*)?age of\s*(\d{1,2})|senior citizens?[^.;]{0,25}?(\d{2})\s*\+?\s*years?/i.exec(text);
+    if (mn2) { const v = Number(mn2[1] || mn2[2] || mn2[3]); if (ok(v) && v >= 5) { min = v; evidence.min_age = clip(mn2[0], 100); } }
+  }
+  if (max === null) {
+    // "below 35 years of age", "age ... 40 years or less/younger"
+    const mx2 = /(?:aged?|age of)\s*(\d{1,2})\s*(?:years?)?\s*(?:and|or)\s*(?:below|less|younger|under)|(\d{1,2})\s*years?\s*(?:of age\s*)?(?:or|and)\s*(?:below|less|younger|under)/i.exec(text);
+    if (mx2 && /age|aged|old/i.test(text.slice(Math.max(0, mx2.index - 40), mx2.index + mx2[0].length + 25))) {
+      const v = Number(mx2[1] || mx2[2]); if (ok(v) && v >= 10) { max = v; evidence.max_age = clip(mx2[0], 100); }
+    }
+  }
   if (min !== null && max !== null && min >= max) { min = null; max = null; }
   return { min, max };
 }
 
 const EDU = [
+  ['school', /\b(?:class|std\.?|standard)\s*(?:[1-9]|i{1,3}|iv|v|vi{1,3}|ix)\b|\b[5-9]th\b|\bprimary (?:school|education)|\bmiddle school|\belementary|\bschool (?:student|going|education)/i],
   ['10th', /\b10th\b|class (10|x)\b|matric(ulation)?\b|secondary (school|education)|\bssc\b/i],
   ['12th', /\b12th\b|class (12|xii)\b|higher secondary|intermediate|\bhsc\b|plus two|\+2\b/i],
   ['diploma', /diploma|polytechnic|\biti\b/i],
-  ['undergraduate', /(?<!post[- ]?)(?<!post )graduat(e|ion)|bachelor|b\.?\s?tech|b\.?\s?e\b|\bb\.?sc\b|\bb\.?a\b|\bb\.?com\b|degree course|under[- ]?graduate|\bug\b/i],
-  ['postgraduate', /post[- ]?graduat|master'?s|m\.?\s?tech|\bm\.?sc\b|\bm\.?a\b|\bmba\b|\bpg\b/i],
+  ['undergraduate', /(?<!post[- ]?)(?<!post )graduat(e|ion)|bachelor|degree course|under[- ]?graduate/i],
+  ['postgraduate', /post[- ]?graduat|master'?s/i],
   ['phd', /ph\.?\s?d|doctora(l|te)/i],
-  ['vocational', /vocational|skill (training|course)|\bnsqf\b/i],
+  ['vocational', /vocational|skill (training|course)|\bnsqf\b|certificate course/i],
+];
+// Degree abbreviations are matched CASE-SENSITIVELY — case-insensitive "B.E" matched the word
+// "be" ("should be", "shall be borne") and "MA" matched ordinary words.
+const EDU_ABBR = [
+  ['undergraduate', /\bB\.\s?Tech\b|\bB\.\s?E\.?(?=[\s,;)/])|\bB\.?\s?Sc\b|\bB\.\s?A\.?(?=[\s,;)/])|\bB\.?\s?Com\b|\bBBA\b|\bBCA\b|\bUG\b/],
+  ['postgraduate', /\bM\.\s?Tech\b|\bM\.?\s?Sc\b|\bM\.\s?A\.?(?=[\s,;)/])|\bMBA\b|\bMCA\b|\bPG\b/],
 ];
 function extractEducation(text, evidence) {
   // only when the text talks about qualification/study, not merely mentions a word
@@ -149,6 +180,10 @@ function extractEducation(text, evidence) {
   for (const [lvl, re] of EDU) {
     const m = re.exec(text);
     if (m) { out.push(lvl); evidence[`edu_${lvl}`] = clip(text.slice(Math.max(0, m.index - 25), m.index + 45), 80); }
+  }
+  for (const [lvl, re] of EDU_ABBR) {
+    const m = re.exec(text);
+    if (m && !out.includes(lvl)) { out.push(lvl); evidence[`edu_${lvl}`] = clip(text.slice(Math.max(0, m.index - 25), m.index + 45), 80); }
   }
   return out;
 }
@@ -216,6 +251,40 @@ export function extractEligibility({ name = '', short_description = '', eligibil
     audiences,
     _evidence: evidence,
   };
+}
+
+// Documents named in a scheme's "documents required" text, as canonical keys. The first
+// eight keys match user_documents.document_type so a user's uploads can be checked off.
+const DOC_PATTERNS = [
+  ['aadhaar', 'Aadhaar Card', /aadhaar|aadhar|uidai/i],
+  ['pan', 'PAN Card', /\bpan\b(?! ?india)|permanent account number/i],
+  ['income_certificate', 'Income Certificate', /income (certificate|proof)|आय प्रमाण/i],
+  ['domicile_certificate', 'Domicile / Residence Proof', /domicile|residen(ce|t) (certificate|proof)|proof of residence|permanent resident|निवास/i],
+  ['caste_certificate', 'Caste / Category Certificate', /caste certificate|category certificate|community certificate|\bsc\s*\/\s*st\b certificate|जाति प्रमाण/i],
+  ['bank_passbook', 'Bank Account / Passbook', /bank (account|passbook|statement|details)|passbook|cancelled cheque/i],
+  ['marksheet', 'Marksheet / Education Certificate', /mark ?sheets?|marks? card|transcript|passing certificate|degree certificate|diploma certificate|educational (qualification|certificate)|admission (letter|proof|receipt)|fee receipt|bonafide/i],
+  ['disability_certificate', 'Disability Certificate', /disability certificate|\budid\b|divyang (certificate|card)/i],
+  ['photo', 'Passport-size Photograph', /passport[- ]?size|photograph|\bphoto\b/i],
+  ['ration_card', 'Ration Card / BPL Card', /ration card|\bbpl\b (card|certificate)/i],
+  ['voter_id', 'Voter ID', /voter ?id|election card|epic card/i],
+  ['birth_certificate', 'Birth / Age Proof', /birth certificate|date of birth|age proof|proof of age/i],
+  ['business_registration', 'Business Registration (Udyam / GST)', /udyam|udyog aadhaar|\bgst(in)?\b|trade licen[cs]e|shop (act|and establishment)|business registration|partnership deed|incorporation/i],
+  ['project_report', 'Project Report / Business Plan', /project report|business plan|quotation|estimate/i],
+  ['land_records', 'Land Records', /land (record|document|holding|ownership)|khasra|khatauni|7\/12|patta|jamabandi/i],
+  ['experience_certificate', 'Experience / Training Certificate', /experience certificate|training certificate|work experience|skill certificate/i],
+  ['self_declaration', 'Self-declaration / Affidavit', /self[- ]declaration|affidavit|undertaking/i],
+];
+export const DOC_LABELS = Object.fromEntries(DOC_PATTERNS.map(([k, l]) => [k, l]));
+// Map a document's name to our standard document key (aadhaar, pan, caste_certificate ...) or null.
+export function docKeyFor(name) {
+  const hit = DOC_PATTERNS.find(([, , re]) => re.test(String(name || '')));
+  return hit ? hit[0] : null;
+}
+
+export function extractDocuments(text) {
+  const t = String(text || '');
+  if (t.trim().length < 5) return [];
+  return DOC_PATTERNS.filter(([, , re]) => re.test(t)).map(([key, label]) => ({ key, label }));
 }
 
 // How many of the eligibility dimensions the rules actually found something for.

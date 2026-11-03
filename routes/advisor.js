@@ -6,6 +6,8 @@ import { getSupabaseAdmin } from '../services/supabaseAdmin.js';
 import { evaluateAllSchemes } from '../services/eligibilityEngine.js';
 import { normalizeSituation, buildAdvice } from '../services/advisor/advisorEngine.js';
 import { explainAdvice, sentence } from '../services/advisor/advisorExplainer.js';
+import { analyseBusiness } from '../services/advisor/businessFeasibility.js';
+import { aiSearch } from '../services/aiSchemeSearch.js';
 
 // Financial Advisory. Pipeline (see services/advisor/advisorEngine.js):
 //   situation → profile → eligible schemes → eligibility engine → financial
@@ -143,6 +145,68 @@ router.post('/plan', requireUser, async (req, res) => {
   } catch (err) {
     console.error('advisor plan error:', err.message); // never log the user's figures
     res.status(500).json({ error: 'Could not build your funding plan right now', code: 'ADVISOR_ERROR' });
+  }
+});
+
+// POST /api/advisor/business-analysis  { inputs: {...}, include_schemes?: boolean }
+// Deterministic feasibility analysis (services/advisor/businessFeasibility.js): every figure is calculated
+// from what the user entered. Scheme suggestions come from the AI scheme search and are shown as options to
+// check, never as approved or guaranteed.
+const NUM_KEYS = ['total_investment', 'working_capital', 'own_savings', 'household_income_monthly', 'household_expenses_monthly',
+  'existing_emi_monthly', 'employees', 'salary_per_employee_month', 'rent_month', 'other_fixed_month', 'depreciation_month',
+  'monthly_revenue', 'monthly_variable_costs', 'loan_amount', 'loan_rate_annual', 'loan_tenure_months', 'min_own_contribution_pct'];
+const FIELD_FOR_SECTOR = { dairy: 'dairy_livestock', poultry: 'dairy_livestock', retail: 'retail_trading', manufacturing: 'manufacturing' };
+
+function cleanInputs(body) {
+  const src = body && typeof body === 'object' ? body : {};
+  const out = { sector: String(src.sector || 'other'), stage: src.stage === 'existing' ? 'existing' : 'new', location: src.location === 'urban' ? 'urban' : src.location === 'rural' ? 'rural' : null, drivers: {} };
+  const bad = (k) => { const e = new Error(`${k} must be a number from 0 to 1,000,000,000`); e.field = k; return e; };
+  const read = (k, v) => {
+    if (v === undefined || v === null || v === '') return undefined;
+    const n = Number(v);
+    if (!Number.isFinite(n) || n < 0 || n > 1e9) throw bad(k);
+    return n;
+  };
+  for (const k of NUM_KEYS) { const v = read(k, src[k]); if (v !== undefined) out[k] = v; }
+  for (const [k, v] of Object.entries(src.drivers && typeof src.drivers === 'object' ? src.drivers : {})) {
+    if (!/^[a-z_]{2,40}$/.test(k)) continue;
+    const n = read(`drivers.${k}`, v);
+    if (n !== undefined) out.drivers[k] = n;
+  }
+  return out;
+}
+
+router.post('/business-analysis', requireUser, async (req, res) => {
+  let inputs;
+  try { inputs = cleanInputs(req.body?.inputs); }
+  catch (e) { return res.status(400).json({ error: e.message, code: 'INVALID_INPUT', field: e.field || null }); }
+  try {
+    const analysis = analyseBusiness(inputs);
+    if (req.body?.include_schemes !== false && analysis.final_recommendation.decision !== 'INSUFFICIENT DATA') {
+      try {
+        const supabase = getSupabaseAdmin();
+        const { data: profile } = await supabase.from('profiles').select('social_category, gender, annual_income, state, date_of_birth').eq('id', req.user.id).maybeSingle();
+        const sectorText = analysis.business_overview.sector_label;
+        const found = await Promise.race([
+          aiSearch({
+            criteria: FIELD_FOR_SECTOR[inputs.sector] ? { field: FIELD_FOR_SECTOR[inputs.sector], business_status: inputs.stage } : { business_status: inputs.stage },
+            profile: { state: profile?.state || null, category: inVocab(profile?.social_category, CAT_VOCAB), gender: inVocab(profile?.gender, GENDER_VOCAB), income: profile?.annual_income ?? null, age: ageFromDob(profile?.date_of_birth) },
+            query: `${inputs.stage === 'new' ? 'Start a new' : 'Grow my existing'} ${sectorText.toLowerCase()} business, project cost about Rs ${analysis.business_overview.total_investment ?? ''}`,
+            limit: 6,
+          }),
+          new Promise((resolve) => setTimeout(() => resolve(null), 30000)),
+        ]);
+        analysis.recommended_schemes = (found?.schemes || []).map((s) => ({
+          slug: s.slug, name: s.name, help_type: s.benefit_types || [], level: s.level, states: s.states || [],
+          maximum_loan: s.loan_amount_max ?? null, interest_or_subsidy: s.interest_subsidy_note || null,
+          official_link: s.application_url, note: 'A suggestion to check, not an approval. Read the scheme terms (eligibility, interest, collateral) before relying on it.',
+        }));
+      } catch (e) { console.error('advisor scheme lookup failed:', e.message); }
+    }
+    res.json(analysis);
+  } catch (err) {
+    console.error('business analysis error:', err.message); // never log the user's figures
+    res.status(500).json({ error: 'Could not run the analysis right now', code: 'ANALYSIS_ERROR' });
   }
 });
 
